@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MSTEEL on FOOLENG</title>
+    <link>http://notes.fooleng.com/tags/msteel/</link>
+    <description>Recent content in MSTEEL on FOOLENG</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 23 Dec 2018 00:00:00 +0000</lastBuildDate><atom:link href="http://notes.fooleng.com/tags/msteel/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AutoCAD绘图环境配置手册</title>
+      <link>http://notes.fooleng.com/post/2018-12-23-autocad%E7%BB%98%E5%9B%BE%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%E6%89%8B%E5%86%8C/</link>
+      <pubDate>Sun, 23 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://notes.fooleng.com/post/2018-12-23-autocad%E7%BB%98%E5%9B%BE%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%E6%89%8B%E5%86%8C/</guid>
+      <description>我们使用AutoCAD的过程中一般不会仅仅使用纯粹的CAD，往往会使用很多的绘图插件，而寻找到优秀的绘图插件以及配置这些绘图插件是一件很繁琐</description>
+    </item>
+    
+  </channel>
+</rss>

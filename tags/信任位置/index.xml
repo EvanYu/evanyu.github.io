@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>信任位置 on FOOLENG</title>
+    <link>http://notes.fooleng.com/tags/%E4%BF%A1%E4%BB%BB%E4%BD%8D%E7%BD%AE/</link>
+    <description>Recent content in 信任位置 on FOOLENG</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 17 Feb 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://notes.fooleng.com/tags/%E4%BF%A1%E4%BB%BB%E4%BD%8D%E7%BD%AE/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AutoCAD常见问题</title>
+      <link>http://notes.fooleng.com/post/2020-02-17-autocad%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</link>
+      <pubDate>Mon, 17 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://notes.fooleng.com/post/2020-02-17-autocad%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</guid>
+      <description>由于在 AutoCAD 的过程中经常会需要使用一些变动的脚本，本文就对我常使用的脚本做一个记录。 批量增加受信任的文件夹位置 在 AutoCAD 2013以及以后的版本中，增加</description>
+    </item>
+    
+  </channel>
+</rss>

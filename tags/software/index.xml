@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>software on FOOLENG</title>
+    <link>http://notes.fooleng.com/tags/software/</link>
+    <description>Recent content in software on FOOLENG</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 25 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://notes.fooleng.com/tags/software/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Excel 常见使用技巧</title>
+      <link>http://notes.fooleng.com/post/2022-01-25-excel%E5%B8%B8%E8%A7%81%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/</link>
+      <pubDate>Tue, 25 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://notes.fooleng.com/post/2022-01-25-excel%E5%B8%B8%E8%A7%81%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/</guid>
+      <description>Excel的自动换行 问题描述 我的一个 excel 文档中我想要一些内容自动换行的同时自动调整行高，不然会导致有一些内容没法显示出来。但当我选中单元格-&amp;</description>
+    </item>
+    
+  </channel>
+</rss>

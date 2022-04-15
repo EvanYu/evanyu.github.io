@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>脚手架 on FOOLENG</title>
+    <link>http://notes.fooleng.com/tags/%E8%84%9A%E6%89%8B%E6%9E%B6/</link>
+    <description>Recent content in 脚手架 on FOOLENG</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 01 Jul 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://notes.fooleng.com/tags/%E8%84%9A%E6%89%8B%E6%9E%B6/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>悬挑脚手架核算示例</title>
+      <link>http://notes.fooleng.com/post/2020-07-01-%E6%82%AC%E6%8C%91%E8%84%9A%E6%89%8B%E6%9E%B6%E6%A0%B8%E7%AE%97%E7%A4%BA%E4%BE%8B/</link>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://notes.fooleng.com/post/2020-07-01-%E6%82%AC%E6%8C%91%E8%84%9A%E6%89%8B%E6%9E%B6%E6%A0%B8%E7%AE%97%E7%A4%BA%E4%BE%8B/</guid>
+      <description>现场施工的时候经常容易遇到悬挑脚手架的核算，其实此类核算可以简单的用手算复核一下结构主体的梁上线荷载够不够，结构梁是否需要加强。因为脚手架本</description>
+    </item>
+    
+  </channel>
+</rss>

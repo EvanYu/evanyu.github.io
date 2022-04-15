@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Esxi on FOOLENG</title>
+    <link>http://notes.fooleng.com/tags/esxi/</link>
+    <description>Recent content in Esxi on FOOLENG</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 10 Mar 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://notes.fooleng.com/tags/esxi/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vmware Esxi 使用单个外网IP地址实现NAT</title>
+      <link>http://notes.fooleng.com/post/2020-03-10-vmware-esxi-%E4%BD%BF%E7%94%A8%E5%8D%95%E4%B8%AA%E5%A4%96%E7%BD%91ip%E5%9C%B0%E5%9D%80%E5%AE%9E%E7%8E%B0nat/</link>
+      <pubDate>Tue, 10 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://notes.fooleng.com/post/2020-03-10-vmware-esxi-%E4%BD%BF%E7%94%A8%E5%8D%95%E4%B8%AA%E5%A4%96%E7%BD%91ip%E5%9C%B0%E5%9D%80%E5%AE%9E%E7%8E%B0nat/</guid>
+      <description>我们的机器经常会出现只有一个外网 IP 可用的情况，但是既然使用了 Esxi 我们就肯定不止一台系统，而 Esxi 使用的虚拟交换机并没有实现 NAT 之类的功能，所以只能自</description>
+    </item>
+    
+  </channel>
+</rss>

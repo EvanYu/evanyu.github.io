@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>版本 on FOOLENG</title>
+    <link>http://notes.fooleng.com/tags/%E7%89%88%E6%9C%AC/</link>
+    <description>Recent content in 版本 on FOOLENG</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 23 Dec 2018 00:00:00 +0000</lastBuildDate><atom:link href="http://notes.fooleng.com/tags/%E7%89%88%E6%9C%AC/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AutoCAD版本与.net、VS版本的对应关系及注册表路径</title>
+      <link>http://notes.fooleng.com/post/2018-12-23-autocad%E7%89%88%E6%9C%AC%E4%B8%8E.netvs%E7%89%88%E6%9C%AC%E7%9A%84%E5%AF%B9%E5%BA%94%E5%85%B3%E7%B3%BB%E5%8F%8A%E6%B3%A8%E5%86%8C%E8%A1%A8%E8%B7%AF%E5%BE%84/</link>
+      <pubDate>Sun, 23 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://notes.fooleng.com/post/2018-12-23-autocad%E7%89%88%E6%9C%AC%E4%B8%8E.netvs%E7%89%88%E6%9C%AC%E7%9A%84%E5%AF%B9%E5%BA%94%E5%85%B3%E7%B3%BB%E5%8F%8A%E6%B3%A8%E5%86%8C%E8%A1%A8%E8%B7%AF%E5%BE%84/</guid>
+      <description>无论在AutoCAD的二次开发还是插件加载的过程中，知道AutoCAD的版本号以及其与之对应的net framework版本和vs版本，对于解</description>
+    </item>
+    
+    <item>
+      <title>批量转换文件夹与子文件夹下的dwg文件版本</title>
+      <link>http://notes.fooleng.com/post/2018-12-19-%E6%89%B9%E9%87%8F%E8%BD%AC%E6%8D%A2%E6%96%87%E4%BB%B6%E5%A4%B9%E4%B8%8E%E5%AD%90%E6%96%87%E4%BB%B6%E5%A4%B9%E4%B8%8B%E7%9A%84dwg%E6%96%87%E4%BB%B6%E7%89%88%E6%9C%AC/</link>
+      <pubDate>Wed, 19 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://notes.fooleng.com/post/2018-12-19-%E6%89%B9%E9%87%8F%E8%BD%AC%E6%8D%A2%E6%96%87%E4%BB%B6%E5%A4%B9%E4%B8%8E%E5%AD%90%E6%96%87%E4%BB%B6%E5%A4%B9%E4%B8%8B%E7%9A%84dwg%E6%96%87%E4%BB%B6%E7%89%88%E6%9C%AC/</guid>
+      <description>我们常常需要转换dwg文件，Autodesk公司出品的dwg trueviewer可以转换所有dwg文件的版本。然而在转换的时候我们经常会有需</description>
+    </item>
+    
+  </channel>
+</rss>

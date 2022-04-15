@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>高等数学基础笔记 - FOOLENG</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="Evan Yu" /><meta name="description" content="空间解析几何 基本知识 向量的关系 $$ \begin{cases} \vec{\alpha} \cdot \vec{\beta} = |\vec{\alpha}| \cdot |\vec{\beta}| \cdot \cos\theta \Rightarrow \vec{\alpha} \perp \vec{\beta}\ \vec{\alpha} \times \vec{\beta} = |\vec{\alpha}| \cdot |\vec{\beta}| \cdot \sin\theta \Rightarrow \vec{\alpha} // \vec{\beta} \end{cases} $$ 向量的坐标运算 $$ \begin{cases} \vec{\alpha} = (a_1, b_1, c_1) \newline \vec{\beta} = (a_2, b_2, c_2) \end{cases} \Longrightarrow \begin{cases} \vec{\alpha} \cdot" /><meta name="keywords" content="高等数学, 向量, 微积分, 线性代数, 概率论, 一注结构, 基础" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.96.0 with theme even" />
+
+
+<link rel="canonical" href="http://notes.fooleng.com/post/2019-10-27-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/sass/main.min.b5a744db6de49a86cadafb3b70f555ab443f83c307a483402259e94726b045ff.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/custom.css">
+
+
+<meta property="og:title" content="高等数学基础笔记" />
+<meta property="og:description" content="空间解析几何 基本知识 向量的关系 $$ \begin{cases} \vec{\alpha} \cdot \vec{\beta} = |\vec{\alpha}| \cdot |\vec{\beta}| \cdot \cos\theta \Rightarrow \vec{\alpha} \perp \vec{\beta}\ \vec{\alpha} \times \vec{\beta} = |\vec{\alpha}| \cdot |\vec{\beta}| \cdot \sin\theta \Rightarrow \vec{\alpha} // \vec{\beta} \end{cases} $$ 向量的坐标运算 $$ \begin{cases} \vec{\alpha} = (a_1, b_1, c_1) \newline \vec{\beta} = (a_2, b_2, c_2) \end{cases} \Longrightarrow \begin{cases} \vec{\alpha} \cdot" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://notes.fooleng.com/post/2019-10-27-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2019-10-26T00:00:00+00:00" />
+<meta property="article:modified_time" content="2019-10-26T00:00:00+00:00" />
+
+<meta itemprop="name" content="高等数学基础笔记">
+<meta itemprop="description" content="空间解析几何 基本知识 向量的关系 $$ \begin{cases} \vec{\alpha} \cdot \vec{\beta} = |\vec{\alpha}| \cdot |\vec{\beta}| \cdot \cos\theta \Rightarrow \vec{\alpha} \perp \vec{\beta}\ \vec{\alpha} \times \vec{\beta} = |\vec{\alpha}| \cdot |\vec{\beta}| \cdot \sin\theta \Rightarrow \vec{\alpha} // \vec{\beta} \end{cases} $$ 向量的坐标运算 $$ \begin{cases} \vec{\alpha} = (a_1, b_1, c_1) \newline \vec{\beta} = (a_2, b_2, c_2) \end{cases} \Longrightarrow \begin{cases} \vec{\alpha} \cdot"><meta itemprop="datePublished" content="2019-10-26T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2019-10-26T00:00:00+00:00" />
+<meta itemprop="wordCount" content="3615">
+<meta itemprop="keywords" content="高等数学,向量,微积分,线性代数,概率论," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="高等数学基础笔记"/>
+<meta name="twitter:description" content="空间解析几何 基本知识 向量的关系 $$ \begin{cases} \vec{\alpha} \cdot \vec{\beta} = |\vec{\alpha}| \cdot |\vec{\beta}| \cdot \cos\theta \Rightarrow \vec{\alpha} \perp \vec{\beta}\ \vec{\alpha} \times \vec{\beta} = |\vec{\alpha}| \cdot |\vec{\beta}| \cdot \sin\theta \Rightarrow \vec{\alpha} // \vec{\beta} \end{cases} $$ 向量的坐标运算 $$ \begin{cases} \vec{\alpha} = (a_1, b_1, c_1) \newline \vec{\beta} = (a_2, b_2, c_2) \end{cases} \Longrightarrow \begin{cases} \vec{\alpha} \cdot"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">FOOLENG</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">主页</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">归档</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">分类</li>
+      </a><a href="/projects/">
+        <li class="mobile-menu-item">项目</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">关于我</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">FOOLENG</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">主页</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">归档</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">分类</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/projects/">项目</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">关于我</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">高等数学基础笔记</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2019-10-26 </span>
+        <div class="post-category">
+            <a href="/categories/%E6%95%B0%E5%AD%A6%E4%B8%8E%E5%8A%9B%E5%AD%A6/"> 数学与力学 </a>
+            </div>
+          <span class="more-meta"> 约 3615 字 </span>
+          <span class="more-meta"> 预计阅读 8 分钟 </span>
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#空间解析几何">空间解析几何</a>
+          <ul>
+            <li><a href="#基本知识">基本知识</a></li>
+            <li><a href="#典型例题">典型例题</a></li>
+          </ul>
+        </li>
+        <li><a href="#微分学">微分学</a>
+          <ul>
+            <li><a href="#基本知识-1">基本知识</a></li>
+            <li><a href="#典型例题-1">典型例题</a></li>
+          </ul>
+        </li>
+        <li><a href="#积分学">积分学</a>
+          <ul>
+            <li><a href="#基本知识-2">基本知识</a></li>
+            <li><a href="#典型例题-2">典型例题</a></li>
+          </ul>
+        </li>
+        <li><a href="#无穷级数">无穷级数</a>
+          <ul>
+            <li><a href="#基本知识-3">基本知识</a></li>
+            <li><a href="#典型例题-3">典型例题</a></li>
+          </ul>
+        </li>
+        <li><a href="#常微分方程">常微分方程</a>
+          <ul>
+            <li><a href="#基本知识-4">基本知识</a></li>
+            <li><a href="#典型例题-4">典型例题</a></li>
+          </ul>
+        </li>
+        <li><a href="#线性代数">线性代数</a></li>
+        <li><a href="#概率与数理统计">概率与数理统计</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <p><img src="https://pic.fooleng.com/2019-10-01_maths.jpg" alt=""></p>
+<h2 id="空间解析几何">空间解析几何</h2>
+<h3 id="基本知识">基本知识</h3>
+<h4 id="向量的关系">向量的关系</h4>
+<p>$$
+\begin{cases}
+\vec{\alpha} \cdot \vec{\beta} = |\vec{\alpha}| \cdot |\vec{\beta}| \cdot \cos\theta \Rightarrow \vec{\alpha} \perp \vec{\beta}\
+\vec{\alpha} \times \vec{\beta} = |\vec{\alpha}| \cdot |\vec{\beta}| \cdot \sin\theta \Rightarrow \vec{\alpha} // \vec{\beta}
+\end{cases}
+$$</p>
+<h4 id="向量的坐标运算">向量的坐标运算</h4>
+<p>$$
+\begin{cases}
+\vec{\alpha} = (a_1, b_1, c_1) \newline
+\vec{\beta} = (a_2, b_2, c_2)
+\end{cases}
+\Longrightarrow
+\begin{cases}
+\vec{\alpha} \cdot \vec{\beta} = (a_1a_2, b_1b_2, c_1c_2) \newline
+\vec{\alpha} \times \vec{\beta} =
+\begin{vmatrix}
+i &amp; j &amp; k \newline
+a_1 &amp; a_2 &amp; a_3 \newline
+b_1 &amp; b_2 &amp; b_3
+\end{vmatrix} (写X左上至右下为正)\newline
+| \vec{\alpha} \times \vec{\beta} | = a_1a_2 + b_1b_2 + c_1c_2 \newline
+| \vec{\alpha} | = \sqrt{a_1^2 + b_1^2 + c_1^2} \newline
+\end{cases}
+$$</p>
+<h4 id="平面方程">平面方程</h4>
+<p>$$
+\begin{aligned}
+&amp;平面的一般方程：F=Ax+By+Cz+D=0 \newline
+&amp;法向量：\vec{\alpha} = (A,B,C) \newline
+&amp;曲面的法向量：\vec{\alpha} = (\frac{\partial F}{\partial x}, \frac{\partial F}{\partial y}, \frac{\partial F}{\partial z})
+\end{aligned}
+$$</p>
+<h4 id="直线方程平面相交为线">直线方程（<strong>平面相交为线</strong>）</h4>
+<p>$$
+\begin{aligned}
+&amp;\text{1.}一般式：
+\begin{cases}
+A_1x + B_1y + C_1z + D_1 = 0 \newline
+A_2x + B_2y + C_2z + D_2 = 0
+\end{cases} \newline
+&amp;\text{2.}对称式(两点式)：
+\frac{x-x_1}{x_2-x_1} = \frac{y-y_1}{y_2-y_1} = \frac{z-z_1}{z_2-z_1} \newline
+\Rightarrow &amp;经过点(x_1, y_1, z_1),(x_2, y_2, z_2) \newline
+&amp;方向向量为：[(x_2-x_1), (y_2-y_1), (z_2-z_1)] \newline
+&amp;\text{3. }参数式：
+\begin{cases}
+x = x_1 + \lambda (x_2 - x_1) \newline
+y = y_1 + \lambda (y_2 - y_1) \newline
+z = z_1 + \lambda (z_2 - z_1)
+\end{cases}
+\end{aligned}
+$$</p>
+<p><em><strong>定理：直线只需有两个点在平面上，则直线在平面上</strong></em></p>
+<h4 id="旋转曲面方程">旋转曲面方程</h4>
+<p><img src="https://pic.fooleng.com/2019-10-01_Math_%E6%97%8B%E8%BD%AC%E6%9B%B2%E9%9D%A2.png" alt=""></p>
+<p>$$
+\begin{aligned}
+&amp;方程：
+\begin{cases}
+y^2+z=1\newline
+x=0
+\end{cases} \newline
+&amp;绕OZ轴旋转以后的方程为：x^2+y^2+z=1 \newline
+&amp;绕z轴则字母z不变，另一字母变为\sqrt{x^2+y^2}
+\end{aligned}
+$$</p>
+<h4 id="点到直线平面的距离">点到直线/平面的距离</h4>
+<p><img src="https://pic.fooleng.com/2019-10-01_Math_%E7%82%B9%E5%88%B0%E9%9D%A2%E7%9A%84%E8%B7%9D%E7%A6%BB.png" alt=""></p>
+<p>$$
+\begin{aligned}
+&amp;\vec{\alpha}=(A,B,C) \newline
+&amp;\vec{\beta} = (p-x_1, q-y_1, r-z_1) \newline
+\Rightarrow &amp;
+\begin{cases}
+d = |\vec{\beta}|\cdot \cos \theta
+= |\vec{\beta}| \frac{\vec{\alpha}\cdot\vec{\beta}}{|\vec{\alpha}||\vec{\beta}|}
+= \frac{A(p-x_1)+B(q-y_1)+C(r-z_1)}{\sqrt{A^2+B^2+C^2}} \newline
+Ax_1 + By_1 + Cz_1 + D = 0
+\end{cases} \newline
+\Rightarrow &amp;
+d = \frac{Ap+Bq+Cr+D}{\sqrt{A^2+B^2+C^2}}
+\end{aligned}
+$$</p>
+<h3 id="典型例题">典型例题</h3>
+<h4 id="例题1">例题1</h4>
+<p>$$
+若向量\vec{\alpha}、\vec{\beta}满足|\vec{\alpha}|=2，|\vec{\beta}|=\sqrt{2}，且\vec{\alpha}\cdot\vec{\beta}=2，则|\vec{\alpha}\times\vec{\beta}|=?
+$$</p>
+<p>$$
+\begin{aligned}
+【解】&amp;设两向量\vec{\alpha}、\vec{\beta}的夹角为\theta，根据\vec{\alpha}\cdot\vec{\beta}=2 \newline
+\Rightarrow &amp;\cos\theta=\frac{\vec{\alpha}\cdot\vec{\beta}}{|\vec{\alpha}||\vec{\beta}|} = \frac{\sqrt{2}}{2} \newline
+\Rightarrow &amp;\sin\theta=\frac{\sqrt{2}}{2} \newline
+\Rightarrow &amp; |\vec{\alpha}\times\vec{\beta}| = |\vec{\alpha}|\cdot|\vec{\beta}|\sin\theta = 2
+\end{aligned}
+$$</p>
+<h2 id="微分学">微分学</h2>
+<h3 id="基本知识-1">基本知识</h3>
+<h4 id="基本初等函数">基本初等函数</h4>
+<p>$$
+\begin{aligned}
+幂函数:&amp;x^{\mu} \newline
+指数函数:&amp;a^x \newline
+对数函数:&amp;\log{a^x}\newline
+三角函数:&amp;\sin{x}、\cos{x}、\tan{x}、\cot{x} \newline
+反三角函数:&amp;\arcsin{x}、\arccos{x}、\arctan{x}
+\end{aligned}
+$$</p>
+<h4 id="无穷小与两个重要极限">无穷小与两个重要极限</h4>
+<p>$$
+无穷小:\lim \limits_{x\to a}f(x)=0
+\begin{cases}
+高阶无穷小:\lim \limits_{x\to a}\frac{\beta}{\alpha}=0 \newline
+低阶无穷小:\lim \limits_{x\to a}\frac{\beta}{\alpha}=\infty \newline
+同阶无穷小:\lim \limits_{x\to a}\frac{\beta}{\alpha} = c(not\ 0)\newline
+k阶无穷小:\lim \limits_{x\to a}\frac{\beta}{\alpha^k}=c(not\ 0)\newline
+等价无穷小:\lim \limits_{x\to a}\frac{\beta}{\alpha}=1\newline
+\end{cases}
+$$</p>
+<p>$$
+常用等价无穷小：
+\begin{cases}
+\sin x \sim x \newline
+\arcsin x \sim x \newline
+\tan x \sim x \newline
+e^x - 1 \sim x \newline
+a^x-1 \sim x\ln{a}(a&gt;0,a\ne1) \newline
+\ln(1+x) \sim x \newline
+\log{a}^{1+x} \sim \frac{x}{\ln a}(a&gt;0,a\ne1) \newline
+1-\cos x \sim \frac{1}{2}x^2 \newline
+(1+\beta x)^{\alpha} -1 \sim \alpha\beta x \newline
+\end{cases}
+$$</p>
+<p>$$
+两个重要极限：
+\begin{cases}
+\lim\limits_{x \to 0}\frac{\sin x}{x} = 1 \newline
+\lim\limits_{x \to \infty}(1+\frac{1}{x})^x = e \newline
+\end{cases}
+$$</p>
+<h4 id="洛必达法则">洛必达法则</h4>
+<p>$对于未定式型极限（\frac{0}{0}、\frac{\infty}{\infty}）可以采用上下求导的方式求极限：$
+$$
+\lim\limits_{x \to 0}\frac{f(x)}{F(x)} = \lim\limits_{x \to 0}\frac{f&rsquo;(x)}{F&rsquo;(x)}
+$$</p>
+<h4 id="函数的连续性与间断点">函数的连续性与间断点</h4>
+<p>$$
+连续
+\begin{cases}
+\text{1. } 在x_0处有定义\newline
+\text{2. } 左右极限存在且相等\newline
+\end{cases}
+$$</p>
+<p>$$
+间断点
+\begin{cases}
+第一类间断点（左右极限均存在）
+\begin{cases}
+可去间断点(在x_0处无定义)\newline
+跳跃间断点(左右极限不相等)
+\end{cases}\newline
+第二类（不属于第一类的，包括无穷间断、振荡间断等）\newline
+\end{cases}
+$$</p>
+<h4 id="基本求导公式与法则">基本求导公式与法则</h4>
+<ul>
+<li>基本求导公式：</li>
+</ul>
+<p>$$
+\begin{aligned}
+(C)&rsquo; &amp;= 0 \newline
+(x^\mu)&rsquo; &amp;= \mu x^{\mu -1} \newline
+(\sin x)&rsquo; &amp;= \cos x \newline
+(\cos x)&rsquo; &amp;= -\sin x \newline
+(\tan x)&rsquo; &amp;= \frac{1}{\cos^2x} \newline
+(\cot x)&rsquo; &amp;= -\frac{1}{\sin^2x} \newline
+(\sec x)&rsquo; &amp;= \sec x \tan x \newline
+(\csc x)&rsquo; &amp;= -\csc x \cot x \newline
+(a^x)&rsquo; &amp;= a^x\ln a \newline
+(e^x)&rsquo; &amp;= e^x \newline
+(\log{a^x})&rsquo; &amp;= \frac{1}{x\ln a} \newline
+(\ln x)&rsquo; &amp;= \frac{1}{x} \newline
+(\arcsin x)&rsquo; &amp;= \frac{1}{\sqrt{1-x^2}} \newline
+(\arccos x)&rsquo; &amp;= -\frac{1}{\sqrt{1-x^2}} \newline
+(\arctan x)&rsquo; &amp;= \frac{1}{1+x^2} \newline
+(arccot x)&rsquo; &amp;= -\frac{1}{1+x^2} \newline
+\end{aligned}
+$$</p>
+<ul>
+<li>和差积商求导法则</li>
+</ul>
+<p>$$(u \pm v)&rsquo; = u&rsquo; \pm v&rsquo;$$
+$$(Cu)&rsquo; = Cu&rsquo;$$
+$$(uv)&rsquo; = u&rsquo;v + uv&rsquo;$$
+$$(\frac{u}{v})&rsquo; = \frac{u&rsquo;v - uv&rsquo;}{v^2}$$</p>
+<ul>
+<li>复合函数求导</li>
+</ul>
+<p>$$
+复合函数F(u),u=t(x);
+\frac{dF}{dx} = \frac{dF}{du} \frac{du}{dx}
+$$</p>
+<p>$$
+例如：F(u) = 5u,u = x^2;
+\Rightarrow \frac{dF}{dx} =5 \cdot 2x = 10x
+$$</p>
+<ul>
+<li>莱布尼兹公式（高阶求导）</li>
+</ul>
+<p>$$(uv)^{(n)} = \displaystyle\sum_{k=0}^nC_n^k u^{(n-k)} v^{(k)} $$</p>
+<p>$$ 排列：A_n^k = \frac{!n}{(n-k)!} $$</p>
+<p>$$ 组合：C_n^k = \frac{A_n^k}{k!} = \frac{n!}{k!(n-k)!} $$</p>
+<h4 id="求导技巧">求导技巧</h4>
+<ul>
+<li>隐函数求导：两边求导</li>
+<li>取对数后求导</li>
+</ul>
+<h4 id="函数的极值">函数的极值</h4>
+<p>$$
+一阶导数\rightarrow
+\begin{cases}
+单调性
+\begin{cases}
+f&rsquo;(x)&gt;0 \uparrow \newline
+f&rsquo;(x)&lt;0 \downarrow \newline
+\end{cases} \
+极值点：驻点或不可导点\newline
+f&rsquo;(x)=0 \Rightarrow 驻点
+\end{cases}
+$$</p>
+<p>$$
+二阶导数\rightarrow
+\begin{cases}
+凹凸性
+\begin{cases}
+f&rsquo;&rsquo;(x) &gt; 0 \Rightarrow 凹函数 \newline
+f&rsquo;&rsquo;(x) &lt; 0 \Rightarrow 凸函数
+\end{cases}
+\newline
+拐点:f&rsquo;&rsquo;(x)=0，凹凸性变化
+\end{cases}
+$$</p>
+<p><em><strong>f(x)与f&rsquo;(x)的奇偶性相反</strong></em></p>
+<h4 id="全微分">全微分</h4>
+<p>$$\frac{\partial^2Z}{\partial x \partial y} = \frac{\partial^2Z}{\partial y \partial x}$$
+$$\Rightarrow Z=f(x,y)先对x求导再对y求导，另一未知量当作常数。 $$</p>
+<p>$$
+\begin{cases}
+F(x,y)=0 \newline
+\frac{dx}{dy} = -\frac{Fx}{Fy}
+\end{cases}
+\Rightarrow dz = \frac{\partial z}{\partial x}dx + \frac{\partial z}{\partial y}dy
+$$</p>
+<p>$$
+\begin{cases}
+F(x,y,z)=0 \newline
+\frac{\partial z}{\partial x} = -\frac{Fx}{Fz} \newline
+\frac{\partial z}{\partial y} = -\frac{Fy}{Fz} \newline
+\end{cases}
+$$</p>
+<h3 id="典型例题-1">典型例题</h3>
+<h2 id="积分学">积分学</h2>
+<h3 id="基本知识-2">基本知识</h3>
+<h4 id="积分的求法">积分的求法</h4>
+<ul>
+<li>与求导相反的基本积分表法</li>
+</ul>
+<p>$$
+\begin{aligned}
+\int{kdx} &amp;= kx + C\newline
+\int{x^\mu dx} &amp;= \frac{x^{\mu+1}}{\mu +1} +C\newline
+\int\frac{dx}{x}&amp;=\ln|x| +C \newline
+\int\frac{dx}{1+x^2} &amp;= \arctan x +C\newline
+\int\frac{dx}{\sqrt{1-x^2}} &amp;= \arcsin x +C\newline
+\int\cos xdx &amp;= \sin x + C \newline
+\int\sin xdx &amp;= -\cos x + C\newline
+\int\frac{dx}{\cos^2x} &amp;= \tan x + C\newline
+\int\frac{dx}{\sin^2x} &amp;= -\cot x + C\newline
+\int e^x dx &amp;= e^x +C \newline
+\int a^xdx &amp;= \frac{a^x}{\ln a} + C\newline
+\int shxdx &amp;= chx + C \newline
+\int chxdx &amp;= shx + C \newline
+\end{aligned}
+$$</p>
+<ul>
+<li>第一类换元法(变量代换)</li>
+</ul>
+<p>$$
+\begin{aligned}
+例：&amp;\int\frac{\sin x}{\cos x}dx = \int -\frac{1}{\cos x}d(\cos x) = -ln^{|\cos x|}+C\newline
+&amp;\int 2\cos 2xdx = \int\cos 2x d2x = \sin 2x + C \newline
+\end{aligned}
+$$</p>
+<ul>
+<li>第二类换元法(将dx的变量x替换)</li>
+</ul>
+<p>$$
+\begin{aligned}
+例：&amp;求\int\sqrt{a^2-x^2}dx\newline
+&amp;令 x = a\sin t \newline
+\Rightarrow &amp;原式=\int a^2 \cos t d\sin t = a^2 \int \cos^2 tdt = a^2\int\frac{1+\cos 2t}{2}dt
+\end{aligned}
+$$</p>
+<ul>
+<li>分部积分法</li>
+</ul>
+<p>$$
+\int udv = uv - \int vdu
+$$</p>
+<h4 id="二重积分的坐标系变换">二重积分的坐标系变换</h4>
+<p>$$
+\begin{cases}
+&amp;\text{1. } 被积函数中 x = \rho \cos \theta , y = \rho \sin \theta \newline
+&amp;\text{2. } 面积元素 dxdy = \rho dr d \theta
+\end{cases}
+$$</p>
+<p>$$
+例：\displaystyle\iint_{D}\frac{dxdy}{1+x^2+y^2}=\int_0^{2\pi}d\theta \int_0^1\frac{1}{1+r^2}rdr
+$$</p>
+<h4 id="线积分">线积分</h4>
+<p>$$
+\begin{cases}
+x = \varphi(t) \newline
+y = \psi(t)
+\end{cases}
+$$</p>
+<p>$$
+\displaystyle\Rightarrow \int_Lf(x,y)ds = \int_\alpha^\beta f[\varphi(t), \psi(t)]\sqrt{\varphi &lsquo;^2(t)+\psi &lsquo;^2(t)}dt
+$$</p>
+<h4 id="二重积分的几何意义">二重积分的几何意义</h4>
+<p>$$
+二重积分 \iint_Df(x,y)dxdy \rightarrow 某一包围区域的体积
+$$</p>
+<p><strong>例：</strong>
+<img src="https://pic.fooleng.com/2019-10-01_Math_%E4%BA%8C%E9%87%8D%E7%A7%AF%E5%88%86%E7%9A%84%E5%87%A0%E4%BD%95%E6%80%A7%E8%B4%A8.png" alt=""></p>
+<p>$$
+\iint_Ddxdy = \int_0^3 \pi y^2dx=\int_0^3 \pi 4xdx
+$$</p>
+<h3 id="典型例题-2">典型例题</h3>
+<h2 id="无穷级数">无穷级数</h2>
+<h3 id="基本知识-3">基本知识</h3>
+<h4 id="基本概念">基本概念</h4>
+<p>$$
+S_n=\displaystyle\sum_{i=1}^nu_i \rightarrow 割圆术、等比数列和等
+$$</p>
+<p>$$
+\lim\limits_{n \to \infty}S_n = S
+\begin{cases}
+\xrightarrow{是}收敛 \newline
+\xrightarrow{是}发散
+\end{cases}
+$$</p>
+<p>$$
+基本性质
+\begin{cases}
+\lim\limits_{n \to \infty}\sum u_n = S \Rightarrow \lim\limits_{n \to \infty}\sum ku_n = kS \newline
+\sigma = \lim\limits_{n \to \infty}\sum v_n \Rightarrow \lim\limits_{n \to \infty}\sum{u_n + v_n} = S + \sigma \newline
+增减项数不变 \newline
+\lim\limits_{n \to \infty}u_n = 0 \rightarrow 单项极限为零
+\end{cases}
+$$</p>
+<h4 id="调和级数发散">调和级数（发散）</h4>
+<p>$$
+1+\frac{1}{2}+\frac{1}{3}+\frac{1}{4}+&hellip;+\frac{1}{n}+&hellip;
+$$</p>
+<h4 id="p级数">p级数</h4>
+<p>$$
+1+\frac{1}{2^p}+\frac{1}{3^p}+\frac{1}{4^p}+&hellip;+\frac{1}{n^p}+&hellip;
+$$</p>
+<p>$$
+\Rightarrow
+\begin{cases}
+p\leq 1时发散 \newline
+p &gt; 1时收敛
+\end{cases}
+$$</p>
+<h4 id="幂级数">幂级数</h4>
+<p>$$
+\begin{aligned}
+&amp;定义与概念：\lim\limits_{n=0}^{\infty}a_n(x-c)^n \newline
+&amp;收敛半径：R=\lim\limits_{n \to \infty}|\frac{a_n}{a_{n+1}}|=\frac{1}{\rho}\newline
+&amp;展开 e^x = \displaystyle\sum_{n=0}^{\infty}\frac{x^n}{n!}\ (注意:0! = 1)\newline
+&amp;常用的一个幂函数的和：x^0+x^1+&hellip;+x^n+&hellip;=\frac{1}{1-x}
+\end{aligned}
+$$</p>
+<h4 id="绝对收敛绝对值收敛">绝对收敛（绝对值收敛）</h4>
+<p>$$
+\begin{aligned}
+\displaystyle\sum_{n=1}^{\infty}a_n 收敛且 \displaystyle\sum_{n=1}^{\infty}|a_n| 也收敛 \rightarrow 绝对收敛 \newline
+\displaystyle\sum_{n=1}^{\infty}a_n 收敛且 \displaystyle\sum_{n=1}^{\infty}|a_n| 发散 \rightarrow 条件收敛 \newline
+交错级数\displaystyle\sum_{n=1}^{\infty}(-1)^{n-1}u_n的收敛条件 \rightarrow
+\begin{cases}
+u_n \geq u_{n+1} \newline
+\lim\limits_{n \to \infty}u_n = 0
+\end{cases}
+\end{aligned}
+$$</p>
+<h4 id="泰勒级数与麦克劳林级数">泰勒级数与麦克劳林级数</h4>
+<p>$$
+\begin{aligned}
+泰勒级数：f(x) = &amp;f(x_0) + f&rsquo;(x_0)(x-x_0)+\frac{f&rsquo;&rsquo;(x_0)(x-x_0)^2}{2!}+&hellip;\newline
+&amp;+\frac{f^{(n)}(x_0)(x-x_0)^n}{n!}+&hellip;\newline
+&amp;\displaystyle x_0 = 0 时 \rightarrow 麦克劳林级数
+\end{aligned}
+$$</p>
+<h3 id="典型例题-3">典型例题</h3>
+<h2 id="常微分方程">常微分方程</h2>
+<h3 id="基本知识-4">基本知识</h3>
+<h4 id="可分离变量的微分方程求法">可分离变量的微分方程求法</h4>
+<p>$$
+可以写成g(y)dy=f(x)dx的微分方程，两边积分后代入边界条件即可求得解
+$$</p>
+<h4 id="齐次方程">齐次方程</h4>
+<p>$$
+\frac{dy}{dx}=f(x,y) \rightarrow 可以写成\frac{y}{x}的函数，即f(x,y) = \varphi (\frac{y}{x})
+$$</p>
+<p>$$
+\begin{aligned}
+例：&amp;求y^2+x^2\frac{dy}{dx} = xy\frac{dy}{dx} \newline
+\Rightarrow &amp;\frac{dy}{dx} = \frac{y^2}{xy-x^2} = \frac{(\frac{y}{x})^2}{(\frac{y}{x})-1} \newline
+令&amp;u = \frac{y}{x} \Rightarrow
+\begin{cases}
+y = ux \newline
+\frac{dy}{dx} = u+x\frac{du}{dx}
+\end{cases}\newline
+\Rightarrow &amp;原式变为 u+x\frac{du}{dx} = \frac{u^2}{u-1} \newline
+\Rightarrow &amp;x\frac{du}{dx} = \frac{u}{u-1} \newline
+\Rightarrow &amp;(1-\frac{1}{u})du = \frac{1}{x}dx \newline
+两端积分 \Rightarrow &amp;u - \ln^{|u|} + C = ln^{|x|} \newline
+用u = \frac{y}{x}代换回来 \Rightarrow &amp;\ln^{|y|} = \frac{y}{x} + C
+\end{aligned}
+$$</p>
+<h4 id="线性微分方程">线性微分方程</h4>
+<p>$$
+\begin{aligned}
+非齐次线性微分方程：&amp;\frac{dy}{dx} + P(x)y = Q(x) \newline
+即：&amp;y&rsquo; + P(x)y = Q(x) \newline
+齐次线性微分方程：&amp;\frac{dy}{dx} + P(x)y = 0 \newline
+即：&amp;y&rsquo; + P(x)y = 0 \newline
+求解步骤：
+&amp;\begin{cases}
+先求齐次通解 \newline
+用u(x)替代常数C \newline
+求得u(x) \newline
+u 回代齐次通解
+\end{cases} \newline
+\end{aligned}
+$$</p>
+<h4 id="二阶常系数齐次微分方程">二阶常系数齐次微分方程</h4>
+<p>$$
+\begin{aligned}
+&amp;求y&rsquo;&rsquo; + py&rsquo;+qy = 0 的通解：\newline
+&amp;\text{1. } 特征方程为r^2+pr+q=0 \newline
+&amp;\text{2. } 求特征方程的两个根r_1、r_2 \newline
+&amp;\text{3. } 根据r_1、r_2判断通解的形式 \newline
+&amp;\rightarrow
+\begin{cases}
+不相等实根r_1,r_2：y=C_1e^{r_1x}+C_2e^{r_2x} \newline
+r_1=r_2：y=(C_1+C_2x)e^{r_1x}\newline
+共轭复根r_{1,2}=\alpha \pm i\beta：y= e^{\alpha x}(C_1 \cos \beta x + C_2 \sin \beta x)
+\end{cases}
+\end{aligned}
+$$</p>
+<h4 id="二阶常系数非齐次微分方程">二阶常系数非齐次微分方程</h4>
+<p>$$
+求y&rsquo;&rsquo; + P(x)y&rsquo;+Q(x)y = f(x) 的通解：
+$$</p>
+<p>$$
+设
+\begin{cases}
+y^*(x)是常系数微分方程的一个特解，\newline
+Y(x)是对应的齐次方程的通解
+\end{cases}
+$$</p>
+<p>$$
+\Rightarrow y = Y(x) + y^*(x)
+$$</p>
+<p>$$
+对f(x) = P_m(x)e^{\lambda x}形式判断【Q_m(x)是与P_m(x)同次的多项式】:
+$$</p>
+<p>$$
+\Rightarrow y^*=x^kQ_m(x)e^{\lambda x} \rightarrow
+\begin{cases}
+\lambda 是特征方程的根\Rightarrow k=0 \newline
+\lambda 是特征方程的单根\Rightarrow k=1 \newline
+\lambda 不是特征方程的根\Rightarrow k=2 \newline
+\end{cases}
+$$</p>
+<p>$$
+\Rightarrow 得出特解形式后将特解代回原方程，对比双边系数。
+$$</p>
+<h3 id="典型例题-4">典型例题</h3>
+<h2 id="线性代数">线性代数</h2>
+<h2 id="概率与数理统计">概率与数理统计</h2>
+
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">Evan Yu</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+        2019-10-26
+        
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/">高等数学</a>
+          <a href="/tags/%E5%90%91%E9%87%8F/">向量</a>
+          <a href="/tags/%E5%BE%AE%E7%A7%AF%E5%88%86/">微积分</a>
+          <a href="/tags/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/">线性代数</a>
+          <a href="/tags/%E6%A6%82%E7%8E%87%E8%AE%BA/">概率论</a>
+          </div>
+      <nav class="post-nav">
+        <a class="prev" href="/post/2019-10-27-%E8%BD%AC%E7%A7%BB-wordpress/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">转移Wordpress</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        <a class="next" href="/post/2019-10-09-%E7%BB%93%E6%9E%84%E5%9B%BE%E7%BA%B8%E7%BB%98%E5%88%B6%E4%B8%BB%E8%A6%81%E5%86%85%E5%AE%B9/">
+            <span class="next-text nav-default">结构图纸绘制主要内容</span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:evan75s@gmail.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://github.com/EvanYu" class="iconfont icon-github" title="github"></a>
+  <a href="http://notes.fooleng.com/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2018 - 
+    2022<span class="heart"><i class="iconfont icon-heart"></i></span><span>Evan Yu</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  <script src="/lib/highlight/highlight.pack.js?v=20171001"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.64437849d125a2d603b3e71d6de5225d641a32d17168a58106e0b61852079683.js"></script>
+  <script type="text/javascript">
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        }
+    };
+  </script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.5/es5/tex-mml-chtml.js" integrity="sha256-HGLuEfFcsUJGhvB8cQ8nr0gai9EucOOaIxFw7qxmd+w=" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

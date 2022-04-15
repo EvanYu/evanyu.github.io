@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo on FOOLENG</title>
+    <link>http://notes.fooleng.com/tags/hugo/</link>
+    <description>Recent content in Hugo on FOOLENG</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 12 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://notes.fooleng.com/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>HUGO的安装与配置</title>
+      <link>http://notes.fooleng.com/private/2022-04-12-hugo%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/</link>
+      <pubDate>Tue, 12 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://notes.fooleng.com/private/2022-04-12-hugo%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/</guid>
+      <description>简介 Hugo对我而言最大的优势就是简单和快速（Golang的单文件） 学习主要参考了Hugo中文文档和Hugo不完美教程。 快速开始 安装 到 Hugo Re</description>
+    </item>
+    
+  </channel>
+</rss>

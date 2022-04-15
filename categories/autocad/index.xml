@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AutoCAD on FOOLENG</title>
+    <link>http://notes.fooleng.com/categories/autocad/</link>
+    <description>Recent content in AutoCAD on FOOLENG</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 17 Feb 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://notes.fooleng.com/categories/autocad/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AutoCAD常见问题</title>
+      <link>http://notes.fooleng.com/post/2020-02-17-autocad%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</link>
+      <pubDate>Mon, 17 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://notes.fooleng.com/post/2020-02-17-autocad%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</guid>
+      <description>由于在 AutoCAD 的过程中经常会需要使用一些变动的脚本，本文就对我常使用的脚本做一个记录。 批量增加受信任的文件夹位置 在 AutoCAD 2013以及以后的版本中，增加</description>
+    </item>
+    
+    <item>
+      <title>AutoCAD打印设置</title>
+      <link>http://notes.fooleng.com/post/2018-12-27-autocad%E6%89%93%E5%8D%B0%E8%AE%BE%E7%BD%AE/</link>
+      <pubDate>Thu, 27 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://notes.fooleng.com/post/2018-12-27-autocad%E6%89%93%E5%8D%B0%E8%AE%BE%E7%BD%AE/</guid>
+      <description>AutoCAD绘图最终的结果都是打印版本，如果图纸元素（文字、线条)的大小、比例不正确，打印出来的图纸就会不正确。结构绘图不像其他专业的绘图</description>
+    </item>
+    
+    <item>
+      <title>AutoCAD版本与.net、VS版本的对应关系及注册表路径</title>
+      <link>http://notes.fooleng.com/post/2018-12-23-autocad%E7%89%88%E6%9C%AC%E4%B8%8E.netvs%E7%89%88%E6%9C%AC%E7%9A%84%E5%AF%B9%E5%BA%94%E5%85%B3%E7%B3%BB%E5%8F%8A%E6%B3%A8%E5%86%8C%E8%A1%A8%E8%B7%AF%E5%BE%84/</link>
+      <pubDate>Sun, 23 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://notes.fooleng.com/post/2018-12-23-autocad%E7%89%88%E6%9C%AC%E4%B8%8E.netvs%E7%89%88%E6%9C%AC%E7%9A%84%E5%AF%B9%E5%BA%94%E5%85%B3%E7%B3%BB%E5%8F%8A%E6%B3%A8%E5%86%8C%E8%A1%A8%E8%B7%AF%E5%BE%84/</guid>
+      <description>无论在AutoCAD的二次开发还是插件加载的过程中，知道AutoCAD的版本号以及其与之对应的net framework版本和vs版本，对于解</description>
+    </item>
+    
+    <item>
+      <title>AutoCAD绘图环境配置手册</title>
+      <link>http://notes.fooleng.com/post/2018-12-23-autocad%E7%BB%98%E5%9B%BE%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%E6%89%8B%E5%86%8C/</link>
+      <pubDate>Sun, 23 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://notes.fooleng.com/post/2018-12-23-autocad%E7%BB%98%E5%9B%BE%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%E6%89%8B%E5%86%8C/</guid>
+      <description>我们使用AutoCAD的过程中一般不会仅仅使用纯粹的CAD，往往会使用很多的绘图插件，而寻找到优秀的绘图插件以及配置这些绘图插件是一件很繁琐</description>
+    </item>
+    
+    <item>
+      <title>CAD自动加载插件的方式</title>
+      <link>http://notes.fooleng.com/post/2018-12-23-cad%E8%87%AA%E5%8A%A8%E5%8A%A0%E8%BD%BD%E6%8F%92%E4%BB%B6%E7%9A%84%E6%96%B9%E5%BC%8F/</link>
+      <pubDate>Sun, 23 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://notes.fooleng.com/post/2018-12-23-cad%E8%87%AA%E5%8A%A8%E5%8A%A0%E8%BD%BD%E6%8F%92%E4%BB%B6%E7%9A%84%E6%96%B9%E5%BC%8F/</guid>
+      <description>CAD加载插件的常用方式主要是两类，手动加载和自动加载，而自动加载可以使用acad.rx加载、acad版本.lsp和注册表加载三种加载方式。</description>
+    </item>
+    
+    <item>
+      <title>批量转换文件夹与子文件夹下的dwg文件版本</title>
+      <link>http://notes.fooleng.com/post/2018-12-19-%E6%89%B9%E9%87%8F%E8%BD%AC%E6%8D%A2%E6%96%87%E4%BB%B6%E5%A4%B9%E4%B8%8E%E5%AD%90%E6%96%87%E4%BB%B6%E5%A4%B9%E4%B8%8B%E7%9A%84dwg%E6%96%87%E4%BB%B6%E7%89%88%E6%9C%AC/</link>
+      <pubDate>Wed, 19 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://notes.fooleng.com/post/2018-12-19-%E6%89%B9%E9%87%8F%E8%BD%AC%E6%8D%A2%E6%96%87%E4%BB%B6%E5%A4%B9%E4%B8%8E%E5%AD%90%E6%96%87%E4%BB%B6%E5%A4%B9%E4%B8%8B%E7%9A%84dwg%E6%96%87%E4%BB%B6%E7%89%88%E6%9C%AC/</guid>
+      <description>我们常常需要转换dwg文件，Autodesk公司出品的dwg trueviewer可以转换所有dwg文件的版本。然而在转换的时候我们经常会有需</description>
+    </item>
+    
+  </channel>
+</rss>

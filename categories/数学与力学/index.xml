@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>数学与力学 on FOOLENG</title>
+    <link>http://notes.fooleng.com/categories/%E6%95%B0%E5%AD%A6%E4%B8%8E%E5%8A%9B%E5%AD%A6/</link>
+    <description>Recent content in 数学与力学 on FOOLENG</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 26 Oct 2019 00:00:00 +0000</lastBuildDate><atom:link href="http://notes.fooleng.com/categories/%E6%95%B0%E5%AD%A6%E4%B8%8E%E5%8A%9B%E5%AD%A6/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>高等数学基础笔记</title>
+      <link>http://notes.fooleng.com/post/2019-10-27-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/</link>
+      <pubDate>Sat, 26 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://notes.fooleng.com/post/2019-10-27-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/</guid>
+      <description>空间解析几何 基本知识 向量的关系 $$ \begin{cases} \vec{\alpha} \cdot \vec{\beta} = |\vec{\alpha}| \cdot |\vec{\beta}| \cdot \cos\theta \Rightarrow \vec{\alpha} \perp \vec{\beta}\ \vec{\alpha} \times \vec{\beta} = |\vec{\alpha}| \cdot |\vec{\beta}| \cdot \sin\theta \Rightarrow \vec{\alpha} // \vec{\beta} \end{cases} $$ 向量的坐标运算 $$ \begin{cases} \vec{\alpha} = (a_1, b_1, c_1) \newline \vec{\beta} = (a_2, b_2, c_2) \end{cases} \Longrightarrow \begin{cases} \vec{\alpha} \cdot</description>
+    </item>
+    
+  </channel>
+</rss>

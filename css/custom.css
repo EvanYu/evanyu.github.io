@@ -1,0 +1,33 @@
+/* Add numbers to title */
+.post-content h1:before{
+    content:counter(h2counter) ' ';
+}
+.post-content h1{
+    counter-increment: h2counter;
+    counter-reset: h3counter;
+}
+
+.post-content h2:before{
+    content:counter(h2counter) ' ';
+}
+.post-content h2{
+    counter-increment: h2counter;
+    counter-reset: h3counter;
+}
+
+.post-content h3:before{
+    content:counter(h2counter) '.' counter(h3counter)' ';
+}
+.post-content h3{
+    counter-increment: h3counter;
+    counter-reset: h4counter;
+}
+
+.post-content h4:before{
+    content:counter(h2counter) '.' counter(h3counter) '.' counter(h4counter)' ';
+}
+.post-content h4{
+    counter-increment: h4counter;
+    counter-reset: h5counter;
+}
+

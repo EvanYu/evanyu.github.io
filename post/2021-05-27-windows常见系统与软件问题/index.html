@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Windows常见系统与软件问题 - FOOLENG</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="Evan Yu" /><meta name="description" content="各种软件装的多了，总是容易碰到一些奇奇怪怪的问题。本文是我自身碰到的、在系统和软件使用过程中的问题记录。 wps activex.msi问题 问题描述" /><meta name="keywords" content="Windows, 软件, 问题" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.96.0 with theme even" />
+
+
+<link rel="canonical" href="http://notes.fooleng.com/post/2021-05-27-windows%E5%B8%B8%E8%A7%81%E7%B3%BB%E7%BB%9F%E4%B8%8E%E8%BD%AF%E4%BB%B6%E9%97%AE%E9%A2%98/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/sass/main.min.b5a744db6de49a86cadafb3b70f555ab443f83c307a483402259e94726b045ff.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/custom.css">
+
+
+<meta property="og:title" content="Windows常见系统与软件问题" />
+<meta property="og:description" content="各种软件装的多了，总是容易碰到一些奇奇怪怪的问题。本文是我自身碰到的、在系统和软件使用过程中的问题记录。 wps activex.msi问题 问题描述" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://notes.fooleng.com/post/2021-05-27-windows%E5%B8%B8%E8%A7%81%E7%B3%BB%E7%BB%9F%E4%B8%8E%E8%BD%AF%E4%BB%B6%E9%97%AE%E9%A2%98/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2021-05-27T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-05-27T00:00:00+00:00" />
+
+<meta itemprop="name" content="Windows常见系统与软件问题">
+<meta itemprop="description" content="各种软件装的多了，总是容易碰到一些奇奇怪怪的问题。本文是我自身碰到的、在系统和软件使用过程中的问题记录。 wps activex.msi问题 问题描述"><meta itemprop="datePublished" content="2021-05-27T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2021-05-27T00:00:00+00:00" />
+<meta itemprop="wordCount" content="1301">
+<meta itemprop="keywords" content="Windows,软件,问题," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Windows常见系统与软件问题"/>
+<meta name="twitter:description" content="各种软件装的多了，总是容易碰到一些奇奇怪怪的问题。本文是我自身碰到的、在系统和软件使用过程中的问题记录。 wps activex.msi问题 问题描述"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">FOOLENG</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">主页</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">归档</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">分类</li>
+      </a><a href="/projects/">
+        <li class="mobile-menu-item">项目</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">关于我</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">FOOLENG</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">主页</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">归档</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">分类</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/projects/">项目</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">关于我</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">Windows常见系统与软件问题</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2021-05-27 </span>
+        <div class="post-category">
+            <a href="/categories/software/"> Software </a>
+            </div>
+          <span class="more-meta"> 约 1301 字 </span>
+          <span class="more-meta"> 预计阅读 3 分钟 </span>
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#wps-activexmsi问题">wps activex.msi问题</a>
+          <ul>
+            <li><a href="#问题描述">问题描述</a></li>
+            <li><a href="#问题分析">问题分析</a></li>
+            <li><a href="#解决方式">解决方式</a></li>
+          </ul>
+        </li>
+        <li><a href="#windows共享网络重启失效问题">windows共享网络重启失效问题</a>
+          <ul>
+            <li><a href="#问题描述-1">问题描述</a></li>
+            <li><a href="#问题解决">问题解决</a></li>
+          </ul>
+        </li>
+        <li><a href="#win10连接wifi后显示无internet连接">win10连接wifi后显示无Internet连接</a>
+          <ul>
+            <li><a href="#问题描述-2">问题描述</a></li>
+            <li><a href="#问题解决-1">问题解决</a></li>
+          </ul>
+        </li>
+        <li><a href="#totalcommander-修改配置文件位置">TotalCommander 修改配置文件位置</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <p>各种软件装的多了，总是容易碰到一些奇奇怪怪的问题。本文是我自身碰到的、在系统和软件使用过程中的问题记录。</p>
+<h2 id="wps-activexmsi问题">wps activex.msi问题</h2>
+<h3 id="问题描述">问题描述</h3>
+<p>在打开 word 文档或者是 excel 文档的时候总是会弹出如下的窗口。</p>
+<p><img src="https://pic.fooleng.com/2021-05-01_wps_activex_error.png" alt=""></p>
+<h3 id="问题分析">问题分析</h3>
+<p>在网上搜索了好久，认为最终的原因应该是安装其他软件的时候出现了这个 activex 的问题，由于打开 wps 的时候软件调用出现了混乱。</p>
+<h3 id="解决方式">解决方式</h3>
+<p>从网上搜索我主要尝试了下面的几种方式：</p>
+<ul>
+<li>wps 论坛有人反映这个同样的问题，认为应该删除*[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Installer\Products]* 和 <em>[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Installer\Features]</em> 下的所有条目，但是实际是无效的（其实理论是正确的，只是位置偏差了而已）</li>
+<li>尝试找个 activex.msi 的安装包，但发现根本没有这个文件，只有第三方的相关软件，装上是无效的</li>
+</ul>
+<p>最终在网上到处搜索的时候看到有关于其他软件（非 activex）的解决方式，发现其实在 <em>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Installer]</em> 条目下也是有 <em>Products</em> 和 <em>Features</em> 条目的，这才让我想到删掉这里相关的应该就不会再弹窗了。事实证明是正确的，在 <em>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Installer\Products]</em> 和 <em>[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Installer\Features]</em> 这两个注册表目录下找到 activex 相关的那个子项目录删掉就不会再出现弹窗了。只是这两个注册表项目的子项数量多的有点吓人，比较难找，可以导出这两个子项，然后到 reg 文件里先去搜索一下（我不是很习惯用注册表直接搜索）。</p>
+<p><strong>注意：先去Products 子项找，才能找到对应的子项名称，比如我这里是 71C4321BCC6D93E4A9B3EA8CF32C12AE ，然后再去 Features 下面删除同名的子项</strong></p>
+<h2 id="windows共享网络重启失效问题">windows共享网络重启失效问题</h2>
+<h3 id="问题描述-1">问题描述</h3>
+<p>我在使用hyper-V的时候使用了共享网络来固定虚拟机的IP并保证虚拟机能够正常的上外网，但是每次开机后发现虚拟机还是会出现上不去外网的情况。必须把共享去掉一下，再勾选一下才行。这就弄得操作很麻烦了。</p>
+<h3 id="问题解决">问题解决</h3>
+<h4 id="添加windows开机启动脚本">添加windows开机启动脚本</h4>
+<p>通过添加如下脚本可以开机自动重启共享网络（<strong>此脚本本人没测试过</strong>）：</p>
+<pre><code class="language-bat">$NetShare = New-Object -ComObject HNetCfg.HNetShare
+$wlan = $null
+$ethernet = $null
+
+foreach ($int in $NetShare.EnumEveryConnection) {
+  $props = $NetShare.NetConnectionProps.Invoke($int)
+  if ($props.Name -eq &quot;WLAN&quot;) {
+    $wlan = $int;
+  }
+  if ($props.Name -eq &quot;网桥&quot;) {
+    $ethernet = $int;
+  }
+}
+
+$wlanConfig = $NetShare.INetSharingConfigurationForINetConnection.Invoke($wlan);
+$ethernetConfig = $NetShare.INetSharingConfigurationForINetConnection.Invoke($ethernet);
+
+$wlanConfig.DisableSharing();
+$ethernetConfig.DisableSharing();
+
+$wlanConfig.EnableSharing(0);
+$ethernetConfig.EnableSharing(1);
+</code></pre>
+<h4 id="修改注册表推荐">修改注册表（推荐）</h4>
+<pre><code class="language-bat">打开注册表，然后在 HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\SharedAccess 中在空白处右击鼠标，新建“DWORD（32位）值（D）”，名称叫做“ EnableRebootPersistConnection ”，将数值数据改为1。
+</code></pre>
+<h2 id="win10连接wifi后显示无internet连接">win10连接wifi后显示无Internet连接</h2>
+<h3 id="问题描述-2">问题描述</h3>
+<p>正常的WiFi连接后本来应当是一个天线的符号，但是我的连接以后还是一个地球的形状，显示已经连接上了WiFi，但又显示没有连接上Internet，<strong>实际上是能够上网的</strong>。试了很多的方法，比如说重置网络、socks、关闭Hyper-V等方式，但是统统都没有用。</p>
+<p>之所以会来解决这个问题是因为虽然基本能够正常的上网，但是有的需要识别网络成功的软件就没办法上网。</p>
+<h3 id="问题解决-1">问题解决</h3>
+<p>最终是在<a href="https://www.zhihu.com/question/48856675">这里</a>找到了问题的原因和解决的有效方式，原来是因为windows版本更新导致的网络反馈问题，解决方式如下：</p>
+<p>将注册表<code>\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\NlaSvc\Parameters\Internet</code>目录下的如下几项：</p>
+<pre><code class="language-reg">&quot;ActiveWebProbeContent&quot;=&quot;Microsoft Connect Test&quot;
+&quot;ActiveWebProbeContentV6&quot;=&quot;Microsoft Connect Test&quot;
+&quot;ActiveWebProbeHost&quot;=&quot;www.msftconnecttest.com&quot;
+&quot;ActiveWebProbeHostV6&quot;=&quot;ipv6.msftconnecttest.com&quot;
+&quot;ActiveWebProbePath&quot;=&quot;connecttest.txt&quot;
+&quot;ActiveWebProbePathV6&quot;=&quot;connecttest.txt&quot;
+</code></pre>
+<p>修改为如下：</p>
+<pre><code class="language-reg">&quot;ActiveWebProbeContent&quot;=&quot;Microsoft NCSI&quot;
+&quot;ActiveWebProbeContentV6&quot;=&quot;Microsoft NCSI&quot;
+&quot;ActiveWebProbeHost&quot;=&quot;www.msftncsi.com&quot;
+&quot;ActiveWebProbeHostV6&quot;=&quot;ipv6.msftncsi.com&quot;
+&quot;ActiveWebProbePath&quot;=&quot;ncsi.txt&quot;
+&quot;ActiveWebProbePathV6&quot;=&quot;ncsi.txt&quot;
+</code></pre>
+<h2 id="totalcommander-修改配置文件位置">TotalCommander 修改配置文件位置</h2>
+<ul>
+<li>查看注册表下的用户的SID</li>
+</ul>
+<pre><code class="language-shell">whoami /user
+</code></pre>
+<ul>
+<li>修改注册表相对位置</li>
+</ul>
+<pre><code class="language-Reg">Windows Registry Editor Version 5.00
+
+[HKEY_USERS\SID\Software\Ghisler\Total Commander]
+&quot;IniFileName&quot;=&quot;.\\wincmd.ini&quot;
+&quot;FtpIniName&quot;=&quot;.\\wcx_ftp.ini&quot;
+&quot;InstallDir&quot;=&quot;D:\\Program Files\\totalcmd&quot;
+</code></pre>
+
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">Evan Yu</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+        2021-05-27
+        
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/windows/">Windows</a>
+          <a href="/tags/%E8%BD%AF%E4%BB%B6/">软件</a>
+          <a href="/tags/%E9%97%AE%E9%A2%98/">问题</a>
+          </div>
+      <nav class="post-nav">
+        <a class="prev" href="/post/2022-01-13-github-pages-and-jekyll-%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">Github Pages and Jekyll安装与使用</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        <a class="next" href="/post/2021-05-11-%E9%92%A2%E7%BB%93%E6%9E%84%E5%B8%B8%E7%94%A8%E9%80%A0%E4%BB%B7%E5%88%9D%E6%AD%A5%E4%BC%B0%E7%AE%97/">
+            <span class="next-text nav-default">钢结构常用造价初步估算</span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:evan75s@gmail.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://github.com/EvanYu" class="iconfont icon-github" title="github"></a>
+  <a href="http://notes.fooleng.com/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2018 - 
+    2022<span class="heart"><i class="iconfont icon-heart"></i></span><span>Evan Yu</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  <script src="/lib/highlight/highlight.pack.js?v=20171001"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.64437849d125a2d603b3e71d6de5225d641a32d17168a58106e0b61852079683.js"></script>
+  <script type="text/javascript">
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        }
+    };
+  </script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.5/es5/tex-mml-chtml.js" integrity="sha256-HGLuEfFcsUJGhvB8cQ8nr0gai9EucOOaIxFw7qxmd+w=" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>可靠性 on FOOLENG</title>
+    <link>http://notes.fooleng.com/tags/%E5%8F%AF%E9%9D%A0%E6%80%A7/</link>
+    <description>Recent content in 可靠性 on FOOLENG</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 10 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://notes.fooleng.com/tags/%E5%8F%AF%E9%9D%A0%E6%80%A7/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>结构笔记001-建筑结构可靠性设计</title>
+      <link>http://notes.fooleng.com/post/2022-02-10-%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0001-%E5%BB%BA%E7%AD%91%E7%BB%93%E6%9E%84%E5%8F%AF%E9%9D%A0%E6%80%A7%E8%AE%BE%E8%AE%A1/</link>
+      <pubDate>Thu, 10 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://notes.fooleng.com/post/2022-02-10-%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0001-%E5%BB%BA%E7%AD%91%E7%BB%93%E6%9E%84%E5%8F%AF%E9%9D%A0%E6%80%A7%E8%AE%BE%E8%AE%A1/</guid>
+      <description>基本规定 设计方法 注意挡墙的结构设计同时使用了三种设计方法。 极限状态设计法：以概率论为基础、以分项系数表达（如挡墙的结构设计） 容许应力法：不超</description>
+    </item>
+    
+  </channel>
+</rss>

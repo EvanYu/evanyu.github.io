@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Samba on FOOLENG</title>
+    <link>http://notes.fooleng.com/tags/samba/</link>
+    <description>Recent content in Samba on FOOLENG</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 12 Mar 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://notes.fooleng.com/tags/samba/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Samba批量增加用户与配置</title>
+      <link>http://notes.fooleng.com/post/2020-03-12-samba%E6%89%B9%E9%87%8F%E5%A2%9E%E5%8A%A0%E7%94%A8%E6%88%B7%E4%B8%8E%E9%85%8D%E7%BD%AE/</link>
+      <pubDate>Thu, 12 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://notes.fooleng.com/post/2020-03-12-samba%E6%89%B9%E9%87%8F%E5%A2%9E%E5%8A%A0%E7%94%A8%E6%88%B7%E4%B8%8E%E9%85%8D%E7%BD%AE/</guid>
+      <description>公司一直以来都有个共享盘的需求，之前使用的 windows server 做共享，但是用户的权限控制一直都做的很不理想，趁着这次服务器重置把共享搬到了 Linux 平台上，也摒除了</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>空间网格结构简介 - FOOLENG</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="Evan Yu" /><meta name="description" content="空间网格结构(space frame structures)是空间结构的一种，也是我国空间结构中发展最快、应用最广的结构形式。它是将杆件按一定规律布置，" /><meta name="keywords" content="空间网格, 简介, 网架, 网壳" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.96.0 with theme even" />
+
+
+<link rel="canonical" href="http://notes.fooleng.com/post/2020-02-20-%E7%A9%BA%E9%97%B4%E7%BD%91%E6%A0%BC%E7%BB%93%E6%9E%84%E7%AE%80%E4%BB%8B/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/sass/main.min.b5a744db6de49a86cadafb3b70f555ab443f83c307a483402259e94726b045ff.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/custom.css">
+
+
+<meta property="og:title" content="空间网格结构简介" />
+<meta property="og:description" content="空间网格结构(space frame structures)是空间结构的一种，也是我国空间结构中发展最快、应用最广的结构形式。它是将杆件按一定规律布置，" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://notes.fooleng.com/post/2020-02-20-%E7%A9%BA%E9%97%B4%E7%BD%91%E6%A0%BC%E7%BB%93%E6%9E%84%E7%AE%80%E4%BB%8B/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2020-02-20T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-02-20T00:00:00+00:00" />
+
+<meta itemprop="name" content="空间网格结构简介">
+<meta itemprop="description" content="空间网格结构(space frame structures)是空间结构的一种，也是我国空间结构中发展最快、应用最广的结构形式。它是将杆件按一定规律布置，"><meta itemprop="datePublished" content="2020-02-20T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2020-02-20T00:00:00+00:00" />
+<meta itemprop="wordCount" content="3690">
+<meta itemprop="keywords" content="空间网格,简介,网架,网壳," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="空间网格结构简介"/>
+<meta name="twitter:description" content="空间网格结构(space frame structures)是空间结构的一种，也是我国空间结构中发展最快、应用最广的结构形式。它是将杆件按一定规律布置，"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">FOOLENG</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">主页</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">归档</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">分类</li>
+      </a><a href="/projects/">
+        <li class="mobile-menu-item">项目</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">关于我</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">FOOLENG</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">主页</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">归档</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">分类</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/projects/">项目</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">关于我</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">空间网格结构简介</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2020-02-20 </span>
+        <div class="post-category">
+            <a href="/categories/%E9%92%A2%E7%BB%93%E6%9E%84/"> 钢结构 </a>
+            </div>
+          <span class="more-meta"> 约 3690 字 </span>
+          <span class="more-meta"> 预计阅读 8 分钟 </span>
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#基本概念">基本概念</a></li>
+        <li><a href="#常用网架网壳分类与形式">常用网架、网壳分类与形式</a>
+          <ul>
+            <li><a href="#网架网壳分类">网架、网壳分类</a></li>
+            <li><a href="#常用网架形式">常用网架形式</a></li>
+            <li><a href="#常用网壳形式">常用网壳形式</a></li>
+          </ul>
+        </li>
+        <li><a href="#设计主要规范">设计主要规范</a></li>
+        <li><a href="#空间网格结构体系设计要点">空间网格结构体系设计要点</a>
+          <ul>
+            <li><a href="#选型原则">选型原则</a></li>
+            <li><a href="#平面网格尺寸和高度的确定">平面网格尺寸和高度的确定</a></li>
+            <li><a href="#结构的挠度允许值">结构的挠度允许值</a></li>
+            <li><a href="#计算原则">计算原则</a></li>
+          </ul>
+        </li>
+        <li><a href="#参考文献">参考文献</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <p>空间网格结构(space frame structures)是空间结构的一种，也是我国空间结构中发展最快、应用最广的结构形式。它是将杆件按一定规律布置，通过节点连接而成的一种空间杆系结构。《空间网格结构技术规程》JGJ 7-2010 中的空间网格结构主要针对网架、网壳(含单、双层)两类形式，也包括组合网格结构(含组合网架和组合网壳结构)、立体桁架(拱架)、张弦立体拱架等形式。
+网架结构具有空间受力、重量轻、刚度大、抗震性能好等优点；可用作体育馆、 影剧院、展览厅、候车厅、体育场看台雨篷、飞机库、双向大柱网架结构距车间等建筑的屋盖。缺点是汇交于节点上的杆件数量较多，制作安装较平面结构复杂。</p>
+<h2 id="基本概念">基本概念</h2>
+<ul>
+<li><strong>空间网格结构</strong>：按一定规律布置的杆件、构件通过节点连接而构成的空间结构，包括<strong>网架</strong>、<strong>曲面型网壳</strong>以及<strong>立体桁架</strong>等。</li>
+<li><strong>网架</strong>：按一定规律布置的杆件通过节点连接而形成的<strong>平板型</strong>或<strong>微曲面型</strong>空间杆系结构，<strong>主要承受整体弯曲内力</strong>。</li>
+<li><strong>网壳</strong>：按一定规律布置的杆件通过节点连接而形成的<strong>曲面状空间杆系或梁系结构，主要承受整体薄膜内力</strong>。</li>
+<li><strong>立体桁架</strong>：由上弦、腹杆与下弦杆构成的横截面为三角形或四边形的格构式桁架。</li>
+</ul>
+<h2 id="常用网架网壳分类与形式">常用网架、网壳分类与形式</h2>
+<p>由于交叉桁架体系、四角锥体系、三角锥体系等通用于空间网格结构，网壳的网格体系可以参照网架。此外，3D3S中的网架网壳-&gt;快捷建模模块中有根据网格形式更加细分的常用网架、网壳形式，可以到 3D3S 软件中查看，<strong>特别是 3D3S 的说明可以作为学习网架、网壳的非常好的资料</strong>。</p>
+<h3 id="网架网壳分类">网架、网壳分类</h3>
+<p>构成网架的基本单元有三角锥，三棱体，正方体，截头四角锥等，由这些基本单元可组合成平面形状的三边形，四边形，六边形，圆形或其他任何形体。网架根据组成形式主要分三类：</p>
+<ul>
+<li>第一类是由平面桁架系组成:
+<ul>
+<li>两向正交正放网架</li>
+<li>两向正交斜放网架</li>
+<li>两向斜交斜放网架</li>
+<li>三向网架</li>
+</ul>
+</li>
+<li>第二类由四角锥体单元组成:
+<ul>
+<li>正放四角锥网架</li>
+<li>正放抽空四角锥网架</li>
+<li>斜放四角锥网架</li>
+<li>棋盘形四角锥网架</li>
+<li>星形四角锥网架</li>
+</ul>
+</li>
+<li>第三类由三角锥体单元组成:
+<ul>
+<li>三角锥网架</li>
+<li>抽空三角锥网架</li>
+<li>蜂窝形三角锥网架</li>
+</ul>
+</li>
+</ul>
+<p>壳型网架结构（网壳）按壳面形式分主要有如下三种形式：</p>
+<ul>
+<li>柱面壳型网架</li>
+<li>球面壳型网架</li>
+<li>双曲抛物面壳型网架</li>
+</ul>
+<h3 id="常用网架形式">常用网架形式</h3>
+<p><img src="https://pic.fooleng.com/2020-02-01_%E7%BD%91%E6%9E%B6-%E5%BD%A2%E5%BC%8F1.jpg" alt="网架形式1">
+<img src="https://pic.fooleng.com/2020-02-01_%E7%BD%91%E6%9E%B6-%E5%BD%A2%E5%BC%8F2.jpg" alt="网架形式2">
+<img src="https://pic.fooleng.com/2020-02-01_%E7%BD%91%E6%9E%B6-%E5%BD%A2%E5%BC%8F3.jpg" alt="网架形式3">
+<img src="https://pic.fooleng.com/2020-02-01_%E7%BD%91%E6%9E%B6-%E5%BD%A2%E5%BC%8F4.jpg" alt="网架形式4"></p>
+<h3 id="常用网壳形式">常用网壳形式</h3>
+<p><img src="https://pic.fooleng.com/2020-02-01_%E7%BD%91%E5%A3%B3-%E5%8D%95%E5%B1%82%E5%9C%86%E6%9F%B1%E9%9D%A2%E5%BD%A2%E5%BC%8F.jpg" alt="网壳-单层圆柱面形式">
+<img src="https://pic.fooleng.com/2020-02-01_%E7%BD%91%E5%A3%B3-%E5%8D%95%E5%B1%82%E7%90%83%E9%9D%A2%E7%BD%91%E5%A3%B3%E7%BD%91%E6%A0%BC%E5%BD%A2%E5%BC%8F.jpg" alt="网壳-单层球面网壳网格形式">
+<img src="https://pic.fooleng.com/2020-02-01_%E7%BD%91%E5%A3%B3-%E5%8D%95%E5%B1%82%E5%8F%8C%E6%9B%B2%E6%8A%9B%E7%89%A9%E9%9D%A2%E7%BD%91%E5%A3%B3%E7%BD%91%E6%A0%BC%E5%BD%A2%E5%BC%8F.jpg" alt="网壳-单层双曲抛物面网壳网格形式"></p>
+<h2 id="设计主要规范">设计主要规范</h2>
+<ul>
+<li>《空间网格结构技术规程》 JGJ 7-2010</li>
+<li>钢结构相关规范</li>
+<li>《高规》、《抗规》等常用规范</li>
+</ul>
+<h2 id="空间网格结构体系设计要点">空间网格结构体系设计要点</h2>
+<h3 id="选型原则">选型原则</h3>
+<p>空间网架结构的选型应结合工程的平面形状和跨度大小、支承情况、荷载大小、屋面构造、建筑设计、制造安装方法及材料供应情况等要求综合分析确定。杆件布置及支承设置应保证结构体系几何不变。</p>
+<ul>
+<li>平面与支承情况
+<ol>
+<li>平面形状为矩形的周边支承网架，当其边长比(长边/短边)小于等于 1.5 时，结构呈双向受力状态，此时宜选用正放四角锥网架、斜放四角锥网架、棋盘形四角锥网架、正放抽空四角锥网架、两向正交斜放网架、两向正交正放网架等结构形式；当其边长比大于 1.5 时，结构接近单向受力状态，此时宜选用两向正交正放网架、正放四角锥网架或正放抽空四角锥网架。当平面狭长时可采用单向折线形网架。</li>
+<li>平面形状为矩形三边支承一边开口的网架可按上条进行选型，开口边必须具有足够的刚度并形成完整的边桁架，当刚度不满足要求时可采用增加网架高度、增加网架层数等办法加强。</li>
+<li>平面形状为矩形、多点支承网架可根据具体情况选用正放四角锥网架、正放抽空四角锥网架、两向正交正放网架等结构形式。</li>
+<li>平面形状为圆形、正六边形及接近正六边形且为周边支承的网架可根据具体情况选用三向网架、三角锥网架或抽空三角锥网架。对中、小跨度也可选用蜂窝形三角锥网架。</li>
+</ol>
+</li>
+<li>节点连接
+<ol>
+<li>中、小跨度的网架结构宜优先选用螺栓球节点连接。在潮湿、有腐蚀介质的环境中，宜采用焊接球节点连接。</li>
+</ol>
+</li>
+<li>上弦/下弦支承选择
+<ol>
+<li>网架可采用上弦或下弦支承方式。当采用上弦支承时应注意避免支座附近杆件与支承柱相碰。当采用下弦支承时应在支座边形成竖直或倾斜的边桁架。</li>
+</ol>
+</li>
+<li>整体稳定性
+<ol>
+<li>当采用两向正交正放网架时应沿网架周边网格放置封闭的水平支撑。</li>
+</ol>
+</li>
+</ul>
+<h3 id="平面网格尺寸和高度的确定">平面网格尺寸和高度的确定</h3>
+<p>网架的网格高度与网格尺寸应根据跨度大小、荷载条件、柱网尺寸、支承情况、网格形式、屋面材料以及构造要求和建筑功能等因素确定。选择合理网格高度与网格尺寸的主要指标：网架杆件内力尽量均匀，同等跨度和荷载下网架用钢量指标最优。</p>
+<h4 id="网格尺寸">网格尺寸</h4>
+<ul>
+<li>一般情况下为减少或避免出现过多的构造杆件和节点<strong>宜采用稍大一点的网格尺寸</strong>。网格尺寸适当加大，可相应地减少节点数和杆件数，从而使杆件截面更有效地发挥作用达到节省钢材的目的，同时也使网架通透简洁。</li>
+<li>网格尺寸与网架<strong>短向跨度</strong>有关.常用网格尺寸与短向跨度的关系见下表。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>网架短向跨度L2</th>
+<th>网格尺寸</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&lt;30m</td>
+<td>(1/12~1/6)L2</td>
+</tr>
+<tr>
+<td>30~60m</td>
+<td>(1/16~1/10)L2</td>
+</tr>
+<tr>
+<td>&gt;60</td>
+<td>(1/20~1/12)L2</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>网格尺寸与屋面板种类及材料有关。当选用<strong>混凝土</strong>屋面板、发泡水泥板或 GRC 板时，板的尺寸不宜过大，<strong>一般以不超过 3m 见方为宜</strong>。若采用压型钢板等轻型屋面板时，灵活性较大。</li>
+<li>网格大小与<strong>杆件材料</strong>有关。当网架杆件采用钢管时，截面性能好,杆件可长一些,即网格尺寸可稍大。当网架杆件采用角钢时,杆件截面可能要由长细比控制,故杆件不宜太长,即网格尺寸不宜过大。</li>
+<li>网格大小还需要考虑<strong>功能的要求</strong>及<strong>支座的位置</strong>。</li>
+</ul>
+<h4 id="网架高度">网架高度</h4>
+<p>网架高度与网架的跨度、荷载大小、节点形式、平面形状、支承情况及起拱等因素有关。</p>
+<ul>
+<li>与<strong>网架跨度</strong>的关系。根据《网架结构设计与施工规程》JGJ7-91 不同材料的屋面体系的网格数(即网格尺寸)及跨高比可按下表选用（对于大跨度屋盖一般可采用 3 层及 3 层以上的网架。）:</li>
+</ul>
+<p><img src="https://pic.fooleng.com/2020-02-01_%E7%BD%91%E6%9E%B6%E9%AB%98%E5%BA%A6-%E8%B7%A8%E5%BA%A6%E5%9B%A0%E7%B4%A0%E9%80%89%E6%8B%A9.png" alt="网架高度与网架跨度的关系"></p>
+<ul>
+<li>与<strong>屋面荷载</strong>的关系。屋面荷载较大时，为满足网架刚度要求网架高度应适当提高；而屋面采用轻型材料时，网架高度可适当降低；而网架下弦设有悬挂吊车时，需满足悬挂吊车轨道对挠度的要求，宜适当提高网架高度。</li>
+<li>与<strong>节点形式</strong>的关系。对螺栓球节点，一般宜将网架的高度取得高一些这样可使上、下弦内力值相对小一些并尽可能地使弦杆内力与腹杆内力相差不致过大，以便统一杆件与螺栓球的规格。</li>
+<li>与<strong>平面形状</strong>的关系。网架平面形状为方形或接近方形时，网架的高跨比可小些；而平面形状为长条形时，网架单向受力明显，网架高跨比可大一些。</li>
+<li>与<strong>支承条件</strong>的关系。网架的支承情况不同决定网架的受力情况不同。点支承同时有悬臂的网架，悬挑部分可以与跨中一部分弯矩平衡，使跨中的弯矩和挠度均减小，网架的高度一般就不像大跨度网架那样由跨中相对挠度的要求来决定。而是根据弦杆的内力来考虑。点支承网架，当设置柱帽后，受力状况得到改善，其高跨比也可取得相对小一些。</li>
+</ul>
+<h3 id="结构的挠度允许值">结构的挠度允许值</h3>
+<ul>
+<li>空间网架结构的最大挠度值不应超过下表中的容许挠度值。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>结构体系</th>
+<th>屋盖结构（短向跨度）</th>
+<th>楼盖结构（短向跨度）</th>
+<th>悬挑结构（悬挑跨度）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>网架</td>
+<td>1/250</td>
+<td>1/300</td>
+<td>1/125</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>当网架有悬挂吊车时，其可变荷载标准值产生的挠度容许值宜≤L/500。</li>
+<li>网架可预起拱，其起拱值可取不大于短向跨度的 1/300。 当仅为改善外观条件时，最大挠度在减去起拱值后不应超过上表中的容许挠度值的规定。</li>
+</ul>
+<h3 id="计算原则">计算原则</h3>
+<ol>
+<li>空间网架结构应进行在外荷载(包括风荷载)作用下的内力、位移计算，并应根据具体情况对<strong>地震、温度变化、支座沉降及施工安装荷载</strong>等作用下的<strong>内力、位移</strong>进行计算。</li>
+<li>对非抗震设计，荷载及荷载效应组合应按现行国家标准《建筑结构荷载规范》GB50009-2012 进行计算，在杆件截面及节点设计中，应按照荷载效应的<strong>基本组合确定内力设计值</strong>；在位移计算中应按照荷载效应的<strong>标准组合确定其挠度</strong>。对抗震设计荷载及荷载效应组合还应按现行国家标准《建筑抗震设计规范》GB50011-2010 确定内力设计值。</li>
+<li>网架结构受力分析时，可假定<strong>节点为铰接，杆件只承受轴向力</strong>，宜采用空间杆系有限元法进行计算。</li>
+<li>空间网架结构的<strong>外荷载可按静力等效原则将节点所辖区域内的荷载集中作用在该节点上</strong>。当杆件上作用有局部荷载时，应另行考虑局部弯曲内力的影响。</li>
+<li>空间网架结构分析时，<strong>当作用有水平荷载</strong>(风、地震、温度)时，应考虑上部网格结构<strong>与下部支承结构的相互影响</strong>。空间网格结构的协同分析可把下部支承结构折算等效刚度和等效质量作为上部网格结构分析时的条件；也可把上部网格结构折算等效刚度和等效质量作为下部支承结构分析时的条件；<strong>有必要时应将上、下部结构整体分析</strong>。</li>
+<li>分析空间网架结构时，应根据结构形式、支座节点的位置、数量和构造情况以及支承结构的刚度，<strong>确定合理的边界约束条件</strong>。边界约束条件可分为<strong>弹性约束、固定约束及强迫位移</strong>。</li>
+<li>空间网架结构<strong>施工安装阶段</strong>与<strong>使用阶段</strong>支承情况不一致时，应区别不同支承条件来分析计算施工安装阶段和使用阶段在相应荷载作用下的结构位移和内力。</li>
+<li>空间网架结构经过位移和内力计算后进行杆件截面设计，杆件截面需要调整时，应重新进行分析，使其满足设计要求为止。网格结构设计后，如必须替换时，应根据截面及刚度等效的原则进行。</li>
+<li>当网架结构有<strong>悬挂吊车</strong>时，悬挂吊车轮压应换算成网架节点荷载，并按吊车运行工况作用于其经过的每个节点。</li>
+<li>在抗震设防烈度为<strong>6度或7度</strong>地区，网架屋盖结构<strong>可不进行竖向和水平抗震验算</strong>；在抗震设防裂度为<strong>8度</strong>地区，网架屋盖结构<strong>应进行竖向和水平抗震验算，仅对于周边支承的中小跨度网架屋盖结构，可不进行水平抗震验算</strong>；在抗震设防烈度为<strong>9度</strong>地区，对各种网架结构<strong>必须进行水平与竖向抗震验算</strong>。</li>
+</ol>
+<h2 id="参考文献">参考文献</h2>
+<p>如有侵权请联系作者删除。</p>
+<p>[1] [空间网格结构技术规程 JGJ7-2010]</p>
+<p>[2] [3D3S 使用说明与帮助]</p>
+
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">Evan Yu</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+        2020-02-20
+        
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/%E7%A9%BA%E9%97%B4%E7%BD%91%E6%A0%BC/">空间网格</a>
+          <a href="/tags/%E7%AE%80%E4%BB%8B/">简介</a>
+          <a href="/tags/%E7%BD%91%E6%9E%B6/">网架</a>
+          <a href="/tags/%E7%BD%91%E5%A3%B3/">网壳</a>
+          </div>
+      <nav class="post-nav">
+        <a class="prev" href="/post/2020-03-09-linux%E7%B3%BB%E7%BB%9F%E4%B8%8Bpkpm%E4%B8%8E%E7%9B%88%E5%BB%BA%E7%A7%91%E7%BD%91%E7%BB%9C%E9%9B%86%E5%9B%A2%E6%8E%88%E6%9D%83%E6%9C%8D%E5%8A%A1%E5%99%A8bit-service%E7%9A%84%E9%83%A8%E7%BD%B2/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">Linux系统下PKPM与盈建科网络集团授权服务器Bit-Service的部署</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        <a class="next" href="/post/2020-02-17-autocad%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/">
+            <span class="next-text nav-default">AutoCAD常见问题</span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:evan75s@gmail.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://github.com/EvanYu" class="iconfont icon-github" title="github"></a>
+  <a href="http://notes.fooleng.com/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2018 - 
+    2022<span class="heart"><i class="iconfont icon-heart"></i></span><span>Evan Yu</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  <script src="/lib/highlight/highlight.pack.js?v=20171001"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.64437849d125a2d603b3e71d6de5225d641a32d17168a58106e0b61852079683.js"></script>
+  <script type="text/javascript">
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        }
+    };
+  </script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.5/es5/tex-mml-chtml.js" integrity="sha256-HGLuEfFcsUJGhvB8cQ8nr0gai9EucOOaIxFw7qxmd+w=" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

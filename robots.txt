@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: http://notes.fooleng.com/sitemap.xml

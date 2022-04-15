@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GithubPages on FOOLENG</title>
+    <link>http://notes.fooleng.com/tags/githubpages/</link>
+    <description>Recent content in GithubPages on FOOLENG</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 13 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://notes.fooleng.com/tags/githubpages/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Github Pages and Jekyll安装与使用</title>
+      <link>http://notes.fooleng.com/post/2022-01-13-github-pages-and-jekyll-%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/</link>
+      <pubDate>Thu, 13 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://notes.fooleng.com/post/2022-01-13-github-pages-and-jekyll-%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/</guid>
+      <description>简介 github pages 可以托管静态资源(HTML、pictures、javascript等)的免费公共空间 仓库总大小不能超过1G 每个月有100G的流量限额</description>
+    </item>
+    
+  </channel>
+</rss>

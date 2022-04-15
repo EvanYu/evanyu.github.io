@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on FOOLENG</title>
+    <link>http://notes.fooleng.com/post/</link>
+    <description>Recent content in Posts on FOOLENG</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 14 Apr 2022 10:25:26 +0800</lastBuildDate><atom:link href="http://notes.fooleng.com/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>桩板式挡墙计算</title>
+      <link>http://notes.fooleng.com/post/2022-04-14-%E6%A1%A9%E6%9D%BF%E5%BC%8F%E6%8C%A1%E5%A2%99%E8%AE%A1%E7%AE%97/</link>
+      <pubDate>Thu, 14 Apr 2022 10:25:26 +0800</pubDate>
+      
+      <guid>http://notes.fooleng.com/post/2022-04-14-%E6%A1%A9%E6%9D%BF%E5%BC%8F%E6%8C%A1%E5%A2%99%E8%AE%A1%E7%AE%97/</guid>
+      <description>简介 桩板式挡土墙是指钢筋混凝土桩和挡土板组成的轻型挡土墙。在深埋的桩柱间用挡板挡住土体。适用于侧压力较大的加固地段。两桩间挡土板可逐层安设或</description>
+    </item>
+    
+    <item>
+      <title>Nginx目录密码认证</title>
+      <link>http://notes.fooleng.com/post/2022-04-11-nginx%E7%9B%AE%E5%BD%95%E5%AF%86%E7%A0%81%E8%AE%A4%E8%AF%81/</link>
+      <pubDate>Mon, 11 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://notes.fooleng.com/post/2022-04-11-nginx%E7%9B%AE%E5%BD%95%E5%AF%86%E7%A0%81%E8%AE%A4%E8%AF%81/</guid>
+      <description>原服务器nginx配置 全部采用https 开启了目录浏览功能 server { listen 80; server_name pic.fooleng.com; # 如下为自动转发https设置 rewrite ^(.*) https://$server_name$1 permanent; } server { listen 443 ssl http2; server_name pic.fooleng.com; location / { root /data/pic.fooleng.com; # 图</description>
+    </item>
+    
+    <item>
+      <title>结构笔记001-建筑结构可靠性设计</title>
+      <link>http://notes.fooleng.com/post/2022-02-10-%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0001-%E5%BB%BA%E7%AD%91%E7%BB%93%E6%9E%84%E5%8F%AF%E9%9D%A0%E6%80%A7%E8%AE%BE%E8%AE%A1/</link>
+      <pubDate>Thu, 10 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://notes.fooleng.com/post/2022-02-10-%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0001-%E5%BB%BA%E7%AD%91%E7%BB%93%E6%9E%84%E5%8F%AF%E9%9D%A0%E6%80%A7%E8%AE%BE%E8%AE%A1/</guid>
+      <description>基本规定 设计方法 注意挡墙的结构设计同时使用了三种设计方法。 极限状态设计法：以概率论为基础、以分项系数表达（如挡墙的结构设计） 容许应力法：不超</description>
+    </item>
+    
+    <item>
+      <title>Excel 常见使用技巧</title>
+      <link>http://notes.fooleng.com/post/2022-01-25-excel%E5%B8%B8%E8%A7%81%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/</link>
+      <pubDate>Tue, 25 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://notes.fooleng.com/post/2022-01-25-excel%E5%B8%B8%E8%A7%81%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/</guid>
+      <description>Excel的自动换行 问题描述 我的一个 excel 文档中我想要一些内容自动换行的同时自动调整行高，不然会导致有一些内容没法显示出来。但当我选中单元格-&amp;</description>
+    </item>
+    
+    <item>
+      <title>Github Pages and Jekyll安装与使用</title>
+      <link>http://notes.fooleng.com/post/2022-01-13-github-pages-and-jekyll-%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/</link>
+      <pubDate>Thu, 13 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://notes.fooleng.com/post/2022-01-13-github-pages-and-jekyll-%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/</guid>
+      <description>简介 github pages 可以托管静态资源(HTML、pictures、javascript等)的免费公共空间 仓库总大小不能超过1G 每个月有100G的流量限额</description>
+    </item>
+    
+    <item>
+      <title>Windows常见系统与软件问题</title>
+      <link>http://notes.fooleng.com/post/2021-05-27-windows%E5%B8%B8%E8%A7%81%E7%B3%BB%E7%BB%9F%E4%B8%8E%E8%BD%AF%E4%BB%B6%E9%97%AE%E9%A2%98/</link>
+      <pubDate>Thu, 27 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://notes.fooleng.com/post/2021-05-27-windows%E5%B8%B8%E8%A7%81%E7%B3%BB%E7%BB%9F%E4%B8%8E%E8%BD%AF%E4%BB%B6%E9%97%AE%E9%A2%98/</guid>
+      <description>各种软件装的多了，总是容易碰到一些奇奇怪怪的问题。本文是我自身碰到的、在系统和软件使用过程中的问题记录。 wps activex.msi问题 问题描述</description>
+    </item>
+    
+    <item>
+      <title>钢结构常用造价初步估算</title>
+      <link>http://notes.fooleng.com/post/2021-05-11-%E9%92%A2%E7%BB%93%E6%9E%84%E5%B8%B8%E7%94%A8%E9%80%A0%E4%BB%B7%E5%88%9D%E6%AD%A5%E4%BC%B0%E7%AE%97/</link>
+      <pubDate>Tue, 11 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://notes.fooleng.com/post/2021-05-11-%E9%92%A2%E7%BB%93%E6%9E%84%E5%B8%B8%E7%94%A8%E9%80%A0%E4%BB%B7%E5%88%9D%E6%AD%A5%E4%BC%B0%E7%AE%97/</guid>
+      <description>结构设计中往往会有业主方询问初步的土建造价，对于混凝土结构，我们一般直接采用盈建科统计一个钢筋用量和砼用量给业主方参考。钢结构这块在结构方面</description>
+    </item>
+    
+    <item>
+      <title>Google style docstrings Examples</title>
+      <link>http://notes.fooleng.com/post/2021-04-27-google-style-docstrings-examples/</link>
+      <pubDate>Tue, 27 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://notes.fooleng.com/post/2021-04-27-google-style-docstrings-examples/</guid>
+      <description>Python # -*- coding: utf-8 -*- &amp;quot;&amp;quot;&amp;quot;Example Google style docstrings. This module demonstrates documentation as specified by the `Google Python Style Guide`_. Docstrings may extend over multiple lines. Sections are created with a section header and a colon followed by a block of indented text. Example: Examples can be given using either the ``Example`` or ``Examples`` sections. Sections support any reStructuredText formatting, including literal blocks:: $ python example_google.py Section breaks are created by resuming unindented text.</description>
+    </item>
+    
+    <item>
+      <title>钢结构深化审查要点</title>
+      <link>http://notes.fooleng.com/post/2020-11-16-%E9%92%A2%E7%BB%93%E6%9E%84%E6%B7%B1%E5%8C%96%E5%AE%A1%E6%9F%A5%E8%A6%81%E7%82%B9/</link>
+      <pubDate>Mon, 16 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://notes.fooleng.com/post/2020-11-16-%E9%92%A2%E7%BB%93%E6%9E%84%E6%B7%B1%E5%8C%96%E5%AE%A1%E6%9F%A5%E8%A6%81%E7%82%B9/</guid>
+      <description>钢结构设计一般情况下是施工图设计方先进行钢结构施工图的设计，然后交由钢结构设计院或有资质的钢结构公司进行深化设计，主要是对支座、节点、施工、</description>
+    </item>
+    
+    <item>
+      <title>悬挑脚手架核算示例</title>
+      <link>http://notes.fooleng.com/post/2020-07-01-%E6%82%AC%E6%8C%91%E8%84%9A%E6%89%8B%E6%9E%B6%E6%A0%B8%E7%AE%97%E7%A4%BA%E4%BE%8B/</link>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://notes.fooleng.com/post/2020-07-01-%E6%82%AC%E6%8C%91%E8%84%9A%E6%89%8B%E6%9E%B6%E6%A0%B8%E7%AE%97%E7%A4%BA%E4%BE%8B/</guid>
+      <description>现场施工的时候经常容易遇到悬挑脚手架的核算，其实此类核算可以简单的用手算复核一下结构主体的梁上线荷载够不够，结构梁是否需要加强。因为脚手架本</description>
+    </item>
+    
+    <item>
+      <title>Samba批量增加用户与配置</title>
+      <link>http://notes.fooleng.com/post/2020-03-12-samba%E6%89%B9%E9%87%8F%E5%A2%9E%E5%8A%A0%E7%94%A8%E6%88%B7%E4%B8%8E%E9%85%8D%E7%BD%AE/</link>
+      <pubDate>Thu, 12 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://notes.fooleng.com/post/2020-03-12-samba%E6%89%B9%E9%87%8F%E5%A2%9E%E5%8A%A0%E7%94%A8%E6%88%B7%E4%B8%8E%E9%85%8D%E7%BD%AE/</guid>
+      <description>公司一直以来都有个共享盘的需求，之前使用的 windows server 做共享，但是用户的权限控制一直都做的很不理想，趁着这次服务器重置把共享搬到了 Linux 平台上，也摒除了</description>
+    </item>
+    
+    <item>
+      <title>Vmware Esxi 使用单个外网IP地址实现NAT</title>
+      <link>http://notes.fooleng.com/post/2020-03-10-vmware-esxi-%E4%BD%BF%E7%94%A8%E5%8D%95%E4%B8%AA%E5%A4%96%E7%BD%91ip%E5%9C%B0%E5%9D%80%E5%AE%9E%E7%8E%B0nat/</link>
+      <pubDate>Tue, 10 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://notes.fooleng.com/post/2020-03-10-vmware-esxi-%E4%BD%BF%E7%94%A8%E5%8D%95%E4%B8%AA%E5%A4%96%E7%BD%91ip%E5%9C%B0%E5%9D%80%E5%AE%9E%E7%8E%B0nat/</guid>
+      <description>我们的机器经常会出现只有一个外网 IP 可用的情况，但是既然使用了 Esxi 我们就肯定不止一台系统，而 Esxi 使用的虚拟交换机并没有实现 NAT 之类的功能，所以只能自</description>
+    </item>
+    
+    <item>
+      <title>Linux系统下PKPM与盈建科网络集团授权服务器Bit-Service的部署</title>
+      <link>http://notes.fooleng.com/post/2020-03-09-linux%E7%B3%BB%E7%BB%9F%E4%B8%8Bpkpm%E4%B8%8E%E7%9B%88%E5%BB%BA%E7%A7%91%E7%BD%91%E7%BB%9C%E9%9B%86%E5%9B%A2%E6%8E%88%E6%9D%83%E6%9C%8D%E5%8A%A1%E5%99%A8bit-service%E7%9A%84%E9%83%A8%E7%BD%B2/</link>
+      <pubDate>Mon, 09 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://notes.fooleng.com/post/2020-03-09-linux%E7%B3%BB%E7%BB%9F%E4%B8%8Bpkpm%E4%B8%8E%E7%9B%88%E5%BB%BA%E7%A7%91%E7%BD%91%E7%BB%9C%E9%9B%86%E5%9B%A2%E6%8E%88%E6%9D%83%E6%9C%8D%E5%8A%A1%E5%99%A8bit-service%E7%9A%84%E9%83%A8%E7%BD%B2/</guid>
+      <description>我们正常使用的 PKPM 和盈建科的集团授权服务器都是采用 windows 版本，PKPM的安装光盘中有一个专门的 Bit_Server 的文件夹就是用于部署集团授权服务器的，而盈建科是直</description>
+    </item>
+    
+    <item>
+      <title>空间网格结构简介</title>
+      <link>http://notes.fooleng.com/post/2020-02-20-%E7%A9%BA%E9%97%B4%E7%BD%91%E6%A0%BC%E7%BB%93%E6%9E%84%E7%AE%80%E4%BB%8B/</link>
+      <pubDate>Thu, 20 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://notes.fooleng.com/post/2020-02-20-%E7%A9%BA%E9%97%B4%E7%BD%91%E6%A0%BC%E7%BB%93%E6%9E%84%E7%AE%80%E4%BB%8B/</guid>
+      <description>空间网格结构(space frame structures)是空间结构的一种，也是我国空间结构中发展最快、应用最广的结构形式。它是将杆件按一定规律布置，</description>
+    </item>
+    
+    <item>
+      <title>AutoCAD常见问题</title>
+      <link>http://notes.fooleng.com/post/2020-02-17-autocad%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</link>
+      <pubDate>Mon, 17 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://notes.fooleng.com/post/2020-02-17-autocad%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</guid>
+      <description>由于在 AutoCAD 的过程中经常会需要使用一些变动的脚本，本文就对我常使用的脚本做一个记录。 批量增加受信任的文件夹位置 在 AutoCAD 2013以及以后的版本中，增加</description>
+    </item>
+    
+    <item>
+      <title>CSharp的字典与哈希表</title>
+      <link>http://notes.fooleng.com/post/2019-12-28-csharp%E7%9A%84%E5%AD%97%E5%85%B8%E4%B8%8E%E5%93%88%E5%B8%8C%E8%A1%A8/</link>
+      <pubDate>Sat, 28 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://notes.fooleng.com/post/2019-12-28-csharp%E7%9A%84%E5%AD%97%E5%85%B8%E4%B8%8E%E5%93%88%E5%B8%8C%E8%A1%A8/</guid>
+      <description>C#语言本身没有字典和哈希表这个类型，他们存在于 .NET 框架的基础库中（System.Collection.Generic）。字典与哈希表相对数组</description>
+    </item>
+    
+    <item>
+      <title>钢结构节点手算示例</title>
+      <link>http://notes.fooleng.com/post/2019-11-12-%E9%92%A2%E7%BB%93%E6%9E%84%E8%8A%82%E7%82%B9%E6%89%8B%E7%AE%97%E7%A4%BA%E4%BE%8B/</link>
+      <pubDate>Tue, 12 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://notes.fooleng.com/post/2019-11-12-%E9%92%A2%E7%BB%93%E6%9E%84%E8%8A%82%E7%82%B9%E6%89%8B%E7%AE%97%E7%A4%BA%E4%BE%8B/</guid>
+      <description>本文记录了常用的一些钢结构节点的手算示例，这些手算的示例可以在无法电算的时候采用手算结果，也可以对电算的结果进行复核使用。 环箍预应力拉索计算</description>
+    </item>
+    
+    <item>
+      <title>OragenPi配置手册</title>
+      <link>http://notes.fooleng.com/post/2019-11-11-orange-pi-%E9%85%8D%E7%BD%AE%E6%89%8B%E5%86%8C/</link>
+      <pubDate>Mon, 11 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://notes.fooleng.com/post/2019-11-11-orange-pi-%E9%85%8D%E7%BD%AE%E6%89%8B%E5%86%8C/</guid>
+      <description>系统安装 Orange Pi可以安装的系统也算是相当的多了，可以直接上官网下载对应的版本即可，建议使用较新的版本，比如我的 Orange Pi ZERO 使用的系统是 Armbian Ubuntu bioni</description>
+    </item>
+    
+    <item>
+      <title>转移Wordpress</title>
+      <link>http://notes.fooleng.com/post/2019-10-27-%E8%BD%AC%E7%A7%BB-wordpress/</link>
+      <pubDate>Sun, 27 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://notes.fooleng.com/post/2019-10-27-%E8%BD%AC%E7%A7%BB-wordpress/</guid>
+      <description>网络上关于转移 wordpress 的文章已经不计其数，我这里只是做一个自己的记录。 网络环境 从一台已经配置好的机器将网站转移到一台新机器。接下来均称呼原网站所在</description>
+    </item>
+    
+    <item>
+      <title>高等数学基础笔记</title>
+      <link>http://notes.fooleng.com/post/2019-10-27-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/</link>
+      <pubDate>Sat, 26 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://notes.fooleng.com/post/2019-10-27-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/</guid>
+      <description>空间解析几何 基本知识 向量的关系 $$ \begin{cases} \vec{\alpha} \cdot \vec{\beta} = |\vec{\alpha}| \cdot |\vec{\beta}| \cdot \cos\theta \Rightarrow \vec{\alpha} \perp \vec{\beta}\ \vec{\alpha} \times \vec{\beta} = |\vec{\alpha}| \cdot |\vec{\beta}| \cdot \sin\theta \Rightarrow \vec{\alpha} // \vec{\beta} \end{cases} $$ 向量的坐标运算 $$ \begin{cases} \vec{\alpha} = (a_1, b_1, c_1) \newline \vec{\beta} = (a_2, b_2, c_2) \end{cases} \Longrightarrow \begin{cases} \vec{\alpha} \cdot</description>
+    </item>
+    
+    <item>
+      <title>结构图纸绘制主要内容</title>
+      <link>http://notes.fooleng.com/post/2019-10-09-%E7%BB%93%E6%9E%84%E5%9B%BE%E7%BA%B8%E7%BB%98%E5%88%B6%E4%B8%BB%E8%A6%81%E5%86%85%E5%AE%B9/</link>
+      <pubDate>Wed, 09 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://notes.fooleng.com/post/2019-10-09-%E7%BB%93%E6%9E%84%E5%9B%BE%E7%BA%B8%E7%BB%98%E5%88%B6%E4%B8%BB%E8%A6%81%E5%86%85%E5%AE%B9/</guid>
+      <description>基础 桩基础平面布置图 轴网、图框 墙柱、填充 区位图 标题、小说明 桩、桩表、桩定位、承台标高、标注桩型 承台配筋表及大样 集水坑、吸水槽、电梯井 基础梁平</description>
+    </item>
+    
+    <item>
+      <title>腾讯视频格式转换（qlv转MP4）</title>
+      <link>http://notes.fooleng.com/post/2019-10-09-%E8%85%BE%E8%AE%AF%E8%A7%86%E9%A2%91%E6%A0%BC%E5%BC%8F%E8%BD%AC%E6%8D%A2qlv-%E8%BD%AC-mp4/</link>
+      <pubDate>Wed, 09 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://notes.fooleng.com/post/2019-10-09-%E8%85%BE%E8%AE%AF%E8%A7%86%E9%A2%91%E6%A0%BC%E5%BC%8F%E8%BD%AC%E6%8D%A2qlv-%E8%BD%AC-mp4/</guid>
+      <description>有的时候出于一些需求我们会需要下载视频网站上的一些视频，然而现在的这些网站（如优酷、腾讯）都对其视频进行了加密，即使下载了也只能使用他们自家</description>
+    </item>
+    
+    <item>
+      <title>Windows自定义右键菜单命令（以pdftk合并pdf为例）</title>
+      <link>http://notes.fooleng.com/post/2019-06-18-windows%E8%87%AA%E5%AE%9A%E4%B9%89%E5%8F%B3%E9%94%AE%E8%8F%9C%E5%8D%95%E5%91%BD%E4%BB%A4%E4%BB%A5pdftk%E5%90%88%E5%B9%B6pdf%E4%B8%BA%E4%BE%8B/</link>
+      <pubDate>Tue, 18 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://notes.fooleng.com/post/2019-06-18-windows%E8%87%AA%E5%AE%9A%E4%B9%89%E5%8F%B3%E9%94%AE%E8%8F%9C%E5%8D%95%E5%91%BD%E4%BB%A4%E4%BB%A5pdftk%E5%90%88%E5%B9%B6pdf%E4%B8%BA%E4%BE%8B/</guid>
+      <description>由于版权的问题，我现在已经使用 pdftk 对 pdf 文件进行合并操作，但是我还是已经习惯 Acrobat 选中 pdf 文件然后右键点击合并就能合并的方式。我并不想再去搞一个复杂的</description>
+    </item>
+    
+    <item>
+      <title>pdftk与imagemagic命令</title>
+      <link>http://notes.fooleng.com/post/2019-06-04-pdftk%E4%B8%8Eimagemagic%E5%91%BD%E4%BB%A4/</link>
+      <pubDate>Fri, 14 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://notes.fooleng.com/post/2019-06-04-pdftk%E4%B8%8Eimagemagic%E5%91%BD%E4%BB%A4/</guid>
+      <description>pdftk pdftk这个软件有 pdftk 、 pdftk pro 、 pdftk server 几个版本。实际上最基础的版本就是 server 版本，这个版本有一个 pdftk 的命令行工具，命令行工具包含完整的功能。 pdftk 和 pdftk pro</description>
+    </item>
+    
+    <item>
+      <title>四边导荷的计算</title>
+      <link>http://notes.fooleng.com/post/2019-05-10-%E5%9B%9B%E8%BE%B9%E5%AF%BC%E8%8D%B7%E7%9A%84%E8%AE%A1%E7%AE%97/</link>
+      <pubDate>Fri, 10 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://notes.fooleng.com/post/2019-05-10-%E5%9B%9B%E8%BE%B9%E5%AF%BC%E8%8D%B7%E7%9A%84%E8%AE%A1%E7%AE%97/</guid>
+      <description>在使用计算软件（如盈建科、pkpm等）进行计算的时候我们往往直接输入了板面荷载而没有去考虑导荷的问题，本文对四边导荷的手算方式进行了一个简单</description>
+    </item>
+    
+    <item>
+      <title>Windows开机启动vmware的虚拟机</title>
+      <link>http://notes.fooleng.com/post/2019-03-30-windows%E5%BC%80%E6%9C%BA%E5%90%AF%E5%8A%A8vmware%E7%9A%84%E8%99%9A%E6%8B%9F%E6%9C%BA/</link>
+      <pubDate>Sat, 30 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://notes.fooleng.com/post/2019-03-30-windows%E5%BC%80%E6%9C%BA%E5%90%AF%E5%8A%A8vmware%E7%9A%84%E8%99%9A%E6%8B%9F%E6%9C%BA/</guid>
+      <description>建立一个D:\Green\StartDebian.bat的脚本： &amp;quot;D:\Program Files (x86)\VMware\VMware Player\vmrun.exe&amp;quot; start &amp;quot;D:\VM\Debian\Debian11.vmx&amp;quot; nogui 开始-&amp;gt;运行shell:startup打开启动文件夹并新</description>
+    </item>
+    
+    <item>
+      <title>ngrok内网穿透</title>
+      <link>http://notes.fooleng.com/post/2019-03-16-ngrok%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</link>
+      <pubDate>Sat, 16 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://notes.fooleng.com/post/2019-03-16-ngrok%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</guid>
+      <description>ngrok是一个可用于内网穿透的软件，在我们做网站调试或者需要访问内网的资源，而内网又没有外网IP的情况下具有非常好的效果。做内网穿透之前我</description>
+    </item>
+    
+    <item>
+      <title>Windows mklink命令——各种链接文件</title>
+      <link>http://notes.fooleng.com/post/2019-02-16-windows-mklink%E5%91%BD%E4%BB%A4%E5%90%84%E7%A7%8D%E9%93%BE%E6%8E%A5%E6%96%87%E4%BB%B6/</link>
+      <pubDate>Sat, 16 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://notes.fooleng.com/post/2019-02-16-windows-mklink%E5%91%BD%E4%BB%A4%E5%90%84%E7%A7%8D%E9%93%BE%E6%8E%A5%E6%96%87%E4%BB%B6/</guid>
+      <description>链接文件和文件夹、快捷方式等可以让我们保持原文件的单一，而同时在不同的地方或电脑上（使用Git同步文件，然后在不同的电脑上创建链接使其同步）</description>
+    </item>
+    
+    <item>
+      <title>AutoCAD打印设置</title>
+      <link>http://notes.fooleng.com/post/2018-12-27-autocad%E6%89%93%E5%8D%B0%E8%AE%BE%E7%BD%AE/</link>
+      <pubDate>Thu, 27 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://notes.fooleng.com/post/2018-12-27-autocad%E6%89%93%E5%8D%B0%E8%AE%BE%E7%BD%AE/</guid>
+      <description>AutoCAD绘图最终的结果都是打印版本，如果图纸元素（文字、线条)的大小、比例不正确，打印出来的图纸就会不正确。结构绘图不像其他专业的绘图</description>
+    </item>
+    
+    <item>
+      <title>在个人服务器上搭建git仓库</title>
+      <link>http://notes.fooleng.com/post/2018-12-27-%E5%9C%A8%E4%B8%AA%E4%BA%BA%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E6%90%AD%E5%BB%BAgit%E4%BB%93%E5%BA%93/</link>
+      <pubDate>Thu, 27 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://notes.fooleng.com/post/2018-12-27-%E5%9C%A8%E4%B8%AA%E4%BA%BA%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E6%90%AD%E5%BB%BAgit%E4%BB%93%E5%BA%93/</guid>
+      <description>github是对于可公开的代码来说是一个非常完美的托管点，然而我们往往会有一些东西不希望是公开的，GitHub的私有仓库我又不想去付费，其他</description>
+    </item>
+    
+    <item>
+      <title>AutoCAD版本与.net、VS版本的对应关系及注册表路径</title>
+      <link>http://notes.fooleng.com/post/2018-12-23-autocad%E7%89%88%E6%9C%AC%E4%B8%8E.netvs%E7%89%88%E6%9C%AC%E7%9A%84%E5%AF%B9%E5%BA%94%E5%85%B3%E7%B3%BB%E5%8F%8A%E6%B3%A8%E5%86%8C%E8%A1%A8%E8%B7%AF%E5%BE%84/</link>
+      <pubDate>Sun, 23 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://notes.fooleng.com/post/2018-12-23-autocad%E7%89%88%E6%9C%AC%E4%B8%8E.netvs%E7%89%88%E6%9C%AC%E7%9A%84%E5%AF%B9%E5%BA%94%E5%85%B3%E7%B3%BB%E5%8F%8A%E6%B3%A8%E5%86%8C%E8%A1%A8%E8%B7%AF%E5%BE%84/</guid>
+      <description>无论在AutoCAD的二次开发还是插件加载的过程中，知道AutoCAD的版本号以及其与之对应的net framework版本和vs版本，对于解</description>
+    </item>
+    
+    <item>
+      <title>AutoCAD绘图环境配置手册</title>
+      <link>http://notes.fooleng.com/post/2018-12-23-autocad%E7%BB%98%E5%9B%BE%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%E6%89%8B%E5%86%8C/</link>
+      <pubDate>Sun, 23 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://notes.fooleng.com/post/2018-12-23-autocad%E7%BB%98%E5%9B%BE%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%E6%89%8B%E5%86%8C/</guid>
+      <description>我们使用AutoCAD的过程中一般不会仅仅使用纯粹的CAD，往往会使用很多的绘图插件，而寻找到优秀的绘图插件以及配置这些绘图插件是一件很繁琐</description>
+    </item>
+    
+    <item>
+      <title>CAD自动加载插件的方式</title>
+      <link>http://notes.fooleng.com/post/2018-12-23-cad%E8%87%AA%E5%8A%A8%E5%8A%A0%E8%BD%BD%E6%8F%92%E4%BB%B6%E7%9A%84%E6%96%B9%E5%BC%8F/</link>
+      <pubDate>Sun, 23 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://notes.fooleng.com/post/2018-12-23-cad%E8%87%AA%E5%8A%A8%E5%8A%A0%E8%BD%BD%E6%8F%92%E4%BB%B6%E7%9A%84%E6%96%B9%E5%BC%8F/</guid>
+      <description>CAD加载插件的常用方式主要是两类，手动加载和自动加载，而自动加载可以使用acad.rx加载、acad版本.lsp和注册表加载三种加载方式。</description>
+    </item>
+    
+    <item>
+      <title>批量转换文件夹与子文件夹下的dwg文件版本</title>
+      <link>http://notes.fooleng.com/post/2018-12-19-%E6%89%B9%E9%87%8F%E8%BD%AC%E6%8D%A2%E6%96%87%E4%BB%B6%E5%A4%B9%E4%B8%8E%E5%AD%90%E6%96%87%E4%BB%B6%E5%A4%B9%E4%B8%8B%E7%9A%84dwg%E6%96%87%E4%BB%B6%E7%89%88%E6%9C%AC/</link>
+      <pubDate>Wed, 19 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://notes.fooleng.com/post/2018-12-19-%E6%89%B9%E9%87%8F%E8%BD%AC%E6%8D%A2%E6%96%87%E4%BB%B6%E5%A4%B9%E4%B8%8E%E5%AD%90%E6%96%87%E4%BB%B6%E5%A4%B9%E4%B8%8B%E7%9A%84dwg%E6%96%87%E4%BB%B6%E7%89%88%E6%9C%AC/</guid>
+      <description>我们常常需要转换dwg文件，Autodesk公司出品的dwg trueviewer可以转换所有dwg文件的版本。然而在转换的时候我们经常会有需</description>
+    </item>
+    
+    <item>
+      <title>VPS折腾日志</title>
+      <link>http://notes.fooleng.com/post/2018-12-01-vps%E6%8A%98%E8%85%BE%E6%97%A5%E5%BF%97/</link>
+      <pubDate>Sat, 01 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://notes.fooleng.com/post/2018-12-01-vps%E6%8A%98%E8%85%BE%E6%97%A5%E5%BF%97/</guid>
+      <description>本文记录了我对本网站所在的 vps 的配置和 wordpress 的安装记录。 vps的购买与对比 其实现在的vps与云服务商有一大堆，国内的最常用的就有阿里云、腾讯云、华</description>
+    </item>
+    
+  </channel>
+</rss>

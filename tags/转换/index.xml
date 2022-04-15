@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>转换 on FOOLENG</title>
+    <link>http://notes.fooleng.com/tags/%E8%BD%AC%E6%8D%A2/</link>
+    <description>Recent content in 转换 on FOOLENG</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 09 Oct 2019 00:00:00 +0000</lastBuildDate><atom:link href="http://notes.fooleng.com/tags/%E8%BD%AC%E6%8D%A2/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>腾讯视频格式转换（qlv转MP4）</title>
+      <link>http://notes.fooleng.com/post/2019-10-09-%E8%85%BE%E8%AE%AF%E8%A7%86%E9%A2%91%E6%A0%BC%E5%BC%8F%E8%BD%AC%E6%8D%A2qlv-%E8%BD%AC-mp4/</link>
+      <pubDate>Wed, 09 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://notes.fooleng.com/post/2019-10-09-%E8%85%BE%E8%AE%AF%E8%A7%86%E9%A2%91%E6%A0%BC%E5%BC%8F%E8%BD%AC%E6%8D%A2qlv-%E8%BD%AC-mp4/</guid>
+      <description>有的时候出于一些需求我们会需要下载视频网站上的一些视频，然而现在的这些网站（如优酷、腾讯）都对其视频进行了加密，即使下载了也只能使用他们自家</description>
+    </item>
+    
+  </channel>
+</rss>

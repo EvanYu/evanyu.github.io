@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Github Pages and Jekyll安装与使用 - FOOLENG</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="Evan Yu" /><meta name="description" content="简介 github pages 可以托管静态资源(HTML、pictures、javascript等)的免费公共空间 仓库总大小不能超过1G 每个月有100G的流量限额" /><meta name="keywords" content="Jekyll, GithubPages" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.96.0 with theme even" />
+
+
+<link rel="canonical" href="http://notes.fooleng.com/post/2022-01-13-github-pages-and-jekyll-%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/sass/main.min.b5a744db6de49a86cadafb3b70f555ab443f83c307a483402259e94726b045ff.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/custom.css">
+
+
+<meta property="og:title" content="Github Pages and Jekyll安装与使用" />
+<meta property="og:description" content="简介 github pages 可以托管静态资源(HTML、pictures、javascript等)的免费公共空间 仓库总大小不能超过1G 每个月有100G的流量限额" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://notes.fooleng.com/post/2022-01-13-github-pages-and-jekyll-%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2022-01-13T00:00:00+00:00" />
+<meta property="article:modified_time" content="2022-01-13T00:00:00+00:00" />
+
+<meta itemprop="name" content="Github Pages and Jekyll安装与使用">
+<meta itemprop="description" content="简介 github pages 可以托管静态资源(HTML、pictures、javascript等)的免费公共空间 仓库总大小不能超过1G 每个月有100G的流量限额"><meta itemprop="datePublished" content="2022-01-13T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2022-01-13T00:00:00+00:00" />
+<meta itemprop="wordCount" content="1675">
+<meta itemprop="keywords" content="Jekyll,GithubPages," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Github Pages and Jekyll安装与使用"/>
+<meta name="twitter:description" content="简介 github pages 可以托管静态资源(HTML、pictures、javascript等)的免费公共空间 仓库总大小不能超过1G 每个月有100G的流量限额"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">FOOLENG</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">主页</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">归档</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">分类</li>
+      </a><a href="/projects/">
+        <li class="mobile-menu-item">项目</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">关于我</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">FOOLENG</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">主页</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">归档</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">分类</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/projects/">项目</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">关于我</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">Github Pages and Jekyll安装与使用</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2022-01-13 </span>
+        <div class="post-category">
+            <a href="/categories/web/"> web </a>
+            </div>
+          <span class="more-meta"> 约 1675 字 </span>
+          <span class="more-meta"> 预计阅读 4 分钟 </span>
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#简介">简介</a></li>
+        <li><a href="#安装">安装</a></li>
+        <li><a href="#创建本地最简单站点">创建本地最简单站点</a></li>
+        <li><a href="#利用他人主题创建github站点">利用他人主题创建github站点</a>
+          <ul>
+            <li><a href="#创建站点">创建站点</a></li>
+            <li><a href="#基本设置">基本设置</a></li>
+            <li><a href="#主题修改">主题修改</a></li>
+          </ul>
+        </li>
+        <li><a href="#注意事项">注意事项</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <h2 id="简介">简介</h2>
+<ul>
+<li>github pages
+<ul>
+<li>可以托管静态资源(HTML、pictures、javascript等)的免费公共空间</li>
+<li>仓库总大小不能超过1G</li>
+<li>每个月有100G的流量限额</li>
+<li>每小时只能生成十次以内</li>
+<li>三种建立pages的方式
+<ul>
+<li>建立一个名为<code>&lt;username&gt;.github.io</code>的仓库，将站点文件全部放在这个仓库的<code>master</code>分支</li>
+<li>放在项目的<code>gh-pages</code>分支（访问链接为<code>https://&lt;username&gt;.github.io/&lt;projectname&gt;/</code>）</li>
+<li>还有一种可以放在项目的<code>doc</code>或<code>root</code> 文件夹中，具体设置方式看<a href="https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site#choosing-a-publishing-source">这里</a></li>
+<li>建议用<code>&lt;username&gt;.github.io</code>建个人网站、项目的文档什么的采用后面两种方式</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Jekyll
+<ul>
+<li>一个静态资源生成器</li>
+<li>github pages 御用</li>
+<li>不用这个工具，单纯手写HTML等也是可以建立起GitHub Pages站点的，比如<a href="https://google.github.io/styleguide/">google style guide</a>。</li>
+<li>当然也可以在自己的VPS上用这个工具生成静态网站</li>
+</ul>
+</li>
+</ul>
+<h2 id="安装">安装</h2>
+<ul>
+<li>依赖
+<ul>
+<li>Ruby</li>
+<li>RubyGems</li>
+<li>gcc, make</li>
+</ul>
+</li>
+<li>安装(以Debian为例)</li>
+</ul>
+<pre><code class="language-shell">sudo apt install ruby ruby-dev build-essential
+# Gem是ruby的包管理工具，安装ruby会默认安装（类似于python的pip）
+# bundler是rails的管理工具
+gem install bundler jekyll --user-install
+export PATH=~/.local/share/gem/ruby/2.7.0/bin:$PATH
+</code></pre>
+<h2 id="创建本地最简单站点">创建本地最简单站点</h2>
+<pre><code class="language-shell"># 设置bundle可以使用普通用户安装
+cd ~/
+bundle config set --local path 'vendor/bundle'
+# 建立空的网站目录并进入
+mkdir myblog
+cd myblog
+# 在./myblog目录创建一个全新的Jekyll网站
+# 默认生成的文件可以查看Jekyll的官方文档
+jekyll new .
+# 构建网站并启动一个本地服务器
+bundle exec jekyll serve -H 0.0.0.0
+# 在浏览器中打开http://localhost:4000
+</code></pre>
+<h2 id="利用他人主题创建github站点">利用他人主题创建github站点</h2>
+<p>此处创建站点都以<code>&lt;username&gt;.github.io</code>这种方式作为示例，其他两种方式无非就是静态文件所放置的分支或者位置不一样，文件都是一样的。</p>
+<h3 id="创建站点">创建站点</h3>
+<ul>
+<li>在<code>github</code>上创建一个<code>&lt;username&gt;.github.io</code>的仓库（username如果有大写字母要改成小写）</li>
+<li>将这个仓库<code>clone</code>到本地：<code>git clone git@github.com:EvanYu/evanyu.github.io.git</code></li>
+<li>安装主题<code>Jekyll-Paper</code></li>
+</ul>
+<pre><code class="language-shell"># 下载主题（这里以Jekyll-Paper为例，其他类似）
+wget https://github.com/ghosind/Jekyll-Paper/archive/refs/tags/v1.3.2.zip
+unzip v1.3.2.zip
+# 安装主题
+cd evanyu.github.io
+cp -rf ../Jekyll-Paper-1.3.2/* ./
+</code></pre>
+<h3 id="基本设置">基本设置</h3>
+<ul>
+<li>
+<p>github的Jekyll设置（参照<a href="https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll">这里</a>编辑<code>Gemfile</code>）</p>
+<ul>
+<li>注释掉<code>gem &quot;jekyll&quot;</code>开头的行</li>
+<li>添加<code>gem &quot;github-pages&quot;, &quot;~&gt; 219&quot;, group: :jekyll_plugins</code></li>
+</ul>
+</li>
+<li>
+<p>编辑 <code>.gitignore</code>文件为如下：</p>
+</li>
+</ul>
+<pre><code class="language-shell">_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+Gemfile.lock
+.DS_Store
+vendor/
+</code></pre>
+<ul>
+<li>基本主题设置
+<ul>
+<li>删除<code>asserts/images</code>目录下的默认图片</li>
+<li>替换自己的<code>favicon.ico</code>并删除<code>CHANGELOG</code>文件</li>
+<li>编辑<code>_config.yml</code>文件定制自己的网站</li>
+<li>编辑<code>_data/menus.yml</code>和<code>_data/lang.yml</code>定制菜单，菜单中的项目就是对应的<code>pages</code>目录下的页面</li>
+<li>删除<code>_post</code>下的默认文章，并编写自己的文章</li>
+</ul>
+</li>
+<li>写完文章后的本地测试
+<ul>
+<li>按照本文中的指引安装<code>jekyll</code>和<code>bundle</code></li>
+<li><code>cd ~/</code>并<code>bundle config set --local path 'vendor/bundle'</code></li>
+<li>进入网站根目录并执行<code>bundle install</code>（如果网站根目录已经是有vendor文件夹的情况可不用执行）</li>
+<li>构建网站：<code>bundle exec jekyll serve -H 0.0.0.0</code></li>
+<li>访问<code>http://localhost:4000</code></li>
+</ul>
+</li>
+</ul>
+<h3 id="主题修改">主题修改</h3>
+<ul>
+<li>所有超链接划过效果修改（修改<code>_sass/reset.scss</code>文件的部分如下）</li>
+</ul>
+<pre><code class="language-css">a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #F00;
+}
+</code></pre>
+<ul>
+<li>文章中超链接颜色的修改（在<code>_sass/post.scss</code>文件中添加）</li>
+</ul>
+<pre><code class="language-css">/* Change hyper link color to blue in post */
+.post-content a {
+  text-decoration: none;
+  color: #2a7ae2;
+}
+
+.post-content a:hover {
+  text-decoration: underline;
+  color: #F00;
+}
+</code></pre>
+<ul>
+<li>
+<p>在文章中添加目录</p>
+<ul>
+<li>
+<p>在<code>_includes</code>文件夹中添加如下<a href="https://raw.githubusercontent.com/allejo/jekyll-toc/master/_includes/toc.html">toc.html</a></p>
+</li>
+<li>
+<p>在<code>_layerouts/post.html</code>文件中的<code>{{ content }}</code>之前添加<code>{% include toc.html html=content %}</code></p>
+</li>
+<li>
+<p>此方法为参照<a href="https://plutotree.me/jekyll/2019/01/30/jekyll-toc-solution.html">这里</a>的第三种方案</p>
+</li>
+</ul>
+</li>
+<li>
+<p>为文章添加序号（在<code>_sass/post.scss</code>文件中添加如下样式）</p>
+</li>
+</ul>
+<pre><code class="language-css">/* Add numbers to title */
+.post-content h2:before{
+    content:counter(h2counter) ' ';
+}
+.post-content h2{
+    counter-increment: h2counter;
+    counter-reset: h3counter;
+}
+
+.post-content h3:before{
+    content:counter(h2counter) '.' counter(h3counter)' ';
+}
+.post-content h3{
+    counter-increment: h3counter;
+    counter-reset: h4counter;
+}
+
+.post-content h4:before{
+    content:counter(h2counter) '.' counter(h3counter) '.' counter(h4counter)' ';
+}
+.post-content h4{
+    counter-increment: h4counter;
+    counter-reset: h5counter;
+}
+</code></pre>
+<ul>
+<li>将标题增加链接（修改文件<code>_includes/header.html</code>的site.title行为如下，即增加一个超链接）</li>
+</ul>
+<pre><code class="language-html">&lt;span class=&quot;header-info-name&quot;&gt;&lt;a href=&quot;/&quot;&gt;{{ site.title }}&lt;/a&gt;&lt;/span&gt;
+</code></pre>
+<h2 id="注意事项">注意事项</h2>
+<ul>
+<li>markdown 中的行内公式也需要使用双美元符号包围<code>$$行内公式$$</code></li>
+</ul>
+
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">Evan Yu</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+        2022-01-13
+        
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/jekyll/">Jekyll</a>
+          <a href="/tags/githubpages/">GithubPages</a>
+          </div>
+      <nav class="post-nav">
+        <a class="prev" href="/post/2022-01-25-excel%E5%B8%B8%E8%A7%81%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">Excel 常见使用技巧</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        <a class="next" href="/post/2021-05-27-windows%E5%B8%B8%E8%A7%81%E7%B3%BB%E7%BB%9F%E4%B8%8E%E8%BD%AF%E4%BB%B6%E9%97%AE%E9%A2%98/">
+            <span class="next-text nav-default">Windows常见系统与软件问题</span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:evan75s@gmail.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://github.com/EvanYu" class="iconfont icon-github" title="github"></a>
+  <a href="http://notes.fooleng.com/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2018 - 
+    2022<span class="heart"><i class="iconfont icon-heart"></i></span><span>Evan Yu</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  <script src="/lib/highlight/highlight.pack.js?v=20171001"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.64437849d125a2d603b3e71d6de5225d641a32d17168a58106e0b61852079683.js"></script>
+  <script type="text/javascript">
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        }
+    };
+  </script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.5/es5/tex-mml-chtml.js" integrity="sha256-HGLuEfFcsUJGhvB8cQ8nr0gai9EucOOaIxFw7qxmd+w=" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

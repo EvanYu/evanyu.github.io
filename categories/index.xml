@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on FOOLENG</title>
+    <link>http://notes.fooleng.com/categories/</link>
+    <description>Recent content in Categories on FOOLENG</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 14 Apr 2022 10:25:26 +0800</lastBuildDate><atom:link href="http://notes.fooleng.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>工程实践</title>
+      <link>http://notes.fooleng.com/categories/%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5/</link>
+      <pubDate>Thu, 14 Apr 2022 10:25:26 +0800</pubDate>
+      
+      <guid>http://notes.fooleng.com/categories/%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Golang</title>
+      <link>http://notes.fooleng.com/categories/golang/</link>
+      <pubDate>Tue, 12 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://notes.fooleng.com/categories/golang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Software</title>
+      <link>http://notes.fooleng.com/categories/software/</link>
+      <pubDate>Tue, 12 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://notes.fooleng.com/categories/software/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Web</title>
+      <link>http://notes.fooleng.com/categories/web/</link>
+      <pubDate>Tue, 12 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://notes.fooleng.com/categories/web/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Linux</title>
+      <link>http://notes.fooleng.com/categories/linux/</link>
+      <pubDate>Mon, 11 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://notes.fooleng.com/categories/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>结构可靠性设计和作用</title>
+      <link>http://notes.fooleng.com/categories/%E7%BB%93%E6%9E%84%E5%8F%AF%E9%9D%A0%E6%80%A7%E8%AE%BE%E8%AE%A1%E5%92%8C%E4%BD%9C%E7%94%A8/</link>
+      <pubDate>Thu, 10 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://notes.fooleng.com/categories/%E7%BB%93%E6%9E%84%E5%8F%AF%E9%9D%A0%E6%80%A7%E8%AE%BE%E8%AE%A1%E5%92%8C%E4%BD%9C%E7%94%A8/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>C&amp;C&#43;&#43;</title>
+      <link>http://notes.fooleng.com/categories/cc&#43;&#43;/</link>
+      <pubDate>Tue, 27 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://notes.fooleng.com/categories/cc&#43;&#43;/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>http://notes.fooleng.com/categories/python/</link>
+      <pubDate>Tue, 27 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://notes.fooleng.com/categories/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>钢结构</title>
+      <link>http://notes.fooleng.com/categories/%E9%92%A2%E7%BB%93%E6%9E%84/</link>
+      <pubDate>Thu, 20 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://notes.fooleng.com/categories/%E9%92%A2%E7%BB%93%E6%9E%84/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AutoCAD</title>
+      <link>http://notes.fooleng.com/categories/autocad/</link>
+      <pubDate>Mon, 17 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://notes.fooleng.com/categories/autocad/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CSharp</title>
+      <link>http://notes.fooleng.com/categories/csharp/</link>
+      <pubDate>Sat, 28 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://notes.fooleng.com/categories/csharp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>数学与力学</title>
+      <link>http://notes.fooleng.com/categories/%E6%95%B0%E5%AD%A6%E4%B8%8E%E5%8A%9B%E5%AD%A6/</link>
+      <pubDate>Sat, 26 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://notes.fooleng.com/categories/%E6%95%B0%E5%AD%A6%E4%B8%8E%E5%8A%9B%E5%AD%A6/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

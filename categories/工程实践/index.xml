@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>工程实践 on FOOLENG</title>
+    <link>http://notes.fooleng.com/categories/%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5/</link>
+    <description>Recent content in 工程实践 on FOOLENG</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 14 Apr 2022 10:25:26 +0800</lastBuildDate><atom:link href="http://notes.fooleng.com/categories/%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>桩板式挡墙计算</title>
+      <link>http://notes.fooleng.com/post/2022-04-14-%E6%A1%A9%E6%9D%BF%E5%BC%8F%E6%8C%A1%E5%A2%99%E8%AE%A1%E7%AE%97/</link>
+      <pubDate>Thu, 14 Apr 2022 10:25:26 +0800</pubDate>
+      
+      <guid>http://notes.fooleng.com/post/2022-04-14-%E6%A1%A9%E6%9D%BF%E5%BC%8F%E6%8C%A1%E5%A2%99%E8%AE%A1%E7%AE%97/</guid>
+      <description>简介 桩板式挡土墙是指钢筋混凝土桩和挡土板组成的轻型挡土墙。在深埋的桩柱间用挡板挡住土体。适用于侧压力较大的加固地段。两桩间挡土板可逐层安设或</description>
+    </item>
+    
+    <item>
+      <title>钢结构常用造价初步估算</title>
+      <link>http://notes.fooleng.com/post/2021-05-11-%E9%92%A2%E7%BB%93%E6%9E%84%E5%B8%B8%E7%94%A8%E9%80%A0%E4%BB%B7%E5%88%9D%E6%AD%A5%E4%BC%B0%E7%AE%97/</link>
+      <pubDate>Tue, 11 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://notes.fooleng.com/post/2021-05-11-%E9%92%A2%E7%BB%93%E6%9E%84%E5%B8%B8%E7%94%A8%E9%80%A0%E4%BB%B7%E5%88%9D%E6%AD%A5%E4%BC%B0%E7%AE%97/</guid>
+      <description>结构设计中往往会有业主方询问初步的土建造价，对于混凝土结构，我们一般直接采用盈建科统计一个钢筋用量和砼用量给业主方参考。钢结构这块在结构方面</description>
+    </item>
+    
+    <item>
+      <title>钢结构深化审查要点</title>
+      <link>http://notes.fooleng.com/post/2020-11-16-%E9%92%A2%E7%BB%93%E6%9E%84%E6%B7%B1%E5%8C%96%E5%AE%A1%E6%9F%A5%E8%A6%81%E7%82%B9/</link>
+      <pubDate>Mon, 16 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://notes.fooleng.com/post/2020-11-16-%E9%92%A2%E7%BB%93%E6%9E%84%E6%B7%B1%E5%8C%96%E5%AE%A1%E6%9F%A5%E8%A6%81%E7%82%B9/</guid>
+      <description>钢结构设计一般情况下是施工图设计方先进行钢结构施工图的设计，然后交由钢结构设计院或有资质的钢结构公司进行深化设计，主要是对支座、节点、施工、</description>
+    </item>
+    
+    <item>
+      <title>悬挑脚手架核算示例</title>
+      <link>http://notes.fooleng.com/post/2020-07-01-%E6%82%AC%E6%8C%91%E8%84%9A%E6%89%8B%E6%9E%B6%E6%A0%B8%E7%AE%97%E7%A4%BA%E4%BE%8B/</link>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://notes.fooleng.com/post/2020-07-01-%E6%82%AC%E6%8C%91%E8%84%9A%E6%89%8B%E6%9E%B6%E6%A0%B8%E7%AE%97%E7%A4%BA%E4%BE%8B/</guid>
+      <description>现场施工的时候经常容易遇到悬挑脚手架的核算，其实此类核算可以简单的用手算复核一下结构主体的梁上线荷载够不够，结构梁是否需要加强。因为脚手架本</description>
+    </item>
+    
+    <item>
+      <title>钢结构节点手算示例</title>
+      <link>http://notes.fooleng.com/post/2019-11-12-%E9%92%A2%E7%BB%93%E6%9E%84%E8%8A%82%E7%82%B9%E6%89%8B%E7%AE%97%E7%A4%BA%E4%BE%8B/</link>
+      <pubDate>Tue, 12 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://notes.fooleng.com/post/2019-11-12-%E9%92%A2%E7%BB%93%E6%9E%84%E8%8A%82%E7%82%B9%E6%89%8B%E7%AE%97%E7%A4%BA%E4%BE%8B/</guid>
+      <description>本文记录了常用的一些钢结构节点的手算示例，这些手算的示例可以在无法电算的时候采用手算结果，也可以对电算的结果进行复核使用。 环箍预应力拉索计算</description>
+    </item>
+    
+    <item>
+      <title>结构图纸绘制主要内容</title>
+      <link>http://notes.fooleng.com/post/2019-10-09-%E7%BB%93%E6%9E%84%E5%9B%BE%E7%BA%B8%E7%BB%98%E5%88%B6%E4%B8%BB%E8%A6%81%E5%86%85%E5%AE%B9/</link>
+      <pubDate>Wed, 09 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://notes.fooleng.com/post/2019-10-09-%E7%BB%93%E6%9E%84%E5%9B%BE%E7%BA%B8%E7%BB%98%E5%88%B6%E4%B8%BB%E8%A6%81%E5%86%85%E5%AE%B9/</guid>
+      <description>基础 桩基础平面布置图 轴网、图框 墙柱、填充 区位图 标题、小说明 桩、桩表、桩定位、承台标高、标注桩型 承台配筋表及大样 集水坑、吸水槽、电梯井 基础梁平</description>
+    </item>
+    
+    <item>
+      <title>四边导荷的计算</title>
+      <link>http://notes.fooleng.com/post/2019-05-10-%E5%9B%9B%E8%BE%B9%E5%AF%BC%E8%8D%B7%E7%9A%84%E8%AE%A1%E7%AE%97/</link>
+      <pubDate>Fri, 10 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://notes.fooleng.com/post/2019-05-10-%E5%9B%9B%E8%BE%B9%E5%AF%BC%E8%8D%B7%E7%9A%84%E8%AE%A1%E7%AE%97/</guid>
+      <description>在使用计算软件（如盈建科、pkpm等）进行计算的时候我们往往直接输入了板面荷载而没有去考虑导荷的问题，本文对四边导荷的手算方式进行了一个简单</description>
+    </item>
+    
+  </channel>
+</rss>

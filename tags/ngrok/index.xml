@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ngrok on FOOLENG</title>
+    <link>http://notes.fooleng.com/tags/ngrok/</link>
+    <description>Recent content in ngrok on FOOLENG</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 16 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="http://notes.fooleng.com/tags/ngrok/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ngrok内网穿透</title>
+      <link>http://notes.fooleng.com/post/2019-03-16-ngrok%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</link>
+      <pubDate>Sat, 16 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://notes.fooleng.com/post/2019-03-16-ngrok%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</guid>
+      <description>ngrok是一个可用于内网穿透的软件，在我们做网站调试或者需要访问内网的资源，而内网又没有外网IP的情况下具有非常好的效果。做内网穿透之前我</description>
+    </item>
+    
+  </channel>
+</rss>
