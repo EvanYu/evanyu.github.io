@@ -9,10 +9,10 @@
     <lastBuildDate>Sat, 28 Dec 2019 00:00:00 +0000</lastBuildDate><atom:link href="http://notes.fooleng.com/tags/%E5%93%88%E5%B8%8C%E8%A1%A8/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>CSharp的字典与哈希表</title>
-      <link>http://notes.fooleng.com/post/2019-12-28-csharp%E7%9A%84%E5%AD%97%E5%85%B8%E4%B8%8E%E5%93%88%E5%B8%8C%E8%A1%A8/</link>
+      <link>http://notes.fooleng.com/post/public/2019-12-28-csharp%E7%9A%84%E5%AD%97%E5%85%B8%E4%B8%8E%E5%93%88%E5%B8%8C%E8%A1%A8/</link>
       <pubDate>Sat, 28 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://notes.fooleng.com/post/2019-12-28-csharp%E7%9A%84%E5%AD%97%E5%85%B8%E4%B8%8E%E5%93%88%E5%B8%8C%E8%A1%A8/</guid>
+      <guid>http://notes.fooleng.com/post/public/2019-12-28-csharp%E7%9A%84%E5%AD%97%E5%85%B8%E4%B8%8E%E5%93%88%E5%B8%8C%E8%A1%A8/</guid>
       <description>C#语言本身没有字典和哈希表这个类型，他们存在于 .NET 框架的基础库中（System.Collection.Generic）。字典与哈希表相对数组</description>
     </item>
     

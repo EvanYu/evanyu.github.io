@@ -9,10 +9,10 @@
     <lastBuildDate>Mon, 17 Feb 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://notes.fooleng.com/tags/%E6%89%B9%E9%87%8F%E5%A2%9E%E5%8A%A0/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AutoCAD常见问题</title>
-      <link>http://notes.fooleng.com/post/2020-02-17-autocad%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</link>
+      <link>http://notes.fooleng.com/post/public/2020-02-17-autocad%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</link>
       <pubDate>Mon, 17 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://notes.fooleng.com/post/2020-02-17-autocad%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</guid>
+      <guid>http://notes.fooleng.com/post/public/2020-02-17-autocad%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</guid>
       <description>由于在 AutoCAD 的过程中经常会需要使用一些变动的脚本，本文就对我常使用的脚本做一个记录。 批量增加受信任的文件夹位置 在 AutoCAD 2013以及以后的版本中，增加</description>
     </item>
     

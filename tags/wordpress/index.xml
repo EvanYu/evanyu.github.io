@@ -9,10 +9,10 @@
     <lastBuildDate>Sun, 27 Oct 2019 00:00:00 +0000</lastBuildDate><atom:link href="http://notes.fooleng.com/tags/wordpress/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>转移Wordpress</title>
-      <link>http://notes.fooleng.com/post/2019-10-27-%E8%BD%AC%E7%A7%BB-wordpress/</link>
+      <link>http://notes.fooleng.com/post/public/2019-10-27-%E8%BD%AC%E7%A7%BB-wordpress/</link>
       <pubDate>Sun, 27 Oct 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://notes.fooleng.com/post/2019-10-27-%E8%BD%AC%E7%A7%BB-wordpress/</guid>
+      <guid>http://notes.fooleng.com/post/public/2019-10-27-%E8%BD%AC%E7%A7%BB-wordpress/</guid>
       <description>网络上关于转移 wordpress 的文章已经不计其数，我这里只是做一个自己的记录。 网络环境 从一台已经配置好的机器将网站转移到一台新机器。接下来均称呼原网站所在</description>
     </item>
     

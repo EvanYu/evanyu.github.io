@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Windows自定义右键菜单命令（以pdftk合并pdf为例） - FOOLENG</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="Evan Yu" /><meta name="description" content="由于版权的问题，我现在已经使用 pdftk 对 pdf 文件进行合并操作，但是我还是已经习惯 Acrobat 选中 pdf 文件然后右键点击合并就能合并的方式。我并不想再去搞一个复杂的" /><meta name="keywords" content="windows, 自定义右键, 命令, pdftk" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.96.0 with theme even" />
+
+
+<link rel="canonical" href="http://notes.fooleng.com/post/public/2019-06-18-windows%E8%87%AA%E5%AE%9A%E4%B9%89%E5%8F%B3%E9%94%AE%E8%8F%9C%E5%8D%95%E5%91%BD%E4%BB%A4%E4%BB%A5pdftk%E5%90%88%E5%B9%B6pdf%E4%B8%BA%E4%BE%8B/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/sass/main.min.b5a744db6de49a86cadafb3b70f555ab443f83c307a483402259e94726b045ff.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/custom.css">
+
+
+<meta property="og:title" content="Windows自定义右键菜单命令（以pdftk合并pdf为例）" />
+<meta property="og:description" content="由于版权的问题，我现在已经使用 pdftk 对 pdf 文件进行合并操作，但是我还是已经习惯 Acrobat 选中 pdf 文件然后右键点击合并就能合并的方式。我并不想再去搞一个复杂的" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://notes.fooleng.com/post/public/2019-06-18-windows%E8%87%AA%E5%AE%9A%E4%B9%89%E5%8F%B3%E9%94%AE%E8%8F%9C%E5%8D%95%E5%91%BD%E4%BB%A4%E4%BB%A5pdftk%E5%90%88%E5%B9%B6pdf%E4%B8%BA%E4%BE%8B/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2019-06-18T00:00:00+00:00" />
+<meta property="article:modified_time" content="2022-04-13T00:00:00+00:00" />
+
+<meta itemprop="name" content="Windows自定义右键菜单命令（以pdftk合并pdf为例）">
+<meta itemprop="description" content="由于版权的问题，我现在已经使用 pdftk 对 pdf 文件进行合并操作，但是我还是已经习惯 Acrobat 选中 pdf 文件然后右键点击合并就能合并的方式。我并不想再去搞一个复杂的"><meta itemprop="datePublished" content="2019-06-18T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2022-04-13T00:00:00+00:00" />
+<meta itemprop="wordCount" content="798">
+<meta itemprop="keywords" content="windows,自定义右键,命令," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Windows自定义右键菜单命令（以pdftk合并pdf为例）"/>
+<meta name="twitter:description" content="由于版权的问题，我现在已经使用 pdftk 对 pdf 文件进行合并操作，但是我还是已经习惯 Acrobat 选中 pdf 文件然后右键点击合并就能合并的方式。我并不想再去搞一个复杂的"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">FOOLENG</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">主页</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">归档</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">分类</li>
+      </a><a href="/projects/">
+        <li class="mobile-menu-item">项目</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">关于我</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">FOOLENG</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">主页</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">归档</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">分类</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/projects/">项目</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">关于我</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">Windows自定义右键菜单命令（以pdftk合并pdf为例）</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2019-06-18 </span>
+        <div class="post-category">
+            <a href="/categories/software/"> Software </a>
+            </div>
+          <span class="more-meta"> 约 798 字 </span>
+          <span class="more-meta"> 预计阅读 2 分钟 </span>
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#下载-pdftk-并加入-path">下载 pdftk 并加入 PATH</a></li>
+        <li><a href="#编写合并-pdf-的脚本">编写合并 pdf 的脚本</a></li>
+        <li><a href="#设置右键快捷方式">设置右键快捷方式</a></li>
+        <li><a href="#参考文献">参考文献</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <p>由于版权的问题，我现在已经使用 pdftk 对 pdf 文件进行合并操作，但是我还是已经习惯 Acrobat 选中 pdf 文件然后右键点击合并就能合并的方式。我并不想再去搞一个复杂的脚本，在网上一番搜索以后发现已经有人做了类似的批处理脚本。本文以使用 pdftk 做右键合并菜单的方式为例，说明一下使用批处理自定义右键菜单的大体流程，以后有相类似的需求可以按照本示例修改。</p>
+<h2 id="下载-pdftk-并加入-path">下载 pdftk 并加入 PATH</h2>
+<p><a href="https://www.pdflabs.com/tools/pdftk-server/">pdftk server下载地址</a>，下载后将 “pdftk.exe” 和 “libiconv2.dll” 放到 %PATH% 变量的目录（即从 cmd 下可以直接执行的目录，比如 C:\windows\system32）。</p>
+<h2 id="编写合并-pdf-的脚本">编写合并 pdf 的脚本</h2>
+<p>编写脚本文件 <code>D:\Green\pdf合并.cmd</code>：</p>
+<pre><code class="language-batch">@echo off
+setlocal enabledelayedexpansion
+
+:: 获取设置文件名的日期、时间等
+for /f &quot;tokens=2 delims==+-&quot; %%i in ('WMIC OS Get LocalDateTime /value ^| findstr &quot;=&quot;') do (
+  set _Date=%%i
+  set YY=!_Date:~2,2!
+  set MM=!_Date:~4,2!
+  set DD=!_Date:~6,2!
+  set HH=!_Date:~8,2!
+  set MIN=!_Date:~10,2!
+  set SS=!_Date:~12,2!
+)
+
+:: 设置 %today% 变量
+set today=20%YY%-%MM%-%DD%-%HH%%MIN%%SS%
+
+:: 获取所有选择的 pdf 文件并设置为变量 command
+FOR %%A IN (%*) DO (set command=!command! %%A)
+
+:: 合并 pdf 文件（&quot;%~dp1&quot;表示下面这条命令的第二个参数的文件所在的路径）
+pdftk.exe %command% cat output &quot;%~dp1CombinedScan_%today%.pdf&quot;
+
+:: 删除原始的 pdf 文件
+del %command%
+</code></pre>
+<h2 id="设置右键快捷方式">设置右键快捷方式</h2>
+<p>网上有很多采用修改注册表的方式增加右键菜单，我这里讲一种更加简单的方式。我们选中文件后右键单击总是会出现一个发送到的菜单，然后下面有很多的子菜单，最常用的是发送到桌面快捷方式。其实 “发送到” 的子菜单就是一些快捷方式而已。</p>
+<ol>
+<li>为刚才的 “合并pdf.cmd” 文件创建一个快捷方式（名字随意，比如 “合并pdf” ）</li>
+<li>将创建的快捷方式放到 sendto 文件夹（ Win+R -&gt; shell:sendto ）</li>
+</ol>
+<p>这样你就可以在文件管理器中选中 pdf 文件然后发送到 “合并pdf”，就可以合并 pdf 文件了。不过这种合并 pdf 的方式有两个需要注意的问题：</p>
+<ol>
+<li><strong>合并会自动按照文件管理器中所看到的顺序从上至下合并。</strong></li>
+<li><strong>合并的第一个文件是选中后鼠标悬停所在的那个文件（比如我按 Ctrl+A 选中的所有的文件之后，鼠标停留在 “05.pdf” 文件上右键合并 pdf ，那么合并的 pdf 的第一页就是 “05.pdf”）。</strong></li>
+</ol>
+<h2 id="参考文献">参考文献</h2>
+<p>[1] <a href="http://savas.co.uk/2017/combine-pdf-files-with-a-context-menu-option/">Combine PDF files with a context menu option</a></p>
+
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">Evan Yu</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+        2022-04-13
+        
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/windows/">windows</a>
+          <a href="/tags/%E8%87%AA%E5%AE%9A%E4%B9%89%E5%8F%B3%E9%94%AE/">自定义右键</a>
+          <a href="/tags/%E5%91%BD%E4%BB%A4/">命令</a>
+          </div>
+      <nav class="post-nav">
+        <a class="prev" href="/post/public/2019-10-09-%E8%85%BE%E8%AE%AF%E8%A7%86%E9%A2%91%E6%A0%BC%E5%BC%8F%E8%BD%AC%E6%8D%A2qlv-%E8%BD%AC-mp4/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">腾讯视频格式转换（qlv转MP4）</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        <a class="next" href="/post/public/2019-06-04-pdftk%E4%B8%8Eimagemagic%E5%91%BD%E4%BB%A4/">
+            <span class="next-text nav-default">pdftk与imagemagic命令</span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:evan75s@gmail.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://github.com/EvanYu" class="iconfont icon-github" title="github"></a>
+  <a href="http://notes.fooleng.com/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2018 - 
+    2022<span class="heart"><i class="iconfont icon-heart"></i></span><span>Evan Yu</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  <script src="/lib/highlight/highlight.pack.js?v=20171001"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.64437849d125a2d603b3e71d6de5225d641a32d17168a58106e0b61852079683.js"></script>
+  <script type="text/javascript">
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        }
+    };
+  </script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.5/es5/tex-mml-chtml.js" integrity="sha256-HGLuEfFcsUJGhvB8cQ8nr0gai9EucOOaIxFw7qxmd+w=" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

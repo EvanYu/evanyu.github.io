@@ -9,10 +9,10 @@
     <lastBuildDate>Fri, 10 May 2019 00:00:00 +0000</lastBuildDate><atom:link href="http://notes.fooleng.com/tags/%E5%9B%9B%E8%BE%B9%E5%AF%BC%E8%8D%B7/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>四边导荷的计算</title>
-      <link>http://notes.fooleng.com/post/2019-05-10-%E5%9B%9B%E8%BE%B9%E5%AF%BC%E8%8D%B7%E7%9A%84%E8%AE%A1%E7%AE%97/</link>
+      <link>http://notes.fooleng.com/post/public/2019-05-10-%E5%9B%9B%E8%BE%B9%E5%AF%BC%E8%8D%B7%E7%9A%84%E8%AE%A1%E7%AE%97/</link>
       <pubDate>Fri, 10 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://notes.fooleng.com/post/2019-05-10-%E5%9B%9B%E8%BE%B9%E5%AF%BC%E8%8D%B7%E7%9A%84%E8%AE%A1%E7%AE%97/</guid>
+      <guid>http://notes.fooleng.com/post/public/2019-05-10-%E5%9B%9B%E8%BE%B9%E5%AF%BC%E8%8D%B7%E7%9A%84%E8%AE%A1%E7%AE%97/</guid>
       <description>在使用计算软件（如盈建科、pkpm等）进行计算的时候我们往往直接输入了板面荷载而没有去考虑导荷的问题，本文对四边导荷的手算方式进行了一个简单</description>
     </item>
     

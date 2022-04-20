@@ -9,10 +9,10 @@
     <lastBuildDate>Tue, 18 Jun 2019 00:00:00 +0000</lastBuildDate><atom:link href="http://notes.fooleng.com/tags/%E5%91%BD%E4%BB%A4/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Windows自定义右键菜单命令（以pdftk合并pdf为例）</title>
-      <link>http://notes.fooleng.com/post/2019-06-18-windows%E8%87%AA%E5%AE%9A%E4%B9%89%E5%8F%B3%E9%94%AE%E8%8F%9C%E5%8D%95%E5%91%BD%E4%BB%A4%E4%BB%A5pdftk%E5%90%88%E5%B9%B6pdf%E4%B8%BA%E4%BE%8B/</link>
+      <link>http://notes.fooleng.com/post/public/2019-06-18-windows%E8%87%AA%E5%AE%9A%E4%B9%89%E5%8F%B3%E9%94%AE%E8%8F%9C%E5%8D%95%E5%91%BD%E4%BB%A4%E4%BB%A5pdftk%E5%90%88%E5%B9%B6pdf%E4%B8%BA%E4%BE%8B/</link>
       <pubDate>Tue, 18 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://notes.fooleng.com/post/2019-06-18-windows%E8%87%AA%E5%AE%9A%E4%B9%89%E5%8F%B3%E9%94%AE%E8%8F%9C%E5%8D%95%E5%91%BD%E4%BB%A4%E4%BB%A5pdftk%E5%90%88%E5%B9%B6pdf%E4%B8%BA%E4%BE%8B/</guid>
+      <guid>http://notes.fooleng.com/post/public/2019-06-18-windows%E8%87%AA%E5%AE%9A%E4%B9%89%E5%8F%B3%E9%94%AE%E8%8F%9C%E5%8D%95%E5%91%BD%E4%BB%A4%E4%BB%A5pdftk%E5%90%88%E5%B9%B6pdf%E4%B8%BA%E4%BE%8B/</guid>
       <description>由于版权的问题，我现在已经使用 pdftk 对 pdf 文件进行合并操作，但是我还是已经习惯 Acrobat 选中 pdf 文件然后右键点击合并就能合并的方式。我并不想再去搞一个复杂的</description>
     </item>
     

@@ -9,10 +9,10 @@
     <lastBuildDate>Tue, 27 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://notes.fooleng.com/tags/google/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Google style docstrings Examples</title>
-      <link>http://notes.fooleng.com/post/2021-04-27-google-style-docstrings-examples/</link>
+      <link>http://notes.fooleng.com/post/public/2021-04-27-google-style-docstrings-examples/</link>
       <pubDate>Tue, 27 Apr 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://notes.fooleng.com/post/2021-04-27-google-style-docstrings-examples/</guid>
+      <guid>http://notes.fooleng.com/post/public/2021-04-27-google-style-docstrings-examples/</guid>
       <description>Python # -*- coding: utf-8 -*- &amp;quot;&amp;quot;&amp;quot;Example Google style docstrings. This module demonstrates documentation as specified by the `Google Python Style Guide`_. Docstrings may extend over multiple lines. Sections are created with a section header and a colon followed by a block of indented text. Example: Examples can be given using either the ``Example`` or ``Examples`` sections. Sections support any reStructuredText formatting, including literal blocks:: $ python example_google.py Section breaks are created by resuming unindented text.</description>
     </item>
     

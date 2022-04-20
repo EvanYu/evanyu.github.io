@@ -9,10 +9,10 @@
     <lastBuildDate>Fri, 14 Jun 2019 00:00:00 +0000</lastBuildDate><atom:link href="http://notes.fooleng.com/tags/imagemagic/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>pdftk与imagemagic命令</title>
-      <link>http://notes.fooleng.com/post/2019-06-04-pdftk%E4%B8%8Eimagemagic%E5%91%BD%E4%BB%A4/</link>
+      <link>http://notes.fooleng.com/post/public/2019-06-04-pdftk%E4%B8%8Eimagemagic%E5%91%BD%E4%BB%A4/</link>
       <pubDate>Fri, 14 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://notes.fooleng.com/post/2019-06-04-pdftk%E4%B8%8Eimagemagic%E5%91%BD%E4%BB%A4/</guid>
+      <guid>http://notes.fooleng.com/post/public/2019-06-04-pdftk%E4%B8%8Eimagemagic%E5%91%BD%E4%BB%A4/</guid>
       <description>pdftk pdftk这个软件有 pdftk 、 pdftk pro 、 pdftk server 几个版本。实际上最基础的版本就是 server 版本，这个版本有一个 pdftk 的命令行工具，命令行工具包含完整的功能。 pdftk 和 pdftk pro</description>
     </item>
     

@@ -9,37 +9,37 @@
     <lastBuildDate>Sun, 27 Oct 2019 00:00:00 +0000</lastBuildDate><atom:link href="http://notes.fooleng.com/tags/vps/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>转移Wordpress</title>
-      <link>http://notes.fooleng.com/post/2019-10-27-%E8%BD%AC%E7%A7%BB-wordpress/</link>
+      <link>http://notes.fooleng.com/post/public/2019-10-27-%E8%BD%AC%E7%A7%BB-wordpress/</link>
       <pubDate>Sun, 27 Oct 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://notes.fooleng.com/post/2019-10-27-%E8%BD%AC%E7%A7%BB-wordpress/</guid>
+      <guid>http://notes.fooleng.com/post/public/2019-10-27-%E8%BD%AC%E7%A7%BB-wordpress/</guid>
       <description>网络上关于转移 wordpress 的文章已经不计其数，我这里只是做一个自己的记录。 网络环境 从一台已经配置好的机器将网站转移到一台新机器。接下来均称呼原网站所在</description>
     </item>
     
     <item>
       <title>ngrok内网穿透</title>
-      <link>http://notes.fooleng.com/post/2019-03-16-ngrok%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</link>
+      <link>http://notes.fooleng.com/post/public/2019-03-16-ngrok%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</link>
       <pubDate>Sat, 16 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://notes.fooleng.com/post/2019-03-16-ngrok%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</guid>
+      <guid>http://notes.fooleng.com/post/public/2019-03-16-ngrok%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</guid>
       <description>ngrok是一个可用于内网穿透的软件，在我们做网站调试或者需要访问内网的资源，而内网又没有外网IP的情况下具有非常好的效果。做内网穿透之前我</description>
     </item>
     
     <item>
       <title>在个人服务器上搭建git仓库</title>
-      <link>http://notes.fooleng.com/post/2018-12-27-%E5%9C%A8%E4%B8%AA%E4%BA%BA%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E6%90%AD%E5%BB%BAgit%E4%BB%93%E5%BA%93/</link>
+      <link>http://notes.fooleng.com/post/public/2018-12-27-%E5%9C%A8%E4%B8%AA%E4%BA%BA%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E6%90%AD%E5%BB%BAgit%E4%BB%93%E5%BA%93/</link>
       <pubDate>Thu, 27 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://notes.fooleng.com/post/2018-12-27-%E5%9C%A8%E4%B8%AA%E4%BA%BA%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E6%90%AD%E5%BB%BAgit%E4%BB%93%E5%BA%93/</guid>
+      <guid>http://notes.fooleng.com/post/public/2018-12-27-%E5%9C%A8%E4%B8%AA%E4%BA%BA%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E6%90%AD%E5%BB%BAgit%E4%BB%93%E5%BA%93/</guid>
       <description>github是对于可公开的代码来说是一个非常完美的托管点，然而我们往往会有一些东西不希望是公开的，GitHub的私有仓库我又不想去付费，其他</description>
     </item>
     
     <item>
       <title>VPS折腾日志</title>
-      <link>http://notes.fooleng.com/post/2018-12-01-vps%E6%8A%98%E8%85%BE%E6%97%A5%E5%BF%97/</link>
+      <link>http://notes.fooleng.com/post/public/2018-12-01-vps%E6%8A%98%E8%85%BE%E6%97%A5%E5%BF%97/</link>
       <pubDate>Sat, 01 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://notes.fooleng.com/post/2018-12-01-vps%E6%8A%98%E8%85%BE%E6%97%A5%E5%BF%97/</guid>
+      <guid>http://notes.fooleng.com/post/public/2018-12-01-vps%E6%8A%98%E8%85%BE%E6%97%A5%E5%BF%97/</guid>
       <description>本文记录了我对本网站所在的 vps 的配置和 wordpress 的安装记录。 vps的购买与对比 其实现在的vps与云服务商有一大堆，国内的最常用的就有阿里云、腾讯云、华</description>
     </item>
     

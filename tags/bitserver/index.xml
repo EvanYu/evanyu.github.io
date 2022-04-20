@@ -9,10 +9,10 @@
     <lastBuildDate>Mon, 09 Mar 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://notes.fooleng.com/tags/bitserver/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Linux系统下PKPM与盈建科网络集团授权服务器Bit-Service的部署</title>
-      <link>http://notes.fooleng.com/post/2020-03-09-linux%E7%B3%BB%E7%BB%9F%E4%B8%8Bpkpm%E4%B8%8E%E7%9B%88%E5%BB%BA%E7%A7%91%E7%BD%91%E7%BB%9C%E9%9B%86%E5%9B%A2%E6%8E%88%E6%9D%83%E6%9C%8D%E5%8A%A1%E5%99%A8bit-service%E7%9A%84%E9%83%A8%E7%BD%B2/</link>
+      <link>http://notes.fooleng.com/post/public/2020-03-09-linux%E7%B3%BB%E7%BB%9F%E4%B8%8Bpkpm%E4%B8%8E%E7%9B%88%E5%BB%BA%E7%A7%91%E7%BD%91%E7%BB%9C%E9%9B%86%E5%9B%A2%E6%8E%88%E6%9D%83%E6%9C%8D%E5%8A%A1%E5%99%A8bit-service%E7%9A%84%E9%83%A8%E7%BD%B2/</link>
       <pubDate>Mon, 09 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://notes.fooleng.com/post/2020-03-09-linux%E7%B3%BB%E7%BB%9F%E4%B8%8Bpkpm%E4%B8%8E%E7%9B%88%E5%BB%BA%E7%A7%91%E7%BD%91%E7%BB%9C%E9%9B%86%E5%9B%A2%E6%8E%88%E6%9D%83%E6%9C%8D%E5%8A%A1%E5%99%A8bit-service%E7%9A%84%E9%83%A8%E7%BD%B2/</guid>
+      <guid>http://notes.fooleng.com/post/public/2020-03-09-linux%E7%B3%BB%E7%BB%9F%E4%B8%8Bpkpm%E4%B8%8E%E7%9B%88%E5%BB%BA%E7%A7%91%E7%BD%91%E7%BB%9C%E9%9B%86%E5%9B%A2%E6%8E%88%E6%9D%83%E6%9C%8D%E5%8A%A1%E5%99%A8bit-service%E7%9A%84%E9%83%A8%E7%BD%B2/</guid>
       <description>我们正常使用的 PKPM 和盈建科的集团授权服务器都是采用 windows 版本，PKPM的安装光盘中有一个专门的 Bit_Server 的文件夹就是用于部署集团授权服务器的，而盈建科是直</description>
     </item>
     

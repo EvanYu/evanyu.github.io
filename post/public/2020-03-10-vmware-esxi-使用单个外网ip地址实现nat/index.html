@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Vmware Esxi 使用单个外网IP地址实现NAT - FOOLENG</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="Evan Yu" /><meta name="description" content="我们的机器经常会出现只有一个外网 IP 可用的情况，但是既然使用了 Esxi 我们就肯定不止一台系统，而 Esxi 使用的虚拟交换机并没有实现 NAT 之类的功能，所以只能自" /><meta name="keywords" content="Vmware, Esxi, NAT" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.96.0 with theme even" />
+
+
+<link rel="canonical" href="http://notes.fooleng.com/post/public/2020-03-10-vmware-esxi-%E4%BD%BF%E7%94%A8%E5%8D%95%E4%B8%AA%E5%A4%96%E7%BD%91ip%E5%9C%B0%E5%9D%80%E5%AE%9E%E7%8E%B0nat/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/sass/main.min.b5a744db6de49a86cadafb3b70f555ab443f83c307a483402259e94726b045ff.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/custom.css">
+
+
+<meta property="og:title" content="Vmware Esxi 使用单个外网IP地址实现NAT" />
+<meta property="og:description" content="我们的机器经常会出现只有一个外网 IP 可用的情况，但是既然使用了 Esxi 我们就肯定不止一台系统，而 Esxi 使用的虚拟交换机并没有实现 NAT 之类的功能，所以只能自" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://notes.fooleng.com/post/public/2020-03-10-vmware-esxi-%E4%BD%BF%E7%94%A8%E5%8D%95%E4%B8%AA%E5%A4%96%E7%BD%91ip%E5%9C%B0%E5%9D%80%E5%AE%9E%E7%8E%B0nat/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2020-03-10T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-03-10T00:00:00+00:00" />
+
+<meta itemprop="name" content="Vmware Esxi 使用单个外网IP地址实现NAT">
+<meta itemprop="description" content="我们的机器经常会出现只有一个外网 IP 可用的情况，但是既然使用了 Esxi 我们就肯定不止一台系统，而 Esxi 使用的虚拟交换机并没有实现 NAT 之类的功能，所以只能自"><meta itemprop="datePublished" content="2020-03-10T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2020-03-10T00:00:00+00:00" />
+<meta itemprop="wordCount" content="712">
+<meta itemprop="keywords" content="Vmware,Esxi,NAT," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Vmware Esxi 使用单个外网IP地址实现NAT"/>
+<meta name="twitter:description" content="我们的机器经常会出现只有一个外网 IP 可用的情况，但是既然使用了 Esxi 我们就肯定不止一台系统，而 Esxi 使用的虚拟交换机并没有实现 NAT 之类的功能，所以只能自"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">FOOLENG</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">主页</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">归档</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">分类</li>
+      </a><a href="/projects/">
+        <li class="mobile-menu-item">项目</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">关于我</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">FOOLENG</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">主页</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">归档</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">分类</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/projects/">项目</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">关于我</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">Vmware Esxi 使用单个外网IP地址实现NAT</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2020-03-10 </span>
+        <div class="post-category">
+            <a href="/categories/web/"> Web </a>
+            <a href="/categories/linux/"> Linux </a>
+            <a href="/categories/software/"> Software </a>
+            </div>
+          <span class="more-meta"> 约 712 字 </span>
+          <span class="more-meta"> 预计阅读 2 分钟 </span>
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#基本思路">基本思路</a></li>
+        <li><a href="#网络设置的步骤">网络设置的步骤</a>
+          <ul>
+            <li><a href="#端口组设置">端口组设置</a></li>
+            <li><a href="#虚拟交换机设置">虚拟交换机设置</a></li>
+            <li><a href="#vmkernel设置">VMkernel设置</a></li>
+            <li><a href="#本实例物理网卡情况">本实例物理网卡情况</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <p>我们的机器经常会出现只有一个外网 IP 可用的情况，但是既然使用了 Esxi 我们就肯定不止一台系统，而 Esxi 使用的虚拟交换机并没有实现 NAT 之类的功能，所以只能自己想办法。经过在网上不断的摸索，看了<a href="http://ask.zol.com.cn/x/6708172.html">这个</a>、<a href="https://blog.csdn.net/u012375924/article/details/95338118">还有这个</a>等等一大堆的网络教程，但是都说的不是很清楚。而且都是用的 pfsense ，由于我不熟悉 pfsense ，而且我不希望花那么多的资源在网关上面，所以我希望能够使用 openwrt （后来我还看了<a href="https://linhongbo.com/posts/openwrt-on-esxi/">这里</a>）。这里我就告诉大家我是如何使用单 IP 实现的 NAT。</p>
+<h2 id="基本思路">基本思路</h2>
+<p><img src="https://pic.fooleng.com/2020-03-01_ESXI_NAT_Path.png" alt=""></p>
+<ol>
+<li>所有的虚拟机都接入到一个自己新建的虚拟交换机上（本文为vSwitchLAN），而这个虚拟交换机没有对应的物理适配器，即不存在上级链路，<strong>是一个与外界隔绝的局域网</strong>，可以想象为几台电脑都直接连接到一个路由器上，而这个路由器没有接外网。</li>
+<li>Esxi 默认的虚拟交换机（本文为vSwitch0）只连接了一根网线到外网。</li>
+<li>创建一个<strong>有两张网卡的路由器系统虚拟机（本文为Openwrt）</strong>，一根网线接到虚拟机所在的局域网交换机（本文为vSwitchLAN），另一根网线连接到外网交换机（本文为vSwitch0），这样就把两个网络串联起来了。</li>
+</ol>
+<p><strong>这个思路有几点需要特别注意的地方：</strong></p>
+<ul>
+<li>虚拟机Openwrt 的 WAN 口才是使用了那个唯一外网 IP 的设备，其 LAN 口连接着局域网</li>
+<li>Esxi 默认的虚拟交换机和端口组都不要去做任何变动</li>
+<li>虚拟机Openwrt 一定要设置自动启动（<strong>ESXI 系统要设置允许自动启动，虚拟机本身也要设置自动启动</strong>），否则就得去手动开启了</li>
+<li>关于Management Network和LanManagement这两个端口组可以参考下图来理解</li>
+</ul>
+<p><img src="https://pic.fooleng.com/2020-03-01_VMKernel.png" alt=""></p>
+<h2 id="网络设置的步骤">网络设置的步骤</h2>
+<p><strong>Esxi默认的网络设置不用去做任何改动，我们只添加我们需要的就可以了</strong></p>
+<h3 id="端口组设置">端口组设置</h3>
+<p><img src="https://pic.fooleng.com/2020-03-01_Esxi_Network_Setting_1.png" alt="">
+<img src="https://pic.fooleng.com/2020-03-01_Esxi_Network_Setting_2.png" alt="">
+<img src="https://pic.fooleng.com/2020-03-01_Esxi_Network_Setting_3.png" alt="">
+<img src="https://pic.fooleng.com/2020-03-01_Esxi_Network_Setting_4.png" alt="">
+<img src="https://pic.fooleng.com/2020-03-01_Esxi_Network_Setting_5.png" alt=""></p>
+<h3 id="虚拟交换机设置">虚拟交换机设置</h3>
+<p><img src="https://pic.fooleng.com/2020-03-01_Esxi_Network_Setting_6.png" alt="">
+<img src="https://pic.fooleng.com/2020-03-01_Esxi_Network_Setting_7.png" alt="">
+<img src="https://pic.fooleng.com/2020-03-01_Esxi_Network_Setting_8.png" alt=""></p>
+<h3 id="vmkernel设置">VMkernel设置</h3>
+<p><img src="https://pic.fooleng.com/2020-03-01_Esxi_Network_Setting_12.png" alt="">
+<img src="https://pic.fooleng.com/2020-03-01_Esxi_Network_Setting_13.png" alt="">
+<img src="https://pic.fooleng.com/2020-03-01_Esxi_Network_Setting_14.png" alt=""></p>
+<h3 id="本实例物理网卡情况">本实例物理网卡情况</h3>
+<p><img src="https://pic.fooleng.com/2020-03-01_Esxi_Network_Setting_9.png" alt="">
+<img src="https://pic.fooleng.com/2020-03-01_Esxi_Network_Setting_10.png" alt="">
+<img src="https://pic.fooleng.com/2020-03-01_Esxi_Network_Setting_11.png" alt=""></p>
+
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">Evan Yu</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+        2020-03-10
+        
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/vmware/">Vmware</a>
+          <a href="/tags/esxi/">Esxi</a>
+          <a href="/tags/nat/">NAT</a>
+          </div>
+      <nav class="post-nav">
+        <a class="prev" href="/post/public/2020-03-12-samba%E6%89%B9%E9%87%8F%E5%A2%9E%E5%8A%A0%E7%94%A8%E6%88%B7%E4%B8%8E%E9%85%8D%E7%BD%AE/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">Samba批量增加用户与配置</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        <a class="next" href="/post/public/2020-03-09-linux%E7%B3%BB%E7%BB%9F%E4%B8%8Bpkpm%E4%B8%8E%E7%9B%88%E5%BB%BA%E7%A7%91%E7%BD%91%E7%BB%9C%E9%9B%86%E5%9B%A2%E6%8E%88%E6%9D%83%E6%9C%8D%E5%8A%A1%E5%99%A8bit-service%E7%9A%84%E9%83%A8%E7%BD%B2/">
+            <span class="next-text nav-default">Linux系统下PKPM与盈建科网络集团授权服务器Bit-Service的部署</span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:evan75s@gmail.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://github.com/EvanYu" class="iconfont icon-github" title="github"></a>
+  <a href="http://notes.fooleng.com/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2018 - 
+    2022<span class="heart"><i class="iconfont icon-heart"></i></span><span>Evan Yu</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  <script src="/lib/highlight/highlight.pack.js?v=20171001"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.64437849d125a2d603b3e71d6de5225d641a32d17168a58106e0b61852079683.js"></script>
+  <script type="text/javascript">
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        }
+    };
+  </script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.5/es5/tex-mml-chtml.js" integrity="sha256-HGLuEfFcsUJGhvB8cQ8nr0gai9EucOOaIxFw7qxmd+w=" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

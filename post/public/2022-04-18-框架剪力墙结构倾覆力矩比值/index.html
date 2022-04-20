@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>框架剪力墙结构倾覆力矩比值 - FOOLENG</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="Evan Yu" /><meta name="description" content="规范条文解析 倾覆力矩百分比从概念上来说就是影响结构体系的确定。 规范原文 《高规》8.1.3条有如下规定： 抗震设计的框架-剪力墙结构，应根据在规" /><meta name="keywords" content="框架, 剪力墙, 倾覆力矩, 比值, 百分比" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.96.0 with theme even" />
+
+
+<link rel="canonical" href="http://notes.fooleng.com/post/public/2022-04-18-%E6%A1%86%E6%9E%B6%E5%89%AA%E5%8A%9B%E5%A2%99%E7%BB%93%E6%9E%84%E5%80%BE%E8%A6%86%E5%8A%9B%E7%9F%A9%E6%AF%94%E5%80%BC/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/sass/main.min.b5a744db6de49a86cadafb3b70f555ab443f83c307a483402259e94726b045ff.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/custom.css">
+
+
+<meta property="og:title" content="框架剪力墙结构倾覆力矩比值" />
+<meta property="og:description" content="规范条文解析 倾覆力矩百分比从概念上来说就是影响结构体系的确定。 规范原文 《高规》8.1.3条有如下规定： 抗震设计的框架-剪力墙结构，应根据在规" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://notes.fooleng.com/post/public/2022-04-18-%E6%A1%86%E6%9E%B6%E5%89%AA%E5%8A%9B%E5%A2%99%E7%BB%93%E6%9E%84%E5%80%BE%E8%A6%86%E5%8A%9B%E7%9F%A9%E6%AF%94%E5%80%BC/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2022-04-18T17:02:40+08:00" />
+<meta property="article:modified_time" content="2022-04-18T17:02:40+08:00" />
+
+<meta itemprop="name" content="框架剪力墙结构倾覆力矩比值">
+<meta itemprop="description" content="规范条文解析 倾覆力矩百分比从概念上来说就是影响结构体系的确定。 规范原文 《高规》8.1.3条有如下规定： 抗震设计的框架-剪力墙结构，应根据在规"><meta itemprop="datePublished" content="2022-04-18T17:02:40+08:00" />
+<meta itemprop="dateModified" content="2022-04-18T17:02:40+08:00" />
+<meta itemprop="wordCount" content="1819">
+<meta itemprop="keywords" content="倾覆力矩," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="框架剪力墙结构倾覆力矩比值"/>
+<meta name="twitter:description" content="规范条文解析 倾覆力矩百分比从概念上来说就是影响结构体系的确定。 规范原文 《高规》8.1.3条有如下规定： 抗震设计的框架-剪力墙结构，应根据在规"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">FOOLENG</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">主页</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">归档</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">分类</li>
+      </a><a href="/projects/">
+        <li class="mobile-menu-item">项目</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">关于我</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">FOOLENG</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">主页</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">归档</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">分类</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/projects/">项目</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">关于我</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">框架剪力墙结构倾覆力矩比值</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2022-04-18 </span>
+        <div class="post-category">
+            <a href="/categories/%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5/"> 工程实践 </a>
+            </div>
+          <span class="more-meta"> 约 1819 字 </span>
+          <span class="more-meta"> 预计阅读 4 分钟 </span>
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#规范条文解析">规范条文解析</a>
+          <ul>
+            <li><a href="#规范原文">规范原文</a></li>
+            <li><a href="#规范解析">规范解析</a></li>
+          </ul>
+        </li>
+        <li><a href="#实际项目问题">实际项目问题</a>
+          <ul>
+            <li><a href="#是否组装地下室导致倾覆力矩比值差异较大">是否组装地下室导致倾覆力矩比值差异较大</a></li>
+            <li><a href="#5080时适用高度比框架结构适当增加">50%~80%时适用高度比框架结构适当增加</a></li>
+          </ul>
+        </li>
+        <li><a href="#结构设计的建议">结构设计的建议</a></li>
+        <li><a href="#参考文献">参考文献</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <h2 id="规范条文解析">规范条文解析</h2>
+<p>倾覆力矩百分比从概念上来说就是影响结构体系的确定。</p>
+<h3 id="规范原文">规范原文</h3>
+<p>《高规》8.1.3条有如下规定：</p>
+<pre><code class="language-tex">抗震设计的框架-剪力墙结构，应根据在规定的水平力作用下结构底层框架部分承受的地震倾覆力矩与结构总地震倾覆力矩的比值，确定相应的设计方法，并应符合下列规定：
+1  框架部分承受的地震倾覆力矩不大于结构总地震倾覆力矩的10％时，按剪力墙结构进行设计，其中的框架部分应按框架-剪力墙结构的框架进行设计；
+2  当框架部分承受的地震倾覆力矩大于结构总地震倾覆力矩的10％但不大于50％时，按框架-剪力墙结构进行设计；
+3  当框架部分承受的地震倾覆力矩大于结构总地震倾覆力矩的50％但不大于80％时，按框架-剪力墙结构进行设计，其最大适用高度可比框架结构适当增加，框架部分的抗震等级和轴压比限值宜按框架结构的规定采用；
+4  当框架部分承受的地震倾覆力矩大于结构总地震倾覆力矩的80％时，按框架-剪力墙结构进行设计，但其最大适用高度宜按框架结构采用，框架部分的抗震等级和轴压比限值应按框架结构的规定采用。当结构的层间位移角不满足框架-剪力墙结构的规定时，可按本规程第3.11节的有关规定进行结构抗震性能分析和论证。
+</code></pre>
+<p>简单来说就是如下几点（主要是影响结构<strong>抗震等级</strong>与<strong>适用高度</strong>、<strong>轴压比</strong>的取值）：</p>
+<ul>
+<li>框架部分的倾覆力矩≤10%：整体按剪力墙结构，<strong>框架部分按框架-剪力墙结构</strong></li>
+<li>10%&lt;框架部分的倾覆力矩≤50%：整体按框架-剪力墙结构</li>
+<li>50%&lt;框架部分的倾覆力矩≤80%：整体按框架-剪力墙结构，<strong>最大适用高度</strong>比框架结构适当增加，<strong>框架部分的抗震等级和轴压比按框架采用</strong></li>
+<li>框架部分的倾覆力矩&gt;80%：整体按框架-剪力墙结构，<strong>最大适用高度</strong>按框架，<strong>框架部分的抗震等级和轴压比按框架采用</strong></li>
+</ul>
+<h3 id="规范解析">规范解析</h3>
+<h4 id="规范的理解">规范的理解</h4>
+<p>在规定水平力的作用下，结构底层框架部分与剪力墙部分的刚度不同、结构性能也有较大差别。设计时，依据框架、剪力墙两部分承担的倾覆力矩百分比，确定改结构相应的<strong>适用高度</strong>和<strong>构造措施</strong>（《高规》表3.9.3）。</p>
+<p>当框架部分的倾覆力矩为10%~50%之间的时候，说明结构有足够的剪力墙，剪力墙是结构的主要抗侧力构件，时结构抗震的第一道防线；其框架部分是次要的抗侧力构件，属于结构抗震的第二道防线。</p>
+<h2 id="实际项目问题">实际项目问题</h2>
+<h3 id="是否组装地下室导致倾覆力矩比值差异较大">是否组装地下室导致倾覆力矩比值差异较大</h3>
+<h4 id="问题描述">问题描述</h4>
+<ul>
+<li>在模型中未组装地下室的情况下，框架部分X向、Y向的倾覆力矩百分比约为46%、48%</li>
+<li>组装地下室以后，Y向的框架倾覆力矩百分比超过50%（第二标准层值）</li>
+</ul>
+<h4 id="问题解析">问题解析</h4>
+<p>结构底层框架和剪力墙地震倾覆力矩的计算数值与倾覆力矩的计算模型密切相关，倾覆力矩主要有如下两种算法：</p>
+<ul>
+<li>规范算法：按《抗规》6.1.3条规定的简化公式计算（<strong>一般都按此方法</strong>）</li>
+<li>轴力算法：按倾覆力矩的定义考虑弯矩、剪力及轴力等的综合影响</li>
+</ul>
+<h4 id="关于地下室">关于地下室</h4>
+<ul>
+<li>有地下室时，是否带地下室计算（即嵌固端是否采用绝对嵌固的计算模型）的差异较大</li>
+<li>计算方法（规范算法与轴力算法）、计算假定（是否绝对嵌固）不同，会导致计算结果有较大不同</li>
+<li>当剪力墙较多或房屋高度较大时，按规范算法计算的框架倾覆力矩还可能出现负值</li>
+</ul>
+<h4 id="解决方式">解决方式</h4>
+<p>由以上可知，组装地下室就是影响了计算假定（不再是绝对嵌固），所以导致框架倾覆力矩比变化较大。<strong>推荐采用不带地下室的绝对嵌固模型的底层倾覆力矩比来判断。</strong></p>
+<h3 id="5080时适用高度比框架结构适当增加">50%~80%时适用高度比框架结构适当增加</h3>
+<p>规范的第三点说<em>最大适用高度可比框架结构适当增加</em>，但是适当增加到底是增加多少。可以按如下来增加：
+$$
+[最大适用高度]=框架适用高度+(框剪适用高度-框架适用高度)\frac{框架倾覆力矩比上限\% - 框架倾覆力矩比实际值\%}{框架倾覆力矩比上限\% - 框架倾覆力矩比下限\%}
+$$
+比如，在7度区，某框架剪力墙结构的框架倾覆力矩比为65%，那么其适用高度<code>[H]</code>计算如下：
+$$
+[H]=50+(120-50)\frac{80 \% -65 \% }{80\% -50 \% }=85m
+$$</p>
+<h2 id="结构设计的建议">结构设计的建议</h2>
+<ul>
+<li>实际工程中应以“规范算法”为主，必要时可采用“轴力算法”进行补充及比较计算</li>
+<li>影响框剪结构的因素很多（如框架和剪力墙的剪力分摊比），倾覆力矩比只是其中一个较为主要的因素，当框架承担的剪力过小（《高规》9.1.11）时，对结构的层间位移角可按偏剪力墙结构控制</li>
+<li>对倾覆力矩比的计算部位：
+<ul>
+<li>对一般结构（竖向规则）可只考察其底层</li>
+<li>对复杂结构、超限建筑工程等，宜核查其底部加强部位的每一层</li>
+</ul>
+</li>
+<li>当倾覆力矩比处在结构体系分界线附近时，应采取措施加以避免，以减少结构体系的飘忽给结构设计带来的困难</li>
+</ul>
+<h2 id="参考文献">参考文献</h2>
+<p>[1] 《高层建筑混凝土结构技术规程应用于分析》——朱丙寅</p>
+
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">Evan Yu</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+        2022-04-18
+        
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/%E5%80%BE%E8%A6%86%E5%8A%9B%E7%9F%A9/">倾覆力矩</a>
+          </div>
+      <nav class="post-nav">
+        <a class="prev" href="/post/public/2022-04-20-7z%E5%88%B6%E4%BD%9C%E8%87%AA%E8%A7%A3%E5%8E%8B%E5%AE%89%E8%A3%85%E5%8C%85/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">7z制作自解压安装包</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        <a class="next" href="/post/public/2022-04-14-%E6%A1%A9%E6%9D%BF%E5%BC%8F%E6%8C%A1%E5%A2%99%E8%AE%A1%E7%AE%97/">
+            <span class="next-text nav-default">桩板式挡墙计算</span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:evan75s@gmail.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://github.com/EvanYu" class="iconfont icon-github" title="github"></a>
+  <a href="http://notes.fooleng.com/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2018 - 
+    2022<span class="heart"><i class="iconfont icon-heart"></i></span><span>Evan Yu</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  <script src="/lib/highlight/highlight.pack.js?v=20171001"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.64437849d125a2d603b3e71d6de5225d641a32d17168a58106e0b61852079683.js"></script>
+  <script type="text/javascript">
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        }
+    };
+  </script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.5/es5/tex-mml-chtml.js" integrity="sha256-HGLuEfFcsUJGhvB8cQ8nr0gai9EucOOaIxFw7qxmd+w=" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

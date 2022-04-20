@@ -9,10 +9,10 @@
     <lastBuildDate>Sat, 30 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="http://notes.fooleng.com/tags/%E5%BC%80%E6%9C%BA%E5%90%AF%E5%8A%A8/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Windows开机启动vmware的虚拟机</title>
-      <link>http://notes.fooleng.com/post/2019-03-30-windows%E5%BC%80%E6%9C%BA%E5%90%AF%E5%8A%A8vmware%E7%9A%84%E8%99%9A%E6%8B%9F%E6%9C%BA/</link>
+      <link>http://notes.fooleng.com/post/public/2019-03-30-windows%E5%BC%80%E6%9C%BA%E5%90%AF%E5%8A%A8vmware%E7%9A%84%E8%99%9A%E6%8B%9F%E6%9C%BA/</link>
       <pubDate>Sat, 30 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://notes.fooleng.com/post/2019-03-30-windows%E5%BC%80%E6%9C%BA%E5%90%AF%E5%8A%A8vmware%E7%9A%84%E8%99%9A%E6%8B%9F%E6%9C%BA/</guid>
+      <guid>http://notes.fooleng.com/post/public/2019-03-30-windows%E5%BC%80%E6%9C%BA%E5%90%AF%E5%8A%A8vmware%E7%9A%84%E8%99%9A%E6%8B%9F%E6%9C%BA/</guid>
       <description>建立一个D:\Green\StartDebian.bat的脚本： &amp;quot;D:\Program Files (x86)\VMware\VMware Player\vmrun.exe&amp;quot; start &amp;quot;D:\VM\Debian\Debian11.vmx&amp;quot; nogui 开始-&amp;gt;运行shell:startup打开启动文件夹并新</description>
     </item>
     

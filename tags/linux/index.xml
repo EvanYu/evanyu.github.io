@@ -9,46 +9,46 @@
     <lastBuildDate>Thu, 12 Mar 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://notes.fooleng.com/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Samba批量增加用户与配置</title>
-      <link>http://notes.fooleng.com/post/2020-03-12-samba%E6%89%B9%E9%87%8F%E5%A2%9E%E5%8A%A0%E7%94%A8%E6%88%B7%E4%B8%8E%E9%85%8D%E7%BD%AE/</link>
+      <link>http://notes.fooleng.com/post/public/2020-03-12-samba%E6%89%B9%E9%87%8F%E5%A2%9E%E5%8A%A0%E7%94%A8%E6%88%B7%E4%B8%8E%E9%85%8D%E7%BD%AE/</link>
       <pubDate>Thu, 12 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://notes.fooleng.com/post/2020-03-12-samba%E6%89%B9%E9%87%8F%E5%A2%9E%E5%8A%A0%E7%94%A8%E6%88%B7%E4%B8%8E%E9%85%8D%E7%BD%AE/</guid>
+      <guid>http://notes.fooleng.com/post/public/2020-03-12-samba%E6%89%B9%E9%87%8F%E5%A2%9E%E5%8A%A0%E7%94%A8%E6%88%B7%E4%B8%8E%E9%85%8D%E7%BD%AE/</guid>
       <description>公司一直以来都有个共享盘的需求，之前使用的 windows server 做共享，但是用户的权限控制一直都做的很不理想，趁着这次服务器重置把共享搬到了 Linux 平台上，也摒除了</description>
     </item>
     
     <item>
       <title>Linux系统下PKPM与盈建科网络集团授权服务器Bit-Service的部署</title>
-      <link>http://notes.fooleng.com/post/2020-03-09-linux%E7%B3%BB%E7%BB%9F%E4%B8%8Bpkpm%E4%B8%8E%E7%9B%88%E5%BB%BA%E7%A7%91%E7%BD%91%E7%BB%9C%E9%9B%86%E5%9B%A2%E6%8E%88%E6%9D%83%E6%9C%8D%E5%8A%A1%E5%99%A8bit-service%E7%9A%84%E9%83%A8%E7%BD%B2/</link>
+      <link>http://notes.fooleng.com/post/public/2020-03-09-linux%E7%B3%BB%E7%BB%9F%E4%B8%8Bpkpm%E4%B8%8E%E7%9B%88%E5%BB%BA%E7%A7%91%E7%BD%91%E7%BB%9C%E9%9B%86%E5%9B%A2%E6%8E%88%E6%9D%83%E6%9C%8D%E5%8A%A1%E5%99%A8bit-service%E7%9A%84%E9%83%A8%E7%BD%B2/</link>
       <pubDate>Mon, 09 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://notes.fooleng.com/post/2020-03-09-linux%E7%B3%BB%E7%BB%9F%E4%B8%8Bpkpm%E4%B8%8E%E7%9B%88%E5%BB%BA%E7%A7%91%E7%BD%91%E7%BB%9C%E9%9B%86%E5%9B%A2%E6%8E%88%E6%9D%83%E6%9C%8D%E5%8A%A1%E5%99%A8bit-service%E7%9A%84%E9%83%A8%E7%BD%B2/</guid>
+      <guid>http://notes.fooleng.com/post/public/2020-03-09-linux%E7%B3%BB%E7%BB%9F%E4%B8%8Bpkpm%E4%B8%8E%E7%9B%88%E5%BB%BA%E7%A7%91%E7%BD%91%E7%BB%9C%E9%9B%86%E5%9B%A2%E6%8E%88%E6%9D%83%E6%9C%8D%E5%8A%A1%E5%99%A8bit-service%E7%9A%84%E9%83%A8%E7%BD%B2/</guid>
       <description>我们正常使用的 PKPM 和盈建科的集团授权服务器都是采用 windows 版本，PKPM的安装光盘中有一个专门的 Bit_Server 的文件夹就是用于部署集团授权服务器的，而盈建科是直</description>
     </item>
     
     <item>
       <title>OragenPi配置手册</title>
-      <link>http://notes.fooleng.com/post/2019-11-11-orange-pi-%E9%85%8D%E7%BD%AE%E6%89%8B%E5%86%8C/</link>
+      <link>http://notes.fooleng.com/post/public/2019-11-11-orange-pi-%E9%85%8D%E7%BD%AE%E6%89%8B%E5%86%8C/</link>
       <pubDate>Mon, 11 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://notes.fooleng.com/post/2019-11-11-orange-pi-%E9%85%8D%E7%BD%AE%E6%89%8B%E5%86%8C/</guid>
+      <guid>http://notes.fooleng.com/post/public/2019-11-11-orange-pi-%E9%85%8D%E7%BD%AE%E6%89%8B%E5%86%8C/</guid>
       <description>系统安装 Orange Pi可以安装的系统也算是相当的多了，可以直接上官网下载对应的版本即可，建议使用较新的版本，比如我的 Orange Pi ZERO 使用的系统是 Armbian Ubuntu bioni</description>
     </item>
     
     <item>
       <title>转移Wordpress</title>
-      <link>http://notes.fooleng.com/post/2019-10-27-%E8%BD%AC%E7%A7%BB-wordpress/</link>
+      <link>http://notes.fooleng.com/post/public/2019-10-27-%E8%BD%AC%E7%A7%BB-wordpress/</link>
       <pubDate>Sun, 27 Oct 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://notes.fooleng.com/post/2019-10-27-%E8%BD%AC%E7%A7%BB-wordpress/</guid>
+      <guid>http://notes.fooleng.com/post/public/2019-10-27-%E8%BD%AC%E7%A7%BB-wordpress/</guid>
       <description>网络上关于转移 wordpress 的文章已经不计其数，我这里只是做一个自己的记录。 网络环境 从一台已经配置好的机器将网站转移到一台新机器。接下来均称呼原网站所在</description>
     </item>
     
     <item>
       <title>VPS折腾日志</title>
-      <link>http://notes.fooleng.com/post/2018-12-01-vps%E6%8A%98%E8%85%BE%E6%97%A5%E5%BF%97/</link>
+      <link>http://notes.fooleng.com/post/public/2018-12-01-vps%E6%8A%98%E8%85%BE%E6%97%A5%E5%BF%97/</link>
       <pubDate>Sat, 01 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://notes.fooleng.com/post/2018-12-01-vps%E6%8A%98%E8%85%BE%E6%97%A5%E5%BF%97/</guid>
+      <guid>http://notes.fooleng.com/post/public/2018-12-01-vps%E6%8A%98%E8%85%BE%E6%97%A5%E5%BF%97/</guid>
       <description>本文记录了我对本网站所在的 vps 的配置和 wordpress 的安装记录。 vps的购买与对比 其实现在的vps与云服务商有一大堆，国内的最常用的就有阿里云、腾讯云、华</description>
     </item>
     

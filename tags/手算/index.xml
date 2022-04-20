@@ -9,28 +9,28 @@
     <lastBuildDate>Wed, 01 Jul 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://notes.fooleng.com/tags/%E6%89%8B%E7%AE%97/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>悬挑脚手架核算示例</title>
-      <link>http://notes.fooleng.com/post/2020-07-01-%E6%82%AC%E6%8C%91%E8%84%9A%E6%89%8B%E6%9E%B6%E6%A0%B8%E7%AE%97%E7%A4%BA%E4%BE%8B/</link>
+      <link>http://notes.fooleng.com/post/public/2020-07-01-%E6%82%AC%E6%8C%91%E8%84%9A%E6%89%8B%E6%9E%B6%E6%A0%B8%E7%AE%97%E7%A4%BA%E4%BE%8B/</link>
       <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://notes.fooleng.com/post/2020-07-01-%E6%82%AC%E6%8C%91%E8%84%9A%E6%89%8B%E6%9E%B6%E6%A0%B8%E7%AE%97%E7%A4%BA%E4%BE%8B/</guid>
+      <guid>http://notes.fooleng.com/post/public/2020-07-01-%E6%82%AC%E6%8C%91%E8%84%9A%E6%89%8B%E6%9E%B6%E6%A0%B8%E7%AE%97%E7%A4%BA%E4%BE%8B/</guid>
       <description>现场施工的时候经常容易遇到悬挑脚手架的核算，其实此类核算可以简单的用手算复核一下结构主体的梁上线荷载够不够，结构梁是否需要加强。因为脚手架本</description>
     </item>
     
     <item>
       <title>钢结构节点手算示例</title>
-      <link>http://notes.fooleng.com/post/2019-11-12-%E9%92%A2%E7%BB%93%E6%9E%84%E8%8A%82%E7%82%B9%E6%89%8B%E7%AE%97%E7%A4%BA%E4%BE%8B/</link>
+      <link>http://notes.fooleng.com/post/public/2019-11-12-%E9%92%A2%E7%BB%93%E6%9E%84%E8%8A%82%E7%82%B9%E6%89%8B%E7%AE%97%E7%A4%BA%E4%BE%8B/</link>
       <pubDate>Tue, 12 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://notes.fooleng.com/post/2019-11-12-%E9%92%A2%E7%BB%93%E6%9E%84%E8%8A%82%E7%82%B9%E6%89%8B%E7%AE%97%E7%A4%BA%E4%BE%8B/</guid>
+      <guid>http://notes.fooleng.com/post/public/2019-11-12-%E9%92%A2%E7%BB%93%E6%9E%84%E8%8A%82%E7%82%B9%E6%89%8B%E7%AE%97%E7%A4%BA%E4%BE%8B/</guid>
       <description>本文记录了常用的一些钢结构节点的手算示例，这些手算的示例可以在无法电算的时候采用手算结果，也可以对电算的结果进行复核使用。 环箍预应力拉索计算</description>
     </item>
     
     <item>
       <title>四边导荷的计算</title>
-      <link>http://notes.fooleng.com/post/2019-05-10-%E5%9B%9B%E8%BE%B9%E5%AF%BC%E8%8D%B7%E7%9A%84%E8%AE%A1%E7%AE%97/</link>
+      <link>http://notes.fooleng.com/post/public/2019-05-10-%E5%9B%9B%E8%BE%B9%E5%AF%BC%E8%8D%B7%E7%9A%84%E8%AE%A1%E7%AE%97/</link>
       <pubDate>Fri, 10 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://notes.fooleng.com/post/2019-05-10-%E5%9B%9B%E8%BE%B9%E5%AF%BC%E8%8D%B7%E7%9A%84%E8%AE%A1%E7%AE%97/</guid>
+      <guid>http://notes.fooleng.com/post/public/2019-05-10-%E5%9B%9B%E8%BE%B9%E5%AF%BC%E8%8D%B7%E7%9A%84%E8%AE%A1%E7%AE%97/</guid>
       <description>在使用计算软件（如盈建科、pkpm等）进行计算的时候我们往往直接输入了板面荷载而没有去考虑导荷的问题，本文对四边导荷的手算方式进行了一个简单</description>
     </item>
     

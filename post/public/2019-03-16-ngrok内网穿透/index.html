@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>ngrok内网穿透 - FOOLENG</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="Evan Yu" /><meta name="description" content="ngrok是一个可用于内网穿透的软件，在我们做网站调试或者需要访问内网的资源，而内网又没有外网IP的情况下具有非常好的效果。做内网穿透之前我" /><meta name="keywords" content="ngrok, 内网穿透, VPS" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.96.0 with theme even" />
+
+
+<link rel="canonical" href="http://notes.fooleng.com/post/public/2019-03-16-ngrok%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/sass/main.min.b5a744db6de49a86cadafb3b70f555ab443f83c307a483402259e94726b045ff.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/custom.css">
+
+
+<meta property="og:title" content="ngrok内网穿透" />
+<meta property="og:description" content="ngrok是一个可用于内网穿透的软件，在我们做网站调试或者需要访问内网的资源，而内网又没有外网IP的情况下具有非常好的效果。做内网穿透之前我" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://notes.fooleng.com/post/public/2019-03-16-ngrok%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2019-03-16T00:00:00+00:00" />
+<meta property="article:modified_time" content="2019-03-16T00:00:00+00:00" />
+
+<meta itemprop="name" content="ngrok内网穿透">
+<meta itemprop="description" content="ngrok是一个可用于内网穿透的软件，在我们做网站调试或者需要访问内网的资源，而内网又没有外网IP的情况下具有非常好的效果。做内网穿透之前我"><meta itemprop="datePublished" content="2019-03-16T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2019-03-16T00:00:00+00:00" />
+<meta itemprop="wordCount" content="1008">
+<meta itemprop="keywords" content="ngrok,内网穿透,VPS," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="ngrok内网穿透"/>
+<meta name="twitter:description" content="ngrok是一个可用于内网穿透的软件，在我们做网站调试或者需要访问内网的资源，而内网又没有外网IP的情况下具有非常好的效果。做内网穿透之前我"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">FOOLENG</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">主页</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">归档</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">分类</li>
+      </a><a href="/projects/">
+        <li class="mobile-menu-item">项目</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">关于我</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">FOOLENG</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">主页</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">归档</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">分类</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/projects/">项目</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">关于我</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">ngrok内网穿透</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2019-03-16 </span>
+        <div class="post-category">
+            <a href="/categories/software/"> Software </a>
+            <a href="/categories/linux/"> Linux </a>
+            </div>
+          <span class="more-meta"> 约 1008 字 </span>
+          <span class="more-meta"> 预计阅读 3 分钟 </span>
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#域名解析">域名解析</a></li>
+        <li><a href="#安装ngrok">安装ngrok</a>
+          <ul>
+            <li><a href="#安装依赖">安装依赖</a></li>
+            <li><a href="#下载源代码">下载源代码</a></li>
+            <li><a href="#生成自签名证书">生成自签名证书</a></li>
+            <li><a href="#替换证书">替换证书</a></li>
+            <li><a href="#编译服务器软件ngrokd">编译服务器软件ngrokd</a></li>
+            <li><a href="#编译各平台的客户端">编译各平台的客户端</a></li>
+            <li><a href="#安装服务端">安装服务端</a></li>
+            <li><a href="#下载编译好的客户端到本地电脑">下载编译好的客户端到本地电脑</a></li>
+          </ul>
+        </li>
+        <li><a href="#测试">测试</a>
+          <ul>
+            <li><a href="#服务端启动">服务端启动</a></li>
+            <li><a href="#本地客户端">本地客户端</a></li>
+          </ul>
+        </li>
+        <li><a href="#写入配置文件">写入配置文件</a>
+          <ul>
+            <li><a href="#服务器">服务器</a></li>
+            <li><a href="#本地">本地</a></li>
+            <li><a href="#启动方式">启动方式</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <p><img src="https://pic.fooleng.com/2019-03-01_ngrok.png" alt="">
+ngrok是一个可用于内网穿透的软件，在我们做网站调试或者需要访问内网的资源，而内网又没有外网IP的情况下具有非常好的效果。做内网穿透之前我们需要具备的条件如下：</p>
+<ul>
+<li>一台具有外网IP的服务器（vps、云服务器等）</li>
+<li>域名</li>
+</ul>
+<h2 id="域名解析">域名解析</h2>
+<p>建立两条A记录，把域名解析到vps上，用来关联ngrok服务。假设你的域名是example.com（<strong>文章接下来的部分均假设你的域名为example.com，请根据自己的域名做修改</strong>），那么建立ngrok.example.com和*.ngrok.example.com解析到vps服务器上。如下图所示：</p>
+<p><img src="https://pic.fooleng.com/2019-03-01_ngrok-jiexi-1024x147.png" alt=""></p>
+<h2 id="安装ngrok">安装ngrok</h2>
+<h3 id="安装依赖">安装依赖</h3>
+<p>git, go，编译环境等。。</p>
+<h3 id="下载源代码">下载源代码</h3>
+<pre><code class="language-bash">git clone https://github.com/inconshreveable/ngrok.git
+</code></pre>
+<h3 id="生成自签名证书">生成自签名证书</h3>
+<pre><code class="language-bash">cd ngrok
+domain=&quot;ngrok.example.com&quot;
+openssl genrsa -out rootCA.key 2048
+openssl req -x509 -new -nodes -key rootCA.key -subj &quot;/CN=$domain&quot; -days 5000 -out rootCA.pem
+openssl genrsa -out device.key 2048
+openssl req -new -key device.key -subj &quot;/CN=$domain&quot; -out device.csr
+openssl x509 -req -in device.csr -CA rootCA.pem -CAkey rootCA.key -CAcreateserial -out device.crt -days 500
+</code></pre>
+<h3 id="替换证书">替换证书</h3>
+<pre><code class="language-bash">
+\cp rootCA.pem assets/client/tls/ngrokroot.crt -f
+\cp device.crt assets/server/tls/snakeoil.crt  -f
+\cp device.key assets/server/tls/snakeoil.key -f
+</code></pre>
+<h3 id="编译服务器软件ngrokd">编译服务器软件ngrokd</h3>
+<pre><code class="language-bash">make release-server
+</code></pre>
+<p>生成的服务软件在bin/ngrokd</p>
+<h3 id="编译各平台的客户端">编译各平台的客户端</h3>
+<pre><code class="language-bash">export GOOS=&quot;windows&quot; GOARCH=&quot;amd64&quot; &amp;&amp; make release-client
+export GOOS=&quot;linux&quot; GOARCH=&quot;amd64&quot; &amp;&amp; make release-client
+export GOOS=&quot;linux&quot; GOARCH=&quot;arm&quot; &amp;&amp; make release-client
+</code></pre>
+<p>不同平台对应的参数如下：</p>
+<blockquote>
+<p>Linux 平台 32 位系统：GOOS=linux GOARCH=386
+Linux 平台 64 位系统：GOOS=linux GOARCH=amd64</p>
+</blockquote>
+<blockquote>
+<p>Windows 平台 32 位系统：GOOS=windows GOARCH=386
+Windows 平台 64 位系统：GOOS=windows GOARCH=amd64</p>
+</blockquote>
+<blockquote>
+<p>MAC 平台 32 位系统：GOOS=darwin GOARCH=386
+MAC 平台 64 位系统：GOOS=darwin GOARCH=amd64</p>
+</blockquote>
+<blockquote>
+<p>ARM 平台：GOOS=linux GOARCH=arm</p>
+</blockquote>
+<h3 id="安装服务端">安装服务端</h3>
+<p>复制ngrokd到/usr/local/bin/进行安装（go生成的客户端就是只有一个文件）</p>
+<h3 id="下载编译好的客户端到本地电脑">下载编译好的客户端到本地电脑</h3>
+<p>可以使用sftp下载。</p>
+<h2 id="测试">测试</h2>
+<h3 id="服务端启动">服务端启动</h3>
+<pre><code class="language-bash">/usr/local/bin/ngrokd -domain=ngrok.example.com -httpAddr=:6060 -httpsAddr=:6061 -tunnelAddr=:6062
+</code></pre>
+<p><strong>记得打开防火墙对应的端口</strong></p>
+<h3 id="本地客户端">本地客户端</h3>
+<h4 id="建立ngrokcfg配置文件">建立ngrok.cfg配置文件：</h4>
+<pre><code class="language-yml">server_addr: &quot;ngrok.example.com:6062&quot;
+trust_host_root_certs: false
+</code></pre>
+<h4 id="运行客户端暴露本地80端口">运行客户端，暴露本地80端口</h4>
+<pre><code class="language-bash">ngrok.exe -subdomain demo -config=ngrok.cfg 80
+</code></pre>
+<p>可以下载一个NGINX，然后在本地运行，用浏览器访问demo.ngrok.example.com:6060</p>
+<h2 id="写入配置文件">写入配置文件</h2>
+<p>刚才测试的时候使用的是命令行，而在我们使用的时候往往希望是以服务在运行。</p>
+<h3 id="服务器">服务器</h3>
+<p>使用systemd来启动与关闭服务，建立文件<code>/etc/systemd/system/ngrokd.service</code></p>
+<pre><code class="language-bash">[Unit]
+Description=Share local port(s) with ngrokd
+After=syslog.target network.target
+
+[Service]
+PrivateTmp=true
+Type=simple
+Restart=always
+RestartSec=1min
+StandardOutput=null
+StandardError=null
+ExecStart=/usr/local/bin/ngrokd -domain=ngrok.example.com -httpAddr=:6060 -httpsAddr=:6061 -tunnelAddr=:6062
+ExecStop=/usr/bin/killall ngrokd
+
+[Install]
+WantedBy=multi-user.target
+</code></pre>
+<p>还应当给<code>ngrok.service</code>文件增加可行性权限：</p>
+<pre><code class="language-bash">chmod +x ngrok.service
+</code></pre>
+<h3 id="本地">本地</h3>
+<h4 id="ngrokcfg多个映射端口同时启用">ngrok.cfg（多个映射端口同时启用）:</h4>
+<pre><code class="language-yml">server_addr: &quot;ngrok.example.com:6062&quot;
+trust_host_root_certs: false
+tunnels:
+    ss:
+        subdomain: &quot;ss&quot;
+        remote_port: 33333
+        proto:
+            tcp: 127.0.0.1:1081
+
+    ssh:
+        subdomain: &quot;ssh&quot;
+        remote_port: 5000
+        proto:
+            tcp: 127.0.0.1:22
+
+    # 内网穿透访问内网的网址
+    yjk:
+        subdomain: &quot;yjk&quot;
+        remote_port: 8273
+        proto:
+            tcp: 172.168.1.20:8273
+
+    demo:
+        subdomain: &quot;demo&quot;
+        proto:
+            http: 127.0.0.1:80
+
+    demo1:
+        subdomain: &quot;demo1&quot;
+        proto:
+            http: 127.0.0.1:8080
+</code></pre>
+<h3 id="启动方式">启动方式</h3>
+<pre><code class="language-batch">ngrok.exe -config=ngrok.cfg start ss ssh demo demo1
+</code></pre>
+
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">Evan Yu</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+        2019-03-16
+        
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/ngrok/">ngrok</a>
+          <a href="/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/">内网穿透</a>
+          <a href="/tags/vps/">VPS</a>
+          </div>
+      <nav class="post-nav">
+        <a class="prev" href="/post/public/2019-03-30-windows%E5%BC%80%E6%9C%BA%E5%90%AF%E5%8A%A8vmware%E7%9A%84%E8%99%9A%E6%8B%9F%E6%9C%BA/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">Windows开机启动vmware的虚拟机</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        <a class="next" href="/post/public/2019-02-16-windows-mklink%E5%91%BD%E4%BB%A4%E5%90%84%E7%A7%8D%E9%93%BE%E6%8E%A5%E6%96%87%E4%BB%B6/">
+            <span class="next-text nav-default">Windows mklink命令——各种链接文件</span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:evan75s@gmail.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://github.com/EvanYu" class="iconfont icon-github" title="github"></a>
+  <a href="http://notes.fooleng.com/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2018 - 
+    2022<span class="heart"><i class="iconfont icon-heart"></i></span><span>Evan Yu</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  <script src="/lib/highlight/highlight.pack.js?v=20171001"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.64437849d125a2d603b3e71d6de5225d641a32d17168a58106e0b61852079683.js"></script>
+  <script type="text/javascript">
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        }
+    };
+  </script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.5/es5/tex-mml-chtml.js" integrity="sha256-HGLuEfFcsUJGhvB8cQ8nr0gai9EucOOaIxFw7qxmd+w=" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

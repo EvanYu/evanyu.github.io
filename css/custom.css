@@ -31,3 +31,14 @@
     counter-reset: h5counter;
 }
 
+
+/* Add numbers to TOC */
+.post-toc-content ul {
+  counter-reset: section;
+  list-style-type: none;
+}
+
+.post-toc-content li::before{
+  counter-increment: section;
+  content: counters(section,".") " ";
+}

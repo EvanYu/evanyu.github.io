@@ -1,0 +1,2024 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>AutoCAD绘图环境配置手册 - FOOLENG</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="Evan Yu" /><meta name="description" content="我们使用AutoCAD的过程中一般不会仅仅使用纯粹的CAD，往往会使用很多的绘图插件，而寻找到优秀的绘图插件以及配置这些绘图插件是一件很繁琐" /><meta name="keywords" content="AutoCAD, 插件, 飞图, MSTEEL" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.96.0 with theme even" />
+
+
+<link rel="canonical" href="http://notes.fooleng.com/post/public/2018-12-23-autocad%E7%BB%98%E5%9B%BE%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%E6%89%8B%E5%86%8C/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/sass/main.min.b5a744db6de49a86cadafb3b70f555ab443f83c307a483402259e94726b045ff.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/custom.css">
+
+
+<meta property="og:title" content="AutoCAD绘图环境配置手册" />
+<meta property="og:description" content="我们使用AutoCAD的过程中一般不会仅仅使用纯粹的CAD，往往会使用很多的绘图插件，而寻找到优秀的绘图插件以及配置这些绘图插件是一件很繁琐" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://notes.fooleng.com/post/public/2018-12-23-autocad%E7%BB%98%E5%9B%BE%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%E6%89%8B%E5%86%8C/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2018-12-23T00:00:00+00:00" />
+<meta property="article:modified_time" content="2018-12-23T00:00:00+00:00" />
+
+<meta itemprop="name" content="AutoCAD绘图环境配置手册">
+<meta itemprop="description" content="我们使用AutoCAD的过程中一般不会仅仅使用纯粹的CAD，往往会使用很多的绘图插件，而寻找到优秀的绘图插件以及配置这些绘图插件是一件很繁琐"><meta itemprop="datePublished" content="2018-12-23T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2018-12-23T00:00:00+00:00" />
+<meta itemprop="wordCount" content="10420">
+<meta itemprop="keywords" content="AutoCAD,插件,飞图,MSTEEL," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="AutoCAD绘图环境配置手册"/>
+<meta name="twitter:description" content="我们使用AutoCAD的过程中一般不会仅仅使用纯粹的CAD，往往会使用很多的绘图插件，而寻找到优秀的绘图插件以及配置这些绘图插件是一件很繁琐"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">FOOLENG</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">主页</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">归档</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">分类</li>
+      </a><a href="/projects/">
+        <li class="mobile-menu-item">项目</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">关于我</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">FOOLENG</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">主页</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">归档</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">分类</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/projects/">项目</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">关于我</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">AutoCAD绘图环境配置手册</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2018-12-23 </span>
+        <div class="post-category">
+            <a href="/categories/autocad/"> AutoCAD </a>
+            </div>
+          <span class="more-meta"> 约 10420 字 </span>
+          <span class="more-meta"> 预计阅读 21 分钟 </span>
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#autocad的安装">AutoCAD的安装</a></li>
+        <li><a href="#其他主要软件的安装">其他主要软件的安装</a></li>
+        <li><a href="#其他cad插件的安装">其他CAD插件的安装</a>
+          <ul>
+            <li><a href="#msteel">Msteel</a></li>
+            <li><a href="#idwgtab">idwgtab</a></li>
+            <li><a href="#foolengineer简称fe">Foolengineer（简称FE）</a></li>
+            <li><a href="#飞图cad">飞图CAD</a></li>
+            <li><a href="#dwgedu">dwgedu</a></li>
+            <li><a href="#bplot">bplot</a></li>
+            <li><a href="#贱人工具箱">贱人工具箱</a></li>
+            <li><a href="#cad瘦身">cad瘦身</a></li>
+          </ul>
+        </li>
+        <li><a href="#cad与插件配置">CAD与插件配置</a>
+          <ul>
+            <li><a href="#注册表自动加载插件">注册表自动加载插件</a></li>
+            <li><a href="#acadlsp加载插件">acad.lsp加载插件</a></li>
+            <li><a href="#添加字体">添加字体</a></li>
+            <li><a href="#修改快捷键">修改快捷键</a></li>
+            <li><a href="#其他配置">其他配置</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <p>我们使用AutoCAD的过程中一般不会仅仅使用纯粹的CAD，往往会使用很多的绘图插件，而寻找到优秀的绘图插件以及配置这些绘图插件是一件很繁琐的事情，常常让人丢三落四，本文记录了本人在日常工作中使用的绘图插件，并记录下其安装过程与优秀的功能，以作备忘。（<em>注：本文记录了AutoCAD2007（x32）以及AutoCAD2012（X64）两个版本的CAD配置方式</em>），本文介绍的主要软件与插件有：<strong>探索者、盈建科、天正、天正插件、老虎板王、MSteel、idwgtab、FoolEngineer、飞图CAD、dwgedu、bplot、贱人工具箱、cad瘦身</strong>。</p>
+<h2 id="autocad的安装">AutoCAD的安装</h2>
+<p>关于AutoCAD的安装我就不赘述了，本人使用的系统是<strong>win7 x64</strong>，正常情况下安装AutoCAD2007的安装能够比较正常的进行，而AutoCAD2012安装的时候可能因为系统已经安装了较新的<em>NET Framework</em>而导致安装失败，可以卸载掉较新的<em>NET Framework</em>，手动安装<em>net framework 4.0</em>，等待安装上AutoCAD2012后再安装新版本的<em>net framework</em>。</p>
+<h2 id="其他主要软件的安装">其他主要软件的安装</h2>
+<p>正常使用过程中主要的几个软件是<strong>探索者、盈建科、天正、天正插件、板王</strong>，这几个软件可以按照顺序依次安装，稍后再讲这几个软件的配置，因为加载过程可以统一配置在一个文件中。</p>
+<h2 id="其他cad插件的安装">其他CAD插件的安装</h2>
+<p>我主要用到的其他CAD插件有如下一些（<strong>如果没有做特殊说明，我的插件均安装在D:\Green\AutoCAD\目录下</strong>）：</p>
+<h3 id="msteel">Msteel</h3>
+<p><img src="https://pic.fooleng.com/2018-12-01_msteel_demo.gif" alt=""></p>
+<h4 id="官网">官网</h4>
+<p><a href="http://www.msteel.ys168.com/">http://www.msteel.ys168.com/</a></p>
+<h4 id="主要功能">主要功能</h4>
+<p>Msteel是一个功能非常丰富的插件，包括一些常用的计算功能，具体我就不演示了，大家自己去体验一下吧，等有时间的时候我会把我常用的一些功能罗列在此处。</p>
+<h4 id="安装">安装</h4>
+<p>Msteel原来是一个纯绿色软件，后来可能因为很多的人都不知道如何去手动加载arx文件，所以作者改变成了一个安装包形式的发布，直接安装就可以了。但我还是喜欢绿色软件的安装方式，因为这样在更新的时候我可以保持我的设置不变，而仅仅去更新对应的arx文件就可以了。把这个软件绿色软件化也比较简单，用压缩软件（<em>如7zip、winrar之类的</em>）打开安装包，把其中的内容解压出来就可以了。</p>
+<h3 id="idwgtab">idwgtab</h3>
+<p><img src="https://pic.fooleng.com/2018-12-01_original_idwgtab.png" alt=""></p>
+<h4 id="官网-1">官网</h4>
+<p>这个软件在Autodesk的app里面就有，链接可以点<a href="https://apps.autodesk.com/ACD/en/Detail/Index?id=6897317942183966705&amp;appLang=en&amp;os=Win32_64">这里</a>。</p>
+<h4 id="主要功能-1">主要功能</h4>
+<p>idwgtab这是个韩国人做的标签页插件，探索者、天正等软件实际上都有标签页的功能，之所以会使用这个插件是因为这个插件显示的标签页更清晰，而且这个插件有个编辑文字的自动切换输入法的功能。这个软件的新版还有对比CAD图纸的功能，不过这些我基本上都没用了。</p>
+<h4 id="安装-1">安装</h4>
+<p>这个软件下载以后也是一个安装包，然而也可以通过与Msteel的方式将这个软件绿色化（同样我也将这个软件绿色化了）。</p>
+<h3 id="foolengineer简称fe">Foolengineer（简称FE）</h3>
+<p><img src="https://pic.fooleng.com/2018-12-01_foolengineer.png" alt="">
+在早些年的时候这个插件并不是免费的，到处找破解版还挺麻烦，不过后来作者把这个插件完全免费了，当然功能也没有再进一步的更新了，不管怎样还是感谢作者。这个作者的官网跟我的网站域名也很类似，缘分哪:D</p>
+<h4 id="官网-2">官网</h4>
+<p><a href="http://foole.net">foole.net</a>，不过最近不知道是不是官网有什么问题，好像上不去了。</p>
+<h4 id="主要功能-2">主要功能</h4>
+<p>这个插件我所用到的两个主要功能是显示钢筋面积和快速选择，其显示钢筋的功能我认为比板王和Msteel的都要清晰一些。另外这个插件的编号功能跟板王的几乎一模一样（不知道到底哪个模仿哪个，或者都是模仿了其他插件的），但是这个的编号系统比板王的有一个优势，可以任意定义前缀（<em>比如JKL这种编号</em>）。</p>
+<h4 id="安装-2">安装</h4>
+<p>这个插件的32位版本就只有对应32位CAD的arx文件，64位版本就只有对应64位版本CAD的arx文件。所以如果像我一样电脑上同时安装有cad2007和cad2012就需要同时安装FE的32位和64位版本，这个软件的绿色化只能是安装以后再把安装后的文件拷贝出来（<em>我这里也把这个软件绿色化了</em>）。</p>
+<h3 id="飞图cad">飞图CAD</h3>
+<p><img src="https://pic.fooleng.com/2018-12-01_ftcad_structure.gif" alt="">
+这是我最近才发现的一个CAD插件网站，这是个比较专业的团队，应该跟板王的作者有很大的关系。这个网站有很多不同专业的插件，我是结构专业的，所以我就只关注结构的插件了。飞图结构有一个免费版本，可以使用板王2013年之前的所有功能，这点还是要大大的为作者鼓掌。订阅的功能我看了一下价格一年是99，其实也不算贵，老虎板王虽然卖500永久不用再续费，但是功能也停滞都没有更新过。飞图结构至少说会更新，不过我点开飞图结构淘宝的链接看了一下，我觉得作者还是应该细致的改进一下，虽然主页上面写了持续改进功能、专享答疑、定制插件可以五折什么的。但是我如果想要购买订阅版我肯定是会想知道订阅版和非订阅版到对有什么区别，我都不知道我付费以后到底能够得到些什么更新的内容，既然有个网站了还得加QQ去问，太麻烦了。而且QQ的客服往往不是专业技术人员，有的东西不一定解释的很清楚，还不如把订阅版新增的功能做个列表，每个功能做个gif的演示来的直接的多（<strong>非推销，个人看法而已</strong>）。</p>
+<h4 id="官网-3">官网</h4>
+<p><a href="http://www.ftcad.com/">ftcad.com</a></p>
+<h4 id="主要功能-3">主要功能</h4>
+<p>跟板王几乎一致，前面也说了，非订阅版只是少了一些功能而已。我就不给板王写文档了，大家自行下载了去摸索一下吧。
+免费版飞图结构CAD无法使用的功能如下：</p>
+<ul>
+<li>板转图
+<ul>
+<li>转换到用户图</li>
+<li>钢筋按规格重编号</li>
+<li>板平法处理</li>
+<li>正筋国标平法</li>
+<li>负筋国标平法</li>
+</ul>
+</li>
+<li>板筋编辑（全部可用）</li>
+<li>板筋删除（全部可用）</li>
+<li>板筋绘制
+<ul>
+<li>自动绘板筋</li>
+</ul>
+</li>
+<li>板校核（全部可用）</li>
+<li>模板图
+<ul>
+<li>梁宽校对</li>
+</ul>
+</li>
+<li>梁
+<ul>
+<li>梁校对</li>
+</ul>
+</li>
+<li>柱
+<ul>
+<li>全楼柱绘制</li>
+<li>柱归并绘制</li>
+</ul>
+</li>
+<li>桩
+<ul>
+<li>自动布桩</li>
+</ul>
+</li>
+<li>墙一
+<ul>
+<li>合并边缘构件</li>
+<li>校核柱表</li>
+</ul>
+</li>
+<li>墙二（全部可用）</li>
+<li>计算书
+<ul>
+<li>图纸导入</li>
+<li>计算书归并</li>
+</ul>
+</li>
+<li>文字一
+<ul>
+<li>屏幕改字</li>
+</ul>
+</li>
+<li>文字二（全部可用）</li>
+<li>工具
+<ul>
+<li>飞图图库</li>
+<li>飞图批量布局</li>
+<li>快速选择</li>
+<li>板王计算器</li>
+<li>组合快捷键设置</li>
+<li>用户定制工具</li>
+</ul>
+</li>
+<li>图层
+<ul>
+<li>图层组合快捷键</li>
+</ul>
+</li>
+<li>组与块（全部可用）</li>
+</ul>
+<h4 id="安装-3">安装</h4>
+<p>我觉得这个绿色化是个很大的进步，结构工程师的软件往往经常这台电脑要用，那台电脑也要用，绿色化可以保证不同电脑之间的配置一致。只是对不知道怎么去加载的人有点麻烦，大家可以参考一下我这篇文章：<a href="https://fooleng.com/2018-12-01_23/autocad_autoload_app/">CAD自动加载插件的方式</a></p>
+<h3 id="dwgedu">dwgedu</h3>
+<p><img src="https://pic.fooleng.com/2018-12-01_dwgedu.png" alt="">
+我也不记得是从哪里下载来的插件了，这个插件的功能就是加载以后能够自动去除CAD教育版。</p>
+<h3 id="bplot">bplot</h3>
+<p><img src="https://pic.fooleng.com/2018-12-01_bplot.png" alt="">
+批量打印插件，最好配合pdf factory pro使用，加载后使用命令bplot即可打开。</p>
+<h3 id="贱人工具箱">贱人工具箱</h3>
+<p><img src="https://pic.fooleng.com/2018-12-01_%E8%B4%B1%E4%BA%BA%E5%B7%A5%E5%85%B7%E7%AE%B1.png" alt="">
+多工具的合集，加载后用y命令调出。我主要使用的功能是跟块、cad-&gt;txt、修改颜色等功能。</p>
+<h3 id="cad瘦身">cad瘦身</h3>
+<p><img src="https://pic.fooleng.com/2018-12-01_cad%E7%98%A6%E8%BA%AB.png" alt="">
+cad瘦身插件可以经过purge的dwg文件进行进一步的瘦身，只要加载这个插件即可完成瘦身。</p>
+<h2 id="cad与插件配置">CAD与插件配置</h2>
+<p>插件安装后就开始进行插件的配置，关于插件的配置还是再次声明我的系统基本配置：</p>
+<ul>
+<li>系统：win7 x64</li>
+<li>cad版本：cad2007(x32)+cad2012(x64)</li>
+<li>默认插件目录：*D:\Green\AutoCAD*</li>
+<li><a href="https://fooleng.com/2018-12-01_23/autocad_autoload_app/">CAD自动加载插件的方式</a></li>
+</ul>
+<p>配置的基本原则是能够使用注册表进行加载的则全部使用注册表进行加载（基本上所有的arx文件都可以使用注册表进行加载），而lsp、vlx等文件则通过AutoCAD安装目录下的acad.lsp文件进行加载。arx文件由于不同的CAD不能通用，所以对不同的CAD版本是要加载不同的arx文件的。关于arx文件版本号与CAD版本的对应关系可以看<a href="https://fooleng.com/2018-12-01_23/autocad_version_to_net_vs/">AutoCAD版本与.net、VS版本的对应关系</a></p>
+<p><strong>注册表加载插件</strong>：MSteel、idwgtab、dwgedu、飞图、Foolengineer、天正插件
+<strong>acad.lsp加载插件</strong>：bplot、贱人工具箱、cad瘦身</p>
+<h3 id="注册表自动加载插件">注册表自动加载插件</h3>
+<p>注册表加载的方式可以自己编辑一个注册表文件（<em>reg后缀的文件</em>），然后双击即可导入注册表。</p>
+<p>AutoCAD2012加载插件（<em>注：根据自身需要的插件和文件路径修改如下文件中LOADER的路径即可，不需要加载的项则把对应项删除即可</em>）：</p>
+<pre><code class="language-reg">Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Autodesk\AutoCAD\R18.2\ACAD-A001:804\Applications\Msteel]
+&quot;LOADCTRLS&quot;=dword:00000002
+&quot;LOADER&quot;=&quot;D:\\Green\\AutoCAD\\MSteel(64bit)\\MSteel2010.arx&quot;
+
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Autodesk\AutoCAD\R18.2\ACAD-A001:804\Applications\iDwgTab]
+&quot;LOADCTRLS&quot;=dword:00000002
+&quot;LOADER&quot;=&quot;D:\\Green\\AutoCAD\\iDwgTab\\iDwgTab2010x.arx&quot;
+&quot;DESCRIPTION&quot;=&quot;iDwgTab Command Module&quot;
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Autodesk\AutoCAD\R18.2\ACAD-A001:804\Applications\iDwgTab\Commands]
+&quot;DT_CFG&quot;=&quot;DT_CFG&quot;
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Autodesk\AutoCAD\R18.2\ACAD-A001:804\Applications\iDwgTab\Groups]
+&quot;IDWGTAB&quot;=&quot;IDWGTAB&quot;
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Autodesk\AutoCAD\R18.2\ACAD-A001:804\Applications\iDwgTab\Name]
+&quot;DT_ABOUT&quot;=&quot;DT_ABOUT&quot;
+
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Autodesk\AutoCAD\R18.2\ACAD-A001:804\Applications\dwgedu]
+&quot;LOADCTRLS&quot;=dword:00000002
+&quot;LOADER&quot;=&quot;D:\\Green\\AutoCAD\\dwgedu\\x64\\BladeR18_x64.arx&quot;
+
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Autodesk\AutoCAD\R18.2\ACAD-A001:804\Applications\ftcad]
+&quot;LOADCTRLS&quot;=dword:00000004
+&quot;LOADER&quot;=&quot;D:\\Green\\AutoCAD\\飞图结构AutoCAD2004-2014(win7win8 64位)\\Jgft10x.arx&quot;
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Autodesk\AutoCAD\R18.2\ACAD-A001:804\Applications\ftcad\Commands]
+&quot;FtQuit&quot;=&quot;_ftquit&quot;
+&quot;FtStart&quot;=&quot;_ftstart&quot;
+
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Autodesk\AutoCAD\R18.2\ACAD-A001:804\Applications\FEMenu]
+&quot;LOADCTRLS&quot;=dword:00000002
+&quot;LOADER&quot;=&quot;D:\\Green\\AutoCAD\\FoolEngineer\\x64\\sys18\\FEMenu.arx&quot;
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Autodesk\AutoCAD\R18.2\ACAD-A001:804\Applications\FERsbHelper]
+&quot;LOADCTRLS&quot;=dword:00000002
+&quot;LOADER&quot;=&quot;D:\\Green\\AutoCAD\\FoolEngineer\\x64\\sys18\\FERsbHelper.arx&quot;
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Autodesk\AutoCAD\R18.2\ACAD-A001:804\Applications\FEStCad]
+&quot;LOADCTRLS&quot;=dword:00000002
+&quot;LOADER&quot;=&quot;D:\\Green\\AutoCAD\\FoolEngineer\\x64\\sys18\\FEStCad.arx&quot;
+
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Autodesk\AutoCAD\R18.2\ACAD-A001:804\Applications\tch_kernal]
+&quot;LOADCTRLS&quot;=dword:00000002
+&quot;LOADER&quot;=&quot;D:\\Tangent\\T20-PlugInV4.0\\sys18x64\\tch_kernal.arx&quot;
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Autodesk\AutoCAD\R18.2\ACAD-A001:804\Applications\tch_PipeBase]
+&quot;LOADCTRLS&quot;=dword:00000002
+&quot;LOADER&quot;=&quot;D:\\Tangent\\T20-PlugInV4.0\\sys18x64\\tch_PipeBase.arx&quot;
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Autodesk\AutoCAD\R18.2\ACAD-A001:804\Applications\tch_pipewire]
+&quot;LOADCTRLS&quot;=dword:00000002
+&quot;LOADER&quot;=&quot;D:\\Tangent\\T20-PlugInV4.0\\sys18x64\\tch_pipewire.arx&quot;
+</code></pre>
+<p>AutoCAD2007加载插件reg文件：</p>
+<pre><code class="language-reg">Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Autodesk\AutoCAD\R17.0\ACAD-5001:804\Applications\Msteel]
+&quot;LOADCTRLS&quot;=dword:00000002
+&quot;LOADER&quot;=&quot;D:\\Green\\AutoCAD\\MSteel(64bit)\\MSteel2008.arx&quot;
+
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Autodesk\AutoCAD\R17.0\ACAD-5001:804\Applications\iDwgTab]
+&quot;LOADCTRLS&quot;=dword:00000002
+&quot;LOADER&quot;=&quot;D:\\Green\\AutoCAD\\iDwgTab\\iDwgTab2007.arx&quot;
+&quot;DESCRIPTION&quot;=&quot;iDwgTab Command Module&quot;
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Autodesk\AutoCAD\R17.0\ACAD-5001:804\Applications\iDwgTab\Commands]
+&quot;DT_CFG&quot;=&quot;DT_CFG&quot;
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Autodesk\AutoCAD\R17.0\ACAD-5001:804\Applications\iDwgTab\Groups]
+&quot;IDWGTAB&quot;=&quot;IDWGTAB&quot;
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Autodesk\AutoCAD\R17.0\ACAD-5001:804\Applications\iDwgTab\Name]
+&quot;DT_ABOUT&quot;=&quot;DT_ABOUT&quot;
+
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Autodesk\AutoCAD\R17.0\ACAD-5001:804\Applications\dwgedu]
+&quot;LOADCTRLS&quot;=dword:00000002
+&quot;LOADER&quot;=&quot;D:\\Green\\AutoCAD\\dwgedu\\win32\\BladeR17.arx&quot;
+
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Autodesk\AutoCAD\R17.0\ACAD-5001:804\Applications\ftcad]
+&quot;LOADCTRLS&quot;=dword:00000004
+&quot;LOADER&quot;=&quot;D:\\Green\\AutoCAD\\飞图结构AutoCAD2004-2014(win7win8 64位)\\Jgft08.arx&quot;
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Autodesk\AutoCAD\R17.0\ACAD-5001:804\Applications\ftcad\Commands]
+&quot;FtQuit&quot;=&quot;_ftquit&quot;
+&quot;FtStart&quot;=&quot;_ftstart&quot;
+
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Autodesk\AutoCAD\R17.0\ACAD-5001:804\Applications\FEMenu]
+&quot;LOADCTRLS&quot;=dword:00000002
+&quot;LOADER&quot;=&quot;D:\\Green\\AutoCAD\\FoolEngineer\\x32\\sys17\\FEMenu.arx&quot;
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Autodesk\AutoCAD\R17.0\ACAD-5001:804\Applications\FERsbHelper]
+&quot;LOADCTRLS&quot;=dword:00000002
+&quot;LOADER&quot;=&quot;D:\\Green\\AutoCAD\\FoolEngineer\\x32\\sys17\\FERsbHelper.arx&quot;
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Autodesk\AutoCAD\R17.0\ACAD-5001:804\Applications\FEStCad]
+&quot;LOADCTRLS&quot;=dword:00000002
+&quot;LOADER&quot;=&quot;D:\\Green\\AutoCAD\\FoolEngineer\\x32\\sys17\\FEStCad.arx&quot;
+
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Autodesk\AutoCAD\R17.0\ACAD-5001:804\Applications\tch_kernal]
+&quot;LOADCTRLS&quot;=dword:00000002
+&quot;LOADER&quot;=&quot;D:\\Tangent\\T20-PlugInV4.0\\sys17\\tch_kernal.arx&quot;
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Autodesk\AutoCAD\R17.0\ACAD-5001:804\Applications\tch_PipeBase]
+&quot;LOADCTRLS&quot;=dword:00000002
+&quot;LOADER&quot;=&quot;D:\\Tangent\\T20-PlugInV4.0\\sys17\\tch_PipeBase.arx&quot;
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Autodesk\AutoCAD\R17.0\ACAD-5001:804\Applications\tch_pipewire]
+&quot;LOADCTRLS&quot;=dword:00000002
+&quot;LOADER&quot;=&quot;D:\\Tangent\\T20-PlugInV4.0\\sys17\\tch_pipewire.arx&quot;
+</code></pre>
+<h3 id="acadlsp加载插件">acad.lsp加载插件</h3>
+<p>由于lsp、vlx插件是不用区分AutoCAD版本的，所以采用acad.lsp的加载方式更加方便，而且方便自己做定制函数。</p>
+<ol>
+<li>编辑<em>D:\Green\AutoCAD\EY.lsp</em>文件，写入如下内容（<em>同样应根据自身系统的情况进行修改</em>）：</li>
+</ol>
+<pre><code class="language-lisp">;; CAD瘦身
+(DEFUN C:CSS ()
+    (SETVAR &quot;CMDECHO&quot; 0)
+    (LOAD &quot;D:\\Green\\AutoCAD\\cad瘦身.VLX&quot;)
+    (SETVAR &quot;CMDECHO&quot; 1)
+    (PRINC))
+
+;; 自定义命令
+(princ &quot;\n加载EY自定义命令...\n&quot;)
+
+(load &quot;D:\\Green\\AutoCAD\\Bplot批量打印.VLX&quot;)
+(load &quot;D:\\Green\\AutoCAD\\贱人_5.8x64.VLX&quot;)
+(princ)
+</code></pre>
+<ol start="2">
+<li>在文件<em>D:\Program Files (x86)\AutoCAD 2007\Support\acad2007.lsp</em>或者<em>D:\Program Files\Autodesk\AutoCAD 2012 - Simplified Chinese\Support\acad2012.lsp</em>末尾添加如下内容：</li>
+</ol>
+<pre><code class="language-lisp">(load &quot;D:\\Green\\AutoCAD\\EY.lsp&quot;)
+(princ)
+</code></pre>
+<h3 id="添加字体">添加字体</h3>
+<p>将盈建科字体目录下的字体（<em>CHINA.SHX、gbcbig.shx、hztxt.shx、Tssdchn.shx、Tssdeng.shx、Tssdeng2.shx、txt.shx、yjkchn.shx、yjkeng.shx</em>）字体复制到AutoCAD安装文件夹下的Fonts目录下去。</p>
+<h3 id="修改快捷键">修改快捷键</h3>
+<p>我重命名过的快捷键分为如下几个部分，大家可以参考一下（不过文章上的快捷键我已经不会再更新，我的配置文件全部放在了个人git仓库里面，有兴趣的可以看看<a href="https://fooleng.com/2018-12-01_27/install_git_server/">在个人服务器上搭建GIT仓库</a>）：</p>
+<ul>
+<li>AutoCAD原版命令</li>
+<li>探索者命令</li>
+<li>MSteel和FE命令</li>
+<li>板王和飞图命令</li>
+</ul>
+<h4 id="autocad原版快捷命令">AutoCAD原版快捷命令</h4>
+<pre><code class="language-lisp">;;  AutoCAD 简化命令
+3A,            *3DARRAY
+3DO,           *3DORBIT
+3F,            *3DFACE
+3P,            *3DPOLY
+A,             *ARRAY
+ADC,           *ADCENTER
+AD,            *ID
+AE,            *AREA
+AL,            *ALIGN
+AP,            *APERTURE
+ATP,           *ATTDISP
+AT,            *DDATTE
+-AT,           *ATTEDIT
+ATT,           *DDATTDEF
+-ATT,          *ATTDEF
+AV,            *DSVIEWER
+B,             *BREAK
+BH,            *BHATCH
+BL,            *BMAKE
+-BL,           *BLOCK
+BO,            *BOUNDARY
+-BO,           *-BOUNDARY
+C,             *COPY
+CC,            *CHAMFER
+CH,            *DDCHPROP
+-CH,           *CHANGE
+CO,            *DDCOLOR
+CR,            *CIRCLE
+D,             *DIM
+DD,            *DDEDIT
+DDV,           *DDVPOINT
+DI,            *DIST
+DIV,           *DIVIDE
+DO,            *DONUT
+DST,           *DIMSTYLE
+DT,            *DTEXT
+DV,            *DVIEW
+DX,            *DDIM
+DXI,           *DXFIN
+DXO,           *DXFOUT
+E,             *ERASE
+EL,            *ELEV
+ELL,           *ELLIPSE
+EN,            *END
+EP,            *EXPLODE
+EX,            *EXTEND
+F,             *FILLET
+FF,            *FILL
+FI,            *FILTER
+G,             *GROUP
+GR,            *DDGRIPS
+-GR,           *GRID
+H,             *HIDE
+HE,            *HATCHEDIT
+HT,            *HATCH
+I,             *DDINSERT
+-I,            *INSERT
+IM,            *IMAGE
+-IM,           *-IMAGE
+1,             *LINE
+1A,            *LAYER
+-LA,           *-LAYER
+LE,            *LEADER
+LEN,           *LENGTHEN
+LI,            *LIST
+LS,            *LTSCALE
+LT,            *LINETYPE
+-LT,           *-LINETYPE
+LTS,           *LTSCALE
+M,             *MOVE
+MA,            *MATCHPROP
+ME,            *MEASURE
+MI,            *MIRROR
+ML,            *MLINE
+MO,            *DDMODIFY
+MN,            *MENU
+MS,            *MSPACE
+MT,            *MTEXT
+-MT,           *-MTEXT
+MV,            *MVIEW
+N,             *NEW
+O,             *OFFSET
+OP,            *OPEN
+OS,            *OSNAP
+-OS,           *-OSNAP
+P,             *PAN
+-P,            *-PAN
+PA,            *PASTESPEC
+PB,            *PICKBOX
+PE,            *PEDIT
+PG,            *POLYGON
+PGP,           *REINIT
+21,            *PLINE
+PN,            *PLAN
+PO,            *POINT
+POL,           *POLYGON
+PR,            *PREFERENCES
+PRE,           *PREVIEW
+PRINT,         *PLOT
+PS,            *PSPACE
+PT,            *PLOT
+PU,            *PURGE
+Q,             *QUIT
+R,             *REDRAW
+RA,            *REDRAWALL
+RD,            *REDO
+RE,            *RENAME
+-RE,           *RENAME
+REC,           *RECTANGLE
+REG,           *REGION
+REV,           *REVOLVE
+RG,            *REGEN
+RGA,           *REGENALL
+RM,            *DDRMODES
+RO,            *ROTATE
+RPR,           *RPREF
+RR,            *RENDER
+S,             *STRETCH
+SC,            *SCALE
+SCR,           *SCRIPT
+SD,            *SHADE
+SE,            *DDSELECT
+-SE,           *SELECT
+SET,           *SETVAR
+SL,            *SLICE
+SN,            *SNAP
+SO,            *SOLID
+SP,            *SPLFRAME
+SPL,           *SPLINE
+SPE,           *SPLINEDIT
+SS,            *QSAVE
+SSA,           *SAVEAS
+ST,            *STYLE
+SV,            *SAVE
+SU,            *SUBTRACT
+T,             *TRIM
+TA,            *TABLET
+TE,            *TEXT
+TH,            *THICKNESS
+TI,            *TILEMODE
+TO,            *TOOLBAR
+TOL,           *TOLERANCE
+TOR,           *TORUS
+TR,            *TRACE
+UC,            *DDUCS
+UCP,           *DDUCSP
+UN,            *DDUNITS
+-UN,           *UNITS
+UNI,           *UNION
+UI,            *UCSICON
+V,             *DDVPOINT
+-V,            *VPOINT
+VI,            *DDVIEW
+-VI,           *VIEW
+VS,            *VSLIDE
+W,             *WBLOCK
+WE,            *WEDGE
+X,             *EXPLODE
+XA,            *XATTACH
+XB,            *XBIND
+-XB,           *-XBIND
+XC,            *XCLIP
+X1,            *XLINE
+XR,            *XREF
+-XR,           *-XREF
+Z,             *ZOOM
+</code></pre>
+<h4 id="探索者快捷命令">探索者快捷命令</h4>
+<pre><code class="language-lisp">;;TSSD简化命令
+TS,            *TSSDSET
+HTK,           *HZHTK
+TZML,          *TZHML
+;;外部接口
+TCH,           *TZHJK
+GS,            *GSHJK
+ZBT,           *ZBPJT
+FBT,           *FBZBT
+ZLT,           *ZLPJT
+FLT,           *FBZLT
+ZZT,           *ZZPJT
+FZT,           *FBZZT
+ZJT,           *ZJCHT
+FJT,           *FBZJC
+;;轴网
+JZ,            *JXZHW
+HZ,            *YHZHW
+TZ,            *TJZHX
+DZ,            *DGZHX
+ZZX,           *ZHZHX
+SZ,            *SHCHZHX
+ZJ,            *ZHXJC
+XZ,            *XCHZHX
+BZ,            *ZHWBZH
+DB,            *DZHBH
+DDH,           *DZHDH
+ZBJ,           *ZHHBJ
+YX,            *ZHHYX
+ZWP,           *ZHHWP
+QWP,           *QXWP
+DH,            *DHKG
+ZBL,           *ZHWXBXSH
+;;柱子
+CFZ,           *CHFZH
+CYZ,           *CHYZH
+ZCC,           *ZHCHCBZH
+BZH,           *GZZH
+ZYW,           *ZHYWBZH
+ZJZ,           *ZHJZHBZH
+DZB,           *DZHBZH
+BJZ,           *ZHUBJ
+SZH,           *SHCHZHZ
+YZH,           *YDZH
+ZTS,           *ZHTSH
+ZKX,           *ZHKX
+CLX,           *ZHJXCHL
+ZFD,           *ZHYWFD
+ZXS,           *ZHXSHBH
+ZXB,           *ZHXBXSH
+ZJM,           *FHGJZH
+;;梁
+ZXL,           *ZHXBL
+Z1,            *HZHXL
+FZL,           *FZHLX
+LYW,           *LYWBZH
+LJZ,           *LJZHBZH
+LBL,           *LXBL
+CL,            *CSHXL
+GLK,           *GBLK
+LPY,           *LXPY
+XLX,           *LJXCHL
+LLJ,           *LJLX
+JDD,           *JDDD
+QCL,           *XCHLX
+LYD,           *LXYD
+XBL,           *LXXB
+LDM,           *LDMH
+LXS,           *LXSHBH
+LXB,           *LXBXSH
+;;剪力墙
+ZXQ,           *ZHXBQ
+ZQ,            *HZHXQ
+FZQ,           *FZHQX
+QJC,           *QXJC
+QHF,           *JCHF
+GQK,           *GBQK
+QPY,           *QXPY
+TCQ,           *QXTCH
+CQ,            *CSHXQ
+QYD,           *QXYD
+QXB,           *QXXB
+QXC,           *XCHQX
+QBZ,           *QXPMBZH
+QKD,           *QSHKD
+SDK,           *SHCHDK
+YDK,           *DKYD
+FZD,           *FZHDK
+DBK,           *DKBK
+DDK,           *DKDCBK
+DXS,           *XSHDK
+DYX,           *DMYX
+QFK,           *QDFK
+;;板
+SZB,           *BBSHZH
+BYZ,           *BYZHB
+HBD,           *HZHBD
+CZM,           *CHZHM
+FBH,           *FJBH
+BKD,           *LBKD
+;;基础
+HTJ,           *HZHTJ
+ZXX,           *ZHXXBJ
+BJC,           *CBDLZHJ
+JJC,           *CJCHJC
+CBJ,           *CBJDLZHJ
+BCT,           *CCHTBZH
+QXZ,           *QXBZH
+RYZ,           *RYBZH
+DZT,           *DZHCHT
+CZJ,           *CZHJB
+TJZ,           *ZHSHTJ
+SHZ,           *SHCHZH
+;;构件计算
+LXL,           *LXLJS
+JZL,           *JZLJS
+JXB,           *JXBJS
+CT,            *ZHJCHTJS
+MJ,            *YMJJS
+LJM,           *LJM
+QZ,            *QZHJM
+LTP,           *LTPM
+LTT,           *LTXT
+LTB,           *LTB
+BYT,           *BSHYT
+CTT,           *ZHJCHT
+ZZJ,           *ZHXZHJ
+BKZ,           *BKZHJ
+WLTJ,          *WLTJ
+YLTJ,          *YLTJ
+WJTJ,          *WJTJ
+WJZJ,          *WJZHJ
+DSJ,           *DLSHJ
+ZSJ,           *ZHXSHJ
+;;工具
+PKG,           *SCRMNU
+GJT,           *YHGJT
+;;钢筋
+SG,            *REINSET
+GJH,           *GJBZ
+BFW,           *GJBZHFW
+JBH,           *GJBH
+ZHJ,           *ZDZHJ
+RZ,            *RYZHJ
+FJ,            *ZDFJ
+RF,            *RYFJ
+DF,            *DKFJ
+HJ,            *TSHHRYJ
+DJ,            *HDGJ
+ZGJ,           *HZGJ
+GJW,           *HGJW
+XBJ,           *XBGJ
+YXG,           *YXGUJ
+GJ,            *GJ
+LJ,            *LJ
+SJ,            *SXGJ
+FDJ,           *FJDJ
+FQJ,           *FJGJ
+;;钢筋工具
+JYG,           *GJJYG
+JXG,           *GJJXG
+JZG,           *GJJZHG
+SWG,           *SHWG
+JTZ,           *FJTZH
+GFX,           *GGFX
+BDJ,           *GBGJDJ
+GJJ,           *XGLJWG
+GJK,           *GJKD
+YG,            *YGDD
+XG,            *XGDD
+PJD,           *PLNEA
+PJDX,          *PLNED
+PYJ,           *PYGJ
+DPY,           *DDPY
+LJJ,           *LJGJ
+JLT,           *GJLT
+SZJ,           *ZHJSHS
+SGJ,           *GJSHS
+CGJ,           *GJCHXB
+;;尺寸
+XXB,           *XXBZH
+DQB,           *DQBZH
+PYB,           *PXBZH
+BKH,           *LKQH
+BLZ,           *LQZHB
+ZDB,           *ZHDBZH
+BJD,           *JDBZH
+BHC,           *HCHBZH
+BBJ,           *BJBZH
+ZJB,           *ZHJBZH
+JDH,           *HJZHH
+BDK,           *BZHDK
+BHB,           *BZHHB
+D1CD,          *CHDCHL
+D1Q,           *KDQQ
+D1XC,          *XCHQQ
+D1WZ,          *WZHQQ
+CCPB,          *CCPB
+YSH,           *CHCYSHTH
+ZYD,           *WZYD
+ZJC,           *CHCJCH
+GCC,           *GCHCZH
+SJK,           *SHJCK
+BWZ,           *CHCBWZ
+ZFZ,           *WZFZH
+;;文字
+SZX,           *TEXTSET
+DSR,           *DHSHR
+DBJ,           *DHBJ
+THJ,           *TZHHJJ
+XFZ,           *XFZH
+SWZ,           *WZSHR
+BJ,            *TYBJ
+WZS,           *WZS
+CX,            *SHSHCHX
+ZWZ,           *MTOT
+ZPX,           *WZPX
+CK,            *CK
+TWZ,           *CHZHTH
+FY,            *ZHYWDZH
+TGJ,           *THGJZHJ
+QCZ,           *QCHWZ
+CCD,           *CHZCHD
+SCD,           *SHCHJCHK
+TSC,           *SHTSHCH
+;;文字工具
+HTH,           *FHTH
+LCZ,           *LJCHZ
+LWZ,           *LJWZ
+WZ2,           *QPWZ
+WZ1,           *SHPWZ
+CWZ,           *CHFZCH
+DWZ,           *WZDD
+SFZ,           *WZSF
+XWZ,           *WZQX
+WZZ,           *WZXZH
+ZDQ,           *WZDQ
+GDQ,           *XGDQFS
+GSB,           *GGSHB
+GXB,           *GGXB
+SHF,           *SHBHF
+XHF,           *XBHF
+TYZ,           *TYZG
+GZS,           *XGWZYS
+;;表格
+ZHB,           *ZHZBG
+DEX,           *READEXCEL
+BJB,           *BJBG
+GN,            *GNWZ
+XXH,           *XXH
+HKB,           *BHDZKB
+HZG,           *BHDZXG
+SLJ,           *SJLJ
+SLC,           *SJLCH
+QHZ,           *WZQHZH
+JQZ,           *WZJQZH
+JHZ,           *WZJHZH
+HZB,           *SHCHZHB
+;;钢结构详图
+HXG,           *XGHZH
+HLS,           *LSHHZH
+BHF,           *HFHZH
+;;常用符号
+CYF,           *CHYFH
+BJH,           *BHBJ
+PF,            *PFBZH
+TPF,           *PFTD
+YC,            *YCHBZH
+SY,            *SYFH
+LF,            *LJFH
+PD,            *PDX
+PP,            *PMPQ
+JP,            *PDFH
+BG,            *BGHZH
+BBG,           *BGBJ
+DC,            *DCHFH
+TM,            *TXMCH
+HMJ,           *MJHZH
+ZB,            *BZBD
+ZBZ,           *ZHBZH
+AR,            *HJT
+;;
+;;图层与显示
+SZC,           *LAYERSET
+ZC,            *ZDQC
+HBC,           *HBTC
+QTC,           *QLTC
+STC,           *TCSHCH
+XSC,           *XCXSH
+GBC,           *XCGB
+CTS,           *TCTS
+QYT,           *QYTS
+STY,           *SHTYC
+STX,           *XSHSHT
+CQZ,           *TCQZH
+CHZ,           *TCHZH
+BZQ,           *BZHQZH
+HTC,           *TCHHZH
+;;组与图块工具
+ZKG,           *ZKG
+JXZ,           *ZCHJ
+ZZK,           *ZZK
+HBZ,           *ZHB
+ZTJ,           *ZTJ
+YDZ,           *ZYD
+QST,           *ZYCH
+JSX,           *KJSHX
+JST,           *KJSHT
+SST,           *KSHSHT
+;;实体工具
+BBL,           *BBL
+GXK,           *GBXK
+XLJ,           *LJXD
+RYJ,           *RYJX
+LC,            *LXKB
+DJK,           *DJKB
+LXD,           *LXYDO
+XYD,           *XYD
+SDX,           *SHCHDX
+JD,            *JXDH
+XCX,           *XCHCHX
+XST,           *XCHSHT
+CJD,           *JDJC
+ZXH,           *XHZHH
+XHB,           *XHBPL
+BXS,           *XSHBH
+XSB,           *XBXSH
+;;其它工具
+PDP,           *TPDG
+KJ,            *TSCT
+SXT,           *SYSET
+GLC,           *TCGL
+GLT,           *STGL
+BJW,           *WDDB
+TDB,           *TXDB
+TC,            *TUCH
+DTX,           *TXZD
+DBT,           *TXDAB
+ZL,            *ZLJSS
+KZK,           *KZK
+JCT,           *TXJC
+QGT,           *TXQG
+SCT,           *TSWB
+JX,            *FJJX
+ZCZ,           *XREFBEG
+CZF,           *XREFBACK
+KCZ,           *DKCZHC
+GCZ,           *GBCZHC
+GCS,           *TCHGS
+TCL,           *JZHTCHCL
+TCG,           *TCHBJ
+TDS,           *QTDS
+TYH,           *TXYH
+TK,            *TKGL
+;;帮助
+TTX,           *RJYL
+
+
+;; ==============================
+;; 探索者未定义而自定义的CAD命令
+;; ------------------------------
+RCD,           *REVCLOUD
+C11,           *CLOSE
+1AC,           *LAYMCUR
+REE,           *REFEDIT
+RC1,           *REFCLOSE
+
+;; =====================================================
+;; 如下在探索者中为探索者命令（此处用可用的CAD命令替代）
+;; -----------------------------------------------------
+D11,           *DQBZH
+D12,           *XXBZH
+D13,           *JDBZH
+D14,           *HCHBZH
+</code></pre>
+<h4 id="msteel和fe快捷命令">Msteel和FE快捷命令</h4>
+<pre><code class="language-lisp">;; ==========================
+;; MSTEEL和FE命令
+;; --------------------------
+;; **************
+;; ** 层与显示 **
+;; **************
+;; 按层显示
+XX,            *MSTEEL_4
+;; 按层隐藏
+XD,            *MSTEEL_5
+;; 层锁住
+1XD,           *MSTEEL_6
+;; 层解锁
+1XX,           *MSTEEL_7
+;; 部分显示
+2XX,           *MSTEEL_2
+;; 部分隐藏
+2XD,           *MSTEEL_3
+;; 图块按类型显示
+3XX,           *MSTEEL_310
+;; 图块按类型隐藏
+3XD,           *MSTEEL_311
+;; 按颜色显示
+4XX,           *MSTEEL_8
+;; 按颜色隐藏
+4XD,           *MSTEEL_9
+;; 按类型显示
+5XX,           *MSTEEL_308
+;; 按类型隐藏
+5XD,           *MSTEEL_309
+;; 设置当前标注样式
+1D1,           *MSTEEL_110
+;; **************
+;; ** 字符工具 **
+;; **************
+;; 单独标高
+HE1,           *MSTEEL_27
+;; 连续标高
+HE2,           *MSTEEL_28
+;; 引出标注
+D15,           *MSTEEL_68
+;; 圆圈标注
+D16,           *MSTEEL_67
+;; 距离标注
+D17,           *MSTEEL_131
+;; 标注拆分
+D1CF,          *MSTEEL_184
+;; 标注合并
+D1HB,          *MSTEEL_185
+;; 新生成编号字符
+TEBH1,         *MSTEEL_157
+;; 对已有字符编号
+TEHB2,         *MSTEEL_170
+;; 增量复制
+Z1C,           *MSTEEL_251
+;; 数字按大小显隐
+TEXY,          *MSTEEL_108
+;; 字符排列
+TEDQ,          *MSTEEL_90
+;; 字符合并
+TEHB,          *MSTEEL_136
+;; 剖面符号
+11Q,           *MSTEEL_63
+;; 加下划线
+11,            *MSTEEL_97
+;; 字符对正方式
+TE1,           *MSTEEL_243
+;; 字符宽度比例
+TE3,           *MSTEEL_142
+;; 字符高度
+TE2,           *MSTEEL_145
+;; 批注
+2Z,            *MSTEEL_288
+;; 字符查找
+;TEF,		*MSTEEL_75
+;; 字符替换
+TEH,           *MSTEEL_14
+;; **************
+;; ** 通用绘图 **
+;; **************
+;; 绘外框
+1WW,           *MSTEEL_155
+;; 直线偏移
+1PY,           *MSTEEL_113
+;; 直线偏移（联动）
+2PY,           *MSTEEL_148
+;; 直线打断
+112,           *MSTEEL_115
+;; 直线联通
+121,           *MSTEEL_70
+;; 单线变双线
+1122,          *MSTEEL_130
+;; 双线变单线
+1221,          *MSTEEL_147
+;; 双线加宽
+12D,           *MSTEEL_167
+;; 单线转PLine线
+122,           *MSTEEL_101
+;; 设Pline线宽
+21W,           *MSTEEL_153
+;; 洞口标示
+HO,            *MSTEEL_285
+;; 去除直线出头段
+T1,            *MSTEEL_151
+;; 延伸直线
+E1,            *MSTEEL_152
+;; **************
+;; ** 结构绘图 **
+;; **************
+;; 圆管截断线
+1S1,           *MSTEEL_54
+;; 剖断线
+MSTEEL_53,           *MSTEEL_53
+;; 绘砼柱
+IC,            *MSTEEL_74
+;; 柱定位标注
+ZDD,           *MSTEEL_95
+;; 左手改筋
+V,             *MSTEEL_135
+;; 梁平法移位设置
+STD,           *MSTEEL_186
+;; 梁平法移位
+TD,            *MSTEEL_181
+;; 梁编号归并
+;BBH,		*MSTEEL_183
+;; 绘钢筋
+1GJ,           *MSTEEL_87
+;; 焊缝标注
+HF,            *MSTEEL_30
+;; 梁梁交线
+BBJ,           *MSTEEL_69
+;; 梁柱交线
+BZJ,           *MSTEEL_146
+;; **************
+;; **   其他   **
+;; **************
+;; 批打印
+MPRINT,        *MSTEEL_111
+;; 出图比例
+CTBL,          *MSTEEL_205
+;; 绘图比例
+HTBL,          *MSTEEL_218
+;; 加删括号
+TEA1,          *FETXTBRACKET
+</code></pre>
+<h4 id="板王和飞图cad快捷命令">板王和飞图CAD快捷命令</h4>
+<pre><code class="language-lisp">;; ==========================
+;; 板王和飞图快捷命令
+;; --------------------------
+
+;; 设置
+;;---------------------------------------
+;钢筋参数设置
+GJCSHSHZH,   *GJCSHSHZH
+;图层文字设置
+TCWZSHZH,   *TCWZSHZH
+;用户界面设置
+YHJMSHZH,   *YHJMSHZH
+;选配筋表设置
+XPJBSHZH,   *XPJBSHZH
+;参数编辑器
+CSBJQ,   *CSBJQ
+;设置备份与恢复
+SHZHBFYHF,   *SHZHBFYHF
+;显示/隐藏工具栏
+XSHYCGJL,   *XSHYCGJL
+
+;; 板转图
+;;---------------------------------------
+;直接转换
+ZZT,   *ZZT
+;读原图数据
+DYTSHJ,   *DYTSHJ
+;转换到用户图
+ZHHDYHT,   *ZHHDYHT
+;位置调整
+TZ,   *TZ
+;对齐钢筋
+DQGJ,   *DQGJ
+;标筋范围
+BJFW,   *BJFW
+;负筋不按实长绘
+FJBASHCHH,   *FJBASHCHH
+;删两点间重复负筋
+SLDJCFFJ,   *SLDJCFFJ
+;板底筋不绘用编号
+BDJBHYBH,   *BDJBHYBH
+;板底筋自动拉通
+BDJZDLT,   *BDJZDLT
+;钢筋按规格重编号
+GJAGGCHBH,   *GJAGGCHBH
+;负筋按规格长度编号
+FJACHDGGBH,   *FJACHDGGBH
+;板平法处理
+BPFCHL,   *BPFCHL
+;正筋国标平法
+ZHJGBPF,   *ZHJGBPF
+;负筋国标平法
+FJGBPF,   *FJGBPF
+
+;; 板筋编辑
+;;---------------------------------------
+;识别任意板
+SBRYB,   *SBRYB
+;拉通钢筋
+LTGJ,   *LTGJ
+;断开钢筋
+DKGJ,   *DKGJ
+;设板下沉
+SHBXCH,   *SHBXCH
+;拉伸钢筋
+LSHGJ,   *LSHGJ
+;间隔拉通
+JGLT,   *JGLT
+;负筋只标一侧
+FJZHBYC,   *FJZHBYC
+;改板配筋
+GBPJ,   *GBPJ
+;批量改配筋
+PLGPJ,   *PLGPJ
+;归并钢筋规格
+GBGJGG,   *GBGJGG
+;修改钢筋钩子
+XGGJGZ,   *XGGJGZ
+;修改负筋标注形式
+XGFJBZXS,   *XGFJBZXS
+;负筋长取整
+FJCHQZH,   *FJCHQZH
+;修改负筋长度
+XGFJCHD,   *XGFJCHD
+;归并负筋长度
+GBFJCHD,   *GBFJCHD
+;负筋左右长取齐
+FJZYCHQZH,   *FJZYCHQZH
+;校核负筋长度
+JHFJCHD,   *JHFJCHD
+;双层双向
+SHCSHX,   *SHCSHX
+;板筋放缩
+BJFS,   *BJFS
+;镜像板筋
+JXBJ,   *JXBJ
+
+
+;; 板筋删除
+;;---------------------------------------
+;删所有板钢筋
+SHSYBGJ,   *SHSYBGJ
+;删正(板底)筋
+SHZHBDJ,   *SHZHBDJ
+;删负(支座)筋
+SHFZHZJ,   *SHFZHZJ
+;删配筋相同底筋
+SHPJXTDJ,   *SHPJXTDJ
+;删双向相同底筋
+SHSHXXTDJ,   *SHSHXXTDJ
+;删配筋相同钢筋
+SHPJXTGJ,   *SHPJXTGJ
+;删相同规格文字
+SHXTGGWZ,   *SHXTGGWZ
+;删板内所有钢筋
+SHBNSYGJ,   *SHBNSYGJ
+;删同号所有钢筋
+SHTHSYGJ,   *SHTHSYGJ
+;查看编号
+CHKBH,   *CHKBH
+;修改编号
+XGBH,   *XGBH
+;重排编号
+CHPBH,   *CHPBH
+;删除编号
+SHCHBH,   *SHCHBH
+;规格应用到同编号
+GGYYDTBH,   *GGYYDTBH
+;长度应用到同编号
+CHDYYDTBH,   *CHDYYDTBH
+
+
+;; 板筋绘制
+;;---------------------------------------
+;识别用户模板
+SHBYHMB,   *SHBYHMB
+;自动绘板筋
+ZDHBJ,   *ZDHBJ
+;手动板底筋
+SHDZHJ,   *SHDZHJ
+;手动支座筋
+SHDFJ,   *SHDFJ
+;任意板底筋
+RYBDJ,   *RYBDJ
+;任意支座筋
+RYZHZJ,   *RYZHZJ
+;板底加钢筋
+BDJGJ,   *BDJGJ
+;绘任意钢筋
+HRYGJ,   *HRYGJ
+;删钢筋钩子
+SHGJGZ,   *SHGJGZ
+;加圆钩
+JYG,   *JYG
+;加斜钩
+JXG,   *JXG
+;加直钩
+JZHG,   *JZHG
+
+
+;; 板校核
+;;---------------------------------------
+;读取板计算配筋图数据
+DQBJSPJTSHJ,   *DQBJSPJTSHJ
+;校核板筋面积
+JHBJMJ,   *JHBJMJ
+;结束校核板筋面积
+JSHJHBJMJ,   *JSHJHBJMJ
+;校核负筋长度
+JHFJCH,   *JHFJCH
+;修正负筋长度
+XZFJC,   *XZFJC
+;显示板筋信息
+XSHBJXX,   *XSHBJXX
+;结束校核负筋长
+JSHJHFJCH,   *JSHJHFJCH
+;显示房间跨度
+XSHFJKD,   *XSHFJKD
+
+
+
+;; 模板图
+;;---------------------------------------
+;梁宽校对
+LKJD,   *LKJD
+;线消重连接
+XXCHLJ,   *XXCHLJ
+;虚线实线转换
+xs,   *XXSHXZHH
+;选层封闭
+XCFB,   *XCFB
+;选层连接
+XCLJ,   *XCLJ
+;选层剪裁
+XCJC,   *XCJC
+;双向偏移
+SXPY,   *SXPY
+;梁墙柱交线处理
+LQZHJXCHL,   *LQZHJXCHL
+;粗线转墙
+CXZQ,   *CXZQ
+;PKPM墙柱转多段线
+PKPMQZZDDX,   *PKPMQZZDDX
+;墙梁生中线
+QLSZX,   *QLSZX
+;偏心梁定位
+DWLX,   *DWLX
+;生成模板图
+SHCHMBT,   *SHCHMBT
+;楼板开洞
+LBKD,   *LBKD
+
+
+;; 梁
+;;---------------------------------------
+;梁平法设置
+LPFSHZH,   *LPFSHZH
+;梁直接转换
+LZHJZHH,   *LZHJZHH
+;绘集中标注
+HJZHBZH,   *HJZHBZH
+;平法图层指定
+LPFTDSHZH,   *LPFTDSHZH
+;分层分图
+FCFT,   *FCFT
+;平法拖动
+1td,   *LPFTD
+;平法镜像
+LPFJX,   *LPFJX
+;修改样式
+XGYSH,   *XGYSH
+;改平法层
+GPFC,   *GPFC
+;删箍筋腰筋
+SHGJYJ,   *SHGJYJ
+;平法对齐
+PFDQ,   *PFDQ
+;简繁互换
+JFHH,   *JFHH
+;截面文字合分
+JMWZHF,   *JMWZHF
+;批量加点
+PLJD,   *PLJD
+;批改首行
+PGSHH,   *PGSHH
+;配筋互换
+PJHH,   *PJHH
+;计算配筋面积
+JSPJMJ,   *JSPJMJ
+;编号系统
+bbh,   *BHXT
+;纵筋配筋
+ZJPJ,   *ZJPJ
+;选配筋表
+XPJB,   *XPJB
+;选配筋表开关
+XPJBKG,   *XPJBKG
+;显筋改筋开关
+XJGJ,   *XJGJ
+;梁校对
+LJD,   *LJD
+
+
+
+;; 柱
+;;---------------------------------------
+;全楼柱绘制
+QLZHZ,   *QLZHZ
+;柱归并绘制
+ZHGBHZH,   *ZHGBHZH
+;柱定位标注
+zdw,   *ZHDWBZH
+;柱表重排
+ZHBCHP,   *ZHBCHP
+;柱编号
+ZHBH,   *ZHBH
+;编号编辑
+BHBJ,   *BHBJ
+;广厦柱转图
+GSHZHZHJZHH,   *GSHZHZHJZHH
+;柱图表达变换
+ZHTBDZHH,   *ZHTBDZHH
+;绘方柱截面
+HFZHJM,   *HFZHJM
+
+
+;; 桩
+;;---------------------------------------
+;桩定位标注
+zdd,   *ZHADWBZH
+;无承台桩定位
+WCHTZHDW,   *WCHTZHDW
+;形心对齐标注
+XXDQBZH,   *XXDQBZH
+;桩编号
+ZHUANGBH,   *ZHUANGBH
+;过滤柱底内力
+GLZHDNL,   *GLZHDNL
+;自动布桩
+ZDBZH,   *ZDBZH
+;桩数统计
+ZHSHTJ,   *ZHSHTJ
+;求合力形心
+QHLXX,   *QHLXX
+;抗浮计算
+KFJS,   *KFJS
+;筏板配筋过滤
+FBPJGL,   *FBPJGL
+;承台内变虚线
+CTNBXX,   *CTNBXX
+;基础放坡线
+JCFPX,   *JCFPX
+
+
+;; 墙一
+;;---------------------------------------
+;墙柱设置
+QZHSHZH,   *QZHSHZH
+;生成边缘构件
+SCBYGJ,   *SCBYGJ
+;边缘构件
+BYGJ,   *BYGJ
+;画柱表
+HZHB,   *HZHB
+;任意墙柱
+R1Z,   *RYQZH
+;填写柱表
+TXZB,   *TXZB
+;校核柱表
+1ZB,   *JHZB
+;箍筋放样
+1FY,   *GJFY
+;墙柱编号拖动
+QZBHTD,   *QZBHTD
+;墙柱定位标注
+qdw,   *QZDWBZ
+;指定内外箍
+ZDNWG,   *ZDNWG
+;画点筋
+HDJ,   *HDJ
+;画拉筋
+HLJ,   *HLJ
+;点选画拉筋
+DXHLJ,   *DXHLJ
+;画S形拉筋
+HSXLJ,   *HSXLJ
+;画箍筋
+HGJ,   *HGJ
+;点选画箍筋
+DXHGJ,   *DXHGJ
+
+
+;; 墙二
+;;---------------------------------------
+;角筋标注互换
+JJBZHHH,   *JJBZHHH
+;空心标注互换
+KXBZHHH,   *KXBZHHH
+;实心标注互换
+SHXBZHHH,   *SHXBZHHH
+;外箍标注互换
+WGBZHHH,   *WGBZHHH
+;内箍标注互换
+NGBZHHH,   *NGBZHHH
+;放大n倍
+FDNB,   *FDNB
+;缩小n倍
+SXNB,   *SXNB
+;表格居中
+BGJZH,   *BGJZH
+;墙剖断线
+QPDX,   *QPDX
+;画单剖断线
+1Z1,   *HDPDX
+;画双剖断线
+2Z2,   *HSHPDX
+;统计点筋
+TJDJ,   *TJDJ
+;点筋空心实心
+DJKXSHX,   *DJKXSHX
+;暗柱长度
+AZCD,   *AZCD
+;转角柱长度
+ZJZCD,   *ZJZCD
+;单根配筋面积
+DGPJMJ,   *DGPJMJ
+
+
+
+;; 计算书
+;;---------------------------------------
+;计算书导入管理
+JSSHDRGL,   *JSSHDRGL
+;计算书更新
+JSSHGX,   *JSSHGX
+;计算书比较
+JSSHBJ,   *JSSHBJ
+;计算书比较并更新
+JSSBJBGX,   *JSSBJBGX
+;计算书归并
+JSSGUIBIN,   *JSSGUIBIN
+;计算书镜像
+JSSJX,   *JSSJX
+;计算书关闭
+JSSGB,   *JSSGB
+;计算书显示
+JSSXS,   *JSSXS
+;计算书列表
+JSSLB,   *JSSLB
+;梁配筋简图互换
+LPJJTHH,   *LPJJTHH
+;过滤梁配筋率
+GLLPJL,   *GLLPJL
+;过滤墙配箍率
+GLQPGL,   *GLQPGL
+
+
+
+;; 文字一
+;;---------------------------------------
+;写附注
+XIFZH,   *XIFZH
+;写文字说明
+XWZSHM,   *XWZSHM
+;文字输入
+WEZSHR,   *WEZSHR
+;快速输入钢筋
+KSSHRGJ,   *KSSHRGJ
+;文本内容刷
+WBNRSH,   *WBNRSH
+;改字对正
+GZDZH,   *GZDZH
+;文字对齐到线
+WZDQDX,   *WZDQDX
+;对齐文字
+DQWZ,   *DQWZ
+;原位旋转
+YWXZH,   *YWXZH
+;调行间距
+THJJ,   *THJJ
+;文字加框
+WZJK,   *WZJK
+;文字加下划线
+WZJXHX,   *WZJXHX
+;文字删下划线
+WZSHXHX,   *WZSHXHX
+;标注变文字
+BZHBWZ,   *BZHBWZ
+;连续标文字
+LXBWZ,   *LXBWZ
+;绘标高符号
+HBGFH,   *HBGFH
+;文字拆分
+WEZCHF,   *WEZCHF
+;文字合并
+WZHB,   *WZHB
+;断开文字
+DUKWZ,   *DUKWZ
+;屏幕改字
+gz,   *PMGZ
+;文字互换
+WZHH,   *WZHH
+;图名传递
+TMCHD,   *TMCHD
+;符号替换
+FHTH,   *FHTH
+;文字消重
+WZXC,   *WZXC
+
+
+;; 文字二
+;;---------------------------------------
+;查找文字
+CHZHWZ,   *CHZHWZ
+;加前后缀
+JQHZH,   *JQHZH
+;文字压线
+WZYX,   *WZYX
+;加减乘除
+JJCHCH,   *JJCHCH
+;文字求和
+WZQH,   *WZQH
+;面积求和
+MJQH,   *MJQH
+;求平均值
+QPJZ,   *QPJZ
+;文字过滤删除
+GLSHCH,   *GLSHCH
+;文字归并
+WZGB,   *WZGB
+;批改标高
+PGBG,   *PGBG
+;通长筋变换
+TCHJBH,   *TCHJBH
+;过滤墙水平筋
+GLQSHPJ,   *GLQSHPJ
+;钢筋互换分排
+GJHHFP,   *GJHHFP
+;两排钢筋变一排
+LPGJBYP,   *LPGJBYP
+;新编码换旧
+XBMHJ,   *XBMHJ
+
+
+;; 工具
+;;---------------------------------------
+;实体隐藏
+BWSHTYC,   *BWSHTYC
+;实体显示
+BWSHTXSH,   *BWSHTXSH
+;图纸目录
+TZHML,   *TZHML
+;图纸比较
+TZHBJ,   *TZHBJ
+;删除填充
+SCTC,   *SCTC
+;填充变独立
+TCBDL,   *TCBDL
+;显多线宽
+XDXK,   *XDXK
+;单点打断
+DDDZ,   *DDDZ
+;编辑后变色
+BJHBS,   *BJHBS
+;逐点标注
+d1,   *BWZHDBZH
+;增补尺寸
+d2,   *ZBCHC
+;标注复位
+BZFW,   *BZFW
+;批量标注圆
+PLBZY,   *PLBZY
+;平面视图助手
+PMSTZS,   *PMSTZS
+;批量打印
+BWPLDY,   *BWPLDY
+;快速选择
+KSXZ,   *KSXZ
+;板王计算器
+BWJSQ,   *BWJSQ
+;批量运行脚本
+PLYXJB,   *PLYXJB
+;组合快捷键设置
+ZHKJJSZ,   *ZHKJJSZ
+;用户定制工具
+YHDZHGJ,   *YHDZHGJ
+
+
+;; 其他
+;;---------------------------------------
+;挖孔桩编号
+WKZHBH,   *WKZHBH
+;增大柱角筋
+ZDZJJ,   *ZDZJJ
+;柱截面建议
+ZJMJY,   *ZJMJY
+;椭圆变圆
+TYBY,   *TYBY
+;改为纯文字
+GWCWZ,   *GWCWZ
+;板镜像
+BJX,   *BJX
+;Z轴归零
+ZZGL,   *ZZGL
+;规整标注
+GZBZ,   *GZBZ
+;圆转多段线
+YZDDX,   *YZDDX
+;块覆盖块
+KFGK,   *KFGK
+;多段线转圆
+DDXZY,   *DDXZY
+;过滤柱底内力结果
+GLZDNLJG,   *GLZDNLJG
+;板筋翻转
+BJFZ,   *BJFZ
+;检查基础截面
+JCJCJM,   *JCJCJM
+;钢筋原位翻转
+GJYWFZ,   *GJYWFZ
+;角筋中筋
+JJZJ,   *JJZJ
+;序号重排
+XHCP,   *XHCP
+;翻转尺寸
+FZCC,   *FZCC
+;属性变文字
+SXBWZ,   *SXBWZ
+;板筋按规格编号
+BJAGGBH,   *BJAGGBH
+;圆公切线
+YGQX,   *YGQX
+;检查标注
+JCBZ,   *JCBZ
+;圆柱对中
+YZDZ,   *YZDZ
+;文字加括号
+WZJKH,   *WZJKH
+;文字去括号
+WZQKH,   *WZQKH
+;截面互换
+JMHH,   *JMHH
+;调整直线
+TZZX,   *TZZX
+;改随层色
+GSCS,   *GSCS
+;空心楼盖改字
+KXLGGZ,   *KXLGGZ
+
+
+;; 图层
+;;---------------------------------------
+;关闭图层
+BWGBTC,   *BWGBTC
+;关闭其他
+BWGBQT,   *BWGBQT
+;冻结图层
+BWDJTC,   *BWDJTC
+;冻结其他
+BWDJQT,   *BWDJQT
+;锁定图层
+BWSDTC,   *BWSDTC
+;锁定其他
+BWSDQT,   *BWSDQT
+;解锁图层
+BWJSTC,   *BWJSTC
+;设为当前层
+SWDQC,   *SWDQC
+;保留当前层
+BLDQC,   *BLDQC
+;打开解冻所有
+BWDKJDSY,   *BWDKJDSY
+;图层加前缀
+TCJQZH,   *TCJQZH
+;图层改名
+TCGM,   *TCGM
+;图层删除
+TCSHCH,   *TCSHCH
+;绘制到指定层开关
+HZHDZDCKG,   *HZHDZDCKG
+;图层组合快捷键
+TCZHKJJ,   *TCZHKJJ
+;层状态管理
+CZTGL,   *CZTGL
+;打开所有层
+DKSY,   *DKSY
+
+
+;; 组与块
+;;---------------------------------------
+;组开关切换
+ZKGQH,   *ZKGQH
+;实体成组
+SHTCHZ,   *SHTCHZ
+;去组定义
+QZDY,   *QZDY
+;组添实体
+ZTSHT,   *ZTSHT
+;组移实体
+ZYSHT,   *ZYSHT
+;快速做块
+b1,   *KSZK
+;块添实体
+b1a,   *KTSHT
+;块删实体
+b1d,   *KSHSHT
+;统计图块
+BWTJTK,   *BWTJTK
+;图块改名
+br1,   *BWTKGM
+;图块变组
+BWTKBZ,   *BWTKBZ
+
+
+;; 平面助手
+;;---------------------------------------
+;创建平面组
+BGK,   *BGK
+;删除平面组
+BGD,   *BGD
+;创建平面
+BK,   *BK
+;管理平面
+BM,   *BM
+;多平面复制
+BC,   *BC
+;多平面删除
+BD,   *BD
+;多平面替换
+BR,   *BR
+;多平面编辑开始
+BS,   *BS
+;多平面编辑结束
+BE,   *BE
+;多平面巡视
+BVV,   *BVV
+;平面返回
+BB,   *BB
+;平面刷新
+BRE,   *BRE
+;平面切换
+BV,   *BV
+;多平面智能巡视
+BVS,   *BVS
+;创建镜像平面
+BKM,   *BKM
+;创建旋转平面
+BKR,   *BKR
+;平面缩放
+BZE,   *BZE
+;平面定位
+BDW,   *BDW
+;平面助手设置
+BSZ,   *BSZ
+;添加平面备注
+BBZ,   *BBZ
+;平面比较
+BPC,   *BPC
+;同步模板图
+BPS,   *BPS
+;平面组切换
+BPJ,   *BPJ
+;切换至下一个平面组
+BPJN,   *BPJN
+;关闭平面视图助手
+BPQ,   *BPQ
+</code></pre>
+<h3 id="其他配置">其他配置</h3>
+<h4 id="老虎板王计算书图层修改设置">老虎板王计算书图层修改设置</h4>
+<p>老虎板王需要修改计算书的图层才能够正确识别导入盈建科的计算书，设置-&gt;参数编辑器-&gt;PKPM计算书参数管理:</p>
+<pre><code class="language-txt">梁结果图层：
+Pkpm_层10052,Pkpm_层3,Pkpm_层117,Pkpm_层115,Pkpm_层116,Pkpm_层15220,Pkpm_层15200,Pkpm_层15100,Pkpm_层10,层10052,层3,层117,层115,层116,层15220,层15200,层15100,10052,3,117,115,116,15220,15200,15100,Satwe 原始梁配筋-X,Satwe 原始梁配筋-Y,Pkpm_层11000,Pkpm_层21000,Pkpm_层27000,Pkpm_层7,Pkpm_层14,Pkpm_层15,Pkpm_层10,Pkpm_层1111,层11000,层21000,层27000,层7,层14,层15,层10,层1111,11000,21000,27000,7,14,15,10,1111,梁配筋,混凝土_yjk,SPRE_SPECBE_TF_yjk,dsptext_beam_yjk,dsp3d_beam_yjk,边构_yjk,边构_虚线_yjk,边构标注_yjk,12_yjk,13_yjk,砼梁_yjk,SPRE_SPECBE_LIAN_yjk,混凝土梁,SPRE_SPECBE_TF,dsptext_beam,dsp3d_beam,边构,边构_虚线,边构标注,12,13,砼梁,SPRE_SPECBE_LIAN,BOUT
+
+框架柱结果图层：
+Pkpm_层15200,Pkpm_层15221,Pkpm_层15101,Pkpm_层14,层15200,层15221,层15101,层14,15200,15221,15101,14,Pkpm_层12000,Pkpm_层22000,Pkpm_层28000,Pkpm_层20001,Pkpm_层2222,层12000,层22000,层28000,层20001,层2222,12000,22000,28000,20001,2222,柱线,COLU,S-COLU,剪力墙柱配筋,砼柱_dwy,SPRE_SPECCL_JIAO_dwy,dsptext_col_dwy,砼柱_yjk,dsp3d_col_yjk,SPRE_SPECCL_JIAO_yjk,dsptext_col_yjk,砼柱,SPRE_SPECCL_KUANGZHI,SPRE_SPECCL_JIAO,dsptext_col,dsp3d_col,柱,bwcolu,COLUMN1
+
+剪力墙及洞口连梁结果图层：
+Pkpm_层15223,Pkpm_层15224,Pkpm_层15200,Pkpm_层15103,Pkpm_层15104,Pkpm_层15105,Pkpm_层15226,层15223,层15224,层15200,层15103,层15104,层15105,层15226,15223,15224,15200,15103,15104,15105,15226,Pkpm_层14000,Pkpm_层24000,Pkpm_层4444,层14000,层24000,层4444,14000,24000,4444,混凝土墙_yjk,dsptext_wallcol_yjk,SPRE_SPECWA_OUT_yjk,砼墙_yjk,dsptext_wallbeam_yjk,墙洞门_yjk,SPRE_SPECWA_SHORT_yjk,24200,24100,混凝土墙,dsptext_wallcol,SPRE_SPECWA_OUT,砼墙,dsptext_wallbeam,墙洞门,SPRE_SPECWA_SHORT
+
+其他图层：
+层20000,层25000,层29000,层30000,层5555,层21,层2106,层11,20000,25000,29000,30000,5555,21,2106,11,墙__虚线,13000,23000,3333,板洞标注_yjk,轴线标注_yjk,dsptext_planname_yjk,11_yjk,柱上板带范围_yjk,jiantu_yjk,板洞边线_yjk,SPRE_SPEC_HINGE_yjk,板洞标注,轴线标注,dsptext_xymass,dsptext_planname,11,柱上板带范围,jiantu,板洞边线,SPRE_SPEC_HINGE,dsptext_xymass_yjk
+</code></pre>
+
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">Evan Yu</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+        2018-12-23
+        
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/autocad/">AutoCAD</a>
+          <a href="/tags/%E6%8F%92%E4%BB%B6/">插件</a>
+          <a href="/tags/%E9%A3%9E%E5%9B%BE/">飞图</a>
+          <a href="/tags/msteel/">MSTEEL</a>
+          </div>
+      <nav class="post-nav">
+        <a class="prev" href="/post/public/2018-12-23-autocad%E7%89%88%E6%9C%AC%E4%B8%8E.netvs%E7%89%88%E6%9C%AC%E7%9A%84%E5%AF%B9%E5%BA%94%E5%85%B3%E7%B3%BB%E5%8F%8A%E6%B3%A8%E5%86%8C%E8%A1%A8%E8%B7%AF%E5%BE%84/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">AutoCAD版本与.net、VS版本的对应关系及注册表路径</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        <a class="next" href="/post/public/2018-12-23-cad%E8%87%AA%E5%8A%A8%E5%8A%A0%E8%BD%BD%E6%8F%92%E4%BB%B6%E7%9A%84%E6%96%B9%E5%BC%8F/">
+            <span class="next-text nav-default">CAD自动加载插件的方式</span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:evan75s@gmail.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://github.com/EvanYu" class="iconfont icon-github" title="github"></a>
+  <a href="http://notes.fooleng.com/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2018 - 
+    2022<span class="heart"><i class="iconfont icon-heart"></i></span><span>Evan Yu</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  <script src="/lib/highlight/highlight.pack.js?v=20171001"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.64437849d125a2d603b3e71d6de5225d641a32d17168a58106e0b61852079683.js"></script>
+  <script type="text/javascript">
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        }
+    };
+  </script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.5/es5/tex-mml-chtml.js" integrity="sha256-HGLuEfFcsUJGhvB8cQ8nr0gai9EucOOaIxFw7qxmd+w=" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>
